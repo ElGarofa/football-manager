@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M50 5 88 19v27c0 24-15 39-38 49C27 85 12 70 12 46V19Z" fill="#29313b" stroke="#9aa6b5" stroke-width="5"/>
+  <path d="M50 17 76 27v19c0 17-10 28-26 36C34 74 24 63 24 46V27Z" fill="none" stroke="#657386" stroke-width="3"/>
+  <text x="50" y="57" font-family="Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#e0e6ed">FC</text>
+</svg>

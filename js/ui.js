@@ -1,167 +1,59 @@
-import { FORMATIONS, OPTIONS, LBL, autoLineup } from './tactics.js';
-import { squadOf, squadValue, wageBill } from './clubs.js';
-import { fmt } from './players.js';
-import { Game } from './game.js';
-import { save, load, hasSave } from './save.js';
+import {FORMATIONS,OPTIONS,LBL,autoLineup} from './tactics.js';
+import {squadOf,squadValue,wageBill} from './clubs.js';
+import {fmt} from './players.js';
+import {Game} from './game.js';
+import {save,load,hasSave} from './save.js';
 import * as T from './transfers.js';
-import { endSeason, renew } from './season.js';
-const MENU = [['inicio', 'Inicio'], ['plantilla', 'Plantilla'], ['tacticas', 'Tácticas'], ['calendario', 'Calendario'], ['resultados', 'Resultados'], ['liga', 'Liga'], ['mercado', 'Mercado'], ['entrenamiento', 'Entrenamiento'], ['finanzas', 'Finanzas'], ['guardar', 'Guardar partida']];
-const POSORD = ['POR', 'DFC', 'LI', 'LD', 'MCD', 'MC', 'MCO', 'MI', 'MD', 'EI', 'ED', 'DC'];
-const COLS = [['pos', 'Pos'], ['nombre', 'Nombre'], ['edad', 'Edad'], ['ovr', 'OVR'], ['pot', 'POT'], ['vel', 'VEL'], ['ace', 'ACE'], ['pas', 'PAS'], ['tec', 'TEC'], ['tir', 'TIR'], ['def', 'DEF'], ['fis', 'FIS'], ['res', 'RES'], ['men', 'MEN'], ['exp', 'EXP'], ['mor', 'MOR'], ['cond', 'CON'], ['gol', 'Gol']];
-const cell = (p, k) => k === 'nombre' && p.lesion > 0 ? `${p.nombre} 🩹${p.lesion}d` : (p[k] ?? 0);
-const pTable = (ps, extra) => `<div class="tw"><table><tr>${COLS.map(c => `<th>${c[1]}</th>`).join('')}<th>Salario</th><th>Valor</th><th>Contrato</th>${extra ? '<th></th>' : ''}</tr>${ps.map(p => `<tr class="${p.lesion > 0 ? 'inj' : ''}">${COLS.map(c => `<td>${cell(p, c[0])}</td>`).join('')}<td>${fmt(p.sal)}</td><td>${fmt(p.val)}</td><td>${p.contrato}</td>${extra ? `<td>${extra(p)}</td>` : ''}</tr>`).join('')}</table></div>`;
-const opts = (a, v) => a.map(x => `<option ${x == v ? 'selected' : ''}>${x}</option>`).join('');
-export class UI {
-    constructor(el) {
-        this.el = el;
-        this.view = 'inicio';
-        this.f = { pos: '', q: '', min: 0 };
-        this.jr = null;
-        this.sd = '';
-        this.lv = null;
-        el.addEventListener('click', e => { const b = e.target.closest('[data-act]'); if (b)
-            this.act(b.dataset.act, b.dataset); });
-        el.addEventListener('change', e => { const b = e.target.closest('[data-chg]'); if (b)
-            this.chg(b.dataset.chg, b.dataset, b.value); });
-    }
-    get g() { return this.game; }
-    tn(id) { return this.g.clubs[id].nombre; }
-    toast(m) { const t = document.getElementById('toast'); t.textContent = m; t.className = 'show'; clearTimeout(this._t); this._t = setTimeout(() => t.className = '', 3500); }
-    start() { this.game = null; this.el.innerHTML = `<div class="start"><h1>Manager Argentina <small>v0.1</small></h1><p>Elegí tu club. Todos los datos son ficticios.</p>${hasSave() ? '<p><button data-act="load">Cargar partida</button></p>' : ''}<label>División<select data-chg="sd"><option value="">Todas</option>${opts(this.data.leagues.map(l => l.nombre), this.sd)}</select></label><div class="tw"><table><tr><th>Club</th><th>Ciudad</th><th>División</th><th>Reputación</th><th>Presupuesto</th><th>Plantilla</th><th></th></tr>${this.data.clubs.filter(c => !this.sd || c.division == this.sd).map(c => `<tr><td>${c.nombre}</td><td>${c.ciudad}, ${c.provincia}</td><td>${c.division}</td><td>${c.reputacion}</td><td>${fmt(c.presupuesto)}</td><td>${fmt(c.valorPlantilla)}</td><td><button data-act="pick" data-id="${c.id}">Elegir</button></td></tr>`).join('')}</table></div></div>`; }
-    render() { const g = this.g; this.el.innerHTML = `<aside class="side"><div class="brand">${this.tn(g.userClubId)}<small>${g.date}</small></div>${MENU.map(([k, t]) => `<button class="${k == this.view ? 'on' : ''}" data-act="nav" data-v="${k}">${t}</button>`).join('')}</aside><main>${this['v_' + this.view]()}</main>`; }
-    act(a, d) {
-        const g = this.g;
-        switch (a) {
-            case 'pick':
-                this.game = Game.create(structuredClone(this.data), +d.id);
-                this.view = 'inicio';
-                this.render();
-                break;
-            case 'load': {
-                const s = load();
-                if (s) {
-                    this.game = s;
-                    this.view = 'inicio';
-                    this.render();
-                    this.toast('Partida cargada');
-                }
-                else
-                    this.toast('No hay partida guardada');
-                break;
-            }
-            case 'nav':
-                this.view = d.v;
-                this.render();
-                break;
-            case 'day':
-                g.advanceDay();
-                this.render();
-                break;
-            case 'next': {
-                let p;
-                do {
-                    p = g.advanceDay();
-                } while (!p && !g.allDone);
-                this.render();
-                this.toast(g.news.at(-1));
-                break;
-            }
-            case 'save':
-                this.toast(save(g) ? 'Partida guardada' : 'No se pudo guardar');
-                break;
-            case 'new':
-                this.start();
-                break;
-            case 'rep':
-                this.report(+d.i);
-                break;
-            case 'auto':
-                g.lineup = autoLineup(squadOf(g, g.userClubId), g.tactic.formacion);
-                this.render();
-                break;
-            case 'buy': {
-                const [ok, m] = T.buy(g, +d.id, +document.getElementById('o' + d.id).value);
-                this.toast(m);
-                this.render();
-                break;
-            }
-            case 'endseason':
-                endSeason(g);
-                this.view = 'inicio';
-                this.render();
-                this.toast('Comienza la temporada ' + g.year);
-                break;
-            case 'renew':
-                this.toast(renew(g, g.players[d.id]));
-                this.render();
-                break;
-            case 'sell': {
-                const o = T.sellOffer(g, +d.id), p = g.players[d.id];
-                if (!o)
-                    this.toast('Sin ofertas o plantilla mínima (16)');
-                else if (confirm(`${this.tn(o.to)} ofrece ${fmt(o.price)} por ${p.nombre}. ¿Vender?`))
-                    this.toast(T.sell(g, p.id, o)[1]);
-                this.render();
-                break;
-            }
-        }
-    }
-    chg(a, d, v) {
-        const g = this.g;
-        if (a === 'sd') {
-            this.sd = v;
-            return this.start();
-        }
-        if (a === 'lv') {
-            this.lv = v;
-            return this.render();
-        }
-        if (a === 'form') {
-            g.tactic.formacion = v;
-            g.lineup = autoLineup(squadOf(g, g.userClubId), v);
-        }
-        else if (a === 'tac')
-            g.tactic[d.k] = v;
-        else if (a === 'slot') {
-            const [t, i] = d.s.split(':'), L = g.lineup, arr = [L.xi, L.bench], A = t === 'xi' ? L.xi : L.bench;
-            v = +v;
-            for (const X of arr) {
-                const j = X.indexOf(v);
-                if (j >= 0)
-                    X[j] = A[i];
-            }
-            A[i] = v;
-        }
-        else if (a === 'f')
-            this.f[d.k] = v;
-        else if (a === 'train')
-            g.training = v;
-        else if (a === 'jr')
-            this.jr = +v;
-        this.render();
-    }
-    resRow(r, i) { return `<div class="res">J${r.j} · <b>${this.tn(r.h)} ${r.hg} - ${r.ag} ${this.tn(r.a)}</b> <button data-act="rep" data-i="${i}">Ver</button></div>`; }
-    report(i) {
-        const r = this.g.league.results[i], s = r.st, n = id => this.tn(id), dl = document.getElementById('dlg'), row = (l, k, f = x => x) => `<tr><td>${f(s[0][k])}</td><th>${l}</th><td>${f(s[1][k])}</td></tr>`;
-        dl.innerHTML = `<h3>${n(r.h)} ${r.hg} - ${r.ag} ${n(r.a)}</h3><small>Jornada ${r.j} · ${r.date}</small><table class="stats">${row('Posesión', 'poss', x => x + '%')}${row('Tiros', 'shots')}${row('Al arco', 'sot')}${row('Faltas', 'fouls')}${row('Amarillas', 'yel')}${row('Rojas', 'red')}${row('Córners', 'corners')}</table><h4>Crónica</h4><div class="ev">${r.ev.map(e => `<div class="${e.t}">MIN ${e.min} — ${e.txt}</div>`).join('')}<b>FINAL ${n(r.h)} ${r.hg} - ${r.ag} ${n(r.a)}</b></div><h4>Jugadores destacados</h4>${r.top.map(p => `<div>${p.n} (${n(p.c)}) — ${p.r.toFixed(1)}</div>`).join('')}<form method="dialog"><p><button>Cerrar</button></p></form>`;
-        dl.showModal();
-    }
-    v_inicio() {
-        const g = this.g, c = g.clubs[g.userClubId], L = g.league, m = (L.fixtures[L.j] || []).find(x => x.h == c.id || x.a == c.id), pos = L.sorted().findIndex(r => r.id == c.id) + 1, li = L.results.findLastIndex(r => r.h == c.id || r.a == c.id);
-        return `<h2>${c.nombre}</h2><div class="cards"><div><b>Temporada</b>${g.year} · ${c.division}</div><div><b>Fecha</b>${g.date}</div><div><b>Posición</b>${pos}º de ${L.ids.length}</div><div><b>Presupuesto</b>${fmt(c.presupuesto)}</div><div><b>Estadio</b>${c.estadio} (${c.capacidad.toLocaleString('es-AR')})</div></div><p>${m ? `Jornada ${L.j + 1} (${L.date(L.j)}): <b>${this.tn(m.h)} vs ${this.tn(m.a)}</b>` : 'Temporada finalizada'}</p>${g.allDone ? `<p>Terminaron todas las ligas. Contratos por vencer en tu plantilla: ${g.expiring().length}. <button data-act="endseason">Cerrar temporada</button></p>` : '<p><button data-act="day">Avanzar día</button> <button data-act="next">Jugar hasta la próxima jornada</button></p>'}${li >= 0 ? `<h3>Último partido</h3>${this.resRow(L.results[li], li)}` : ''}<h3>Novedades</h3><ul>${g.news.slice(-6).reverse().map(n => `<li>${n}</li>`).join('')}</ul>`;
-    }
-    v_plantilla() { const g = this.g; return `<h2>Plantilla</h2>${pTable([...squadOf(g, g.userClubId)].sort((a, b) => POSORD.indexOf(a.pos) - POSORD.indexOf(b.pos) || b.ovr - a.ovr), p => p.contrato <= g.year + 1 ? `<button data-act="renew" data-id="${p.id}">Renovar</button>` : '')}`; }
-    v_tacticas() {
-        const g = this.g, t = g.tactic, sq = squadOf(g, g.userClubId), F = FORMATIONS[t.formacion], sel = (s, id, l) => `<label>${l}<select data-chg="slot" data-s="${s}">${sq.map(p => `<option value="${p.id}" ${p.id == id ? 'selected' : ''}>${p.pos} ${p.nombre} (${p.ovr}${p.lesion > 0 ? ' 🩹' : ''})</option>`).join('')}</select></label>`;
-        return `<h2>Tácticas</h2><div class="grid"><label>Formación<select data-chg="form">${opts(Object.keys(FORMATIONS), t.formacion)}</select></label>${Object.keys(OPTIONS).map(k => `<label>${LBL[k]}<select data-chg="tac" data-k="${k}">${opts(OPTIONS[k], t[k])}</select></label>`).join('')}</div><h3>Once titular</h3><div class="grid">${g.lineup.xi.map((id, i) => sel('xi:' + i, id, F[i])).join('')}</div><h3>Suplentes</h3><div class="grid">${g.lineup.bench.map((id, i) => sel('bench:' + i, id, 'Banco ' + (i + 1))).join('')}</div><p><button data-act="auto">Elegir el mejor equipo</button></p>`;
-    }
-    v_calendario() { const g = this.g, id = g.userClubId, L = g.league; return `<h2>Calendario</h2><table><tr><th>J</th><th>Fecha</th><th>Partido</th><th>Resultado</th></tr>${L.fixtures.map((fx, i) => { const m = fx.find(x => x.h == id || x.a == id); if (!m)
-        return `<tr><td>${i + 1}</td><td>${L.date(i)}</td><td>Libre</td><td>-</td></tr>`; const ri = L.results.findIndex(r => r.j == i + 1 && r.h == m.h), r = L.results[ri]; return `<tr class="${i == L.j ? 'hl' : ''}"><td>${i + 1}</td><td>${L.date(i)}</td><td>${this.tn(m.h)} vs ${this.tn(m.a)}</td><td>${r ? `${r.hg}-${r.ag} <button data-act="rep" data-i="${ri}">Ver</button>` : '-'}</td></tr>`; }).join('')}</table>`; }
-    v_resultados() { const L = this.g.league, j = this.jr || L.j; if (!j)
-        return '<h2>Resultados</h2><p>Todavía no se jugó ninguna jornada.</p>'; return `<h2>Resultados</h2><label>Jornada<select data-chg="jr">${Array.from({ length: L.j }, (_, i) => `<option ${i + 1 == j ? 'selected' : ''}>${i + 1}</option>`).join('')}</select></label>${L.results.map((r, i) => r.j == j ? this.resRow(r, i) : '').join('')}`; }
-    v_liga() { const g = this.g, L = g.leagues[this.lv] || g.league, gs = Object.values(g.players).filter(p => p.gol && g.clubs[p.clubId].liga == L.def.id).sort((a, b) => b.gol - a.gol).slice(0, 5); return `<h2>${L.def.nombre}</h2><label>Liga<select data-chg="lv">${Object.values(g.leagues).map(l => `<option value="${l.def.id}" ${l === L ? 'selected' : ''}>${l.def.nombre}</option>`).join('')}</select></label><div class="tw"><table><tr><th>#</th><th>Club</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th></tr>${L.sorted().map((r, i) => `<tr class="${r.id == g.userClubId ? 'hl' : ''}"><td>${i + 1}</td><td>${this.tn(r.id)}</td><td>${r.pj}</td><td>${r.g}</td><td>${r.e}</td><td>${r.p}</td><td>${r.gf}</td><td>${r.gc}</td><td>${r.gf - r.gc}</td><td><b>${r.pts}</b></td></tr>`).join('')}</table></div><h3>Goleadores</h3>${gs.map(p => `<div>${p.nombre} (${this.tn(p.clubId)}) — ${p.gol}</div>`).join('') || '<p>Sin goles todavía.</p>'}<h3>Campeones de Primera</h3>${g.hist.map(h => `<div>${h.y}: ${h.camp}</div>`).join('') || '<p>Todavía no hay temporadas completas.</p>'}`; }
-    v_mercado() { const g = this.g, f = this.f, c = g.clubs[g.userClubId], res = T.search(g, { pos: f.pos, q: f.q, min: +f.min }); return `<h2>Mercado</h2><p>Presupuesto: <b>${fmt(c.presupuesto)}</b> · Plantilla: ${c.plantilla.length}/30</p><div class="grid"><label>Posición<select data-chg="f" data-k="pos"><option value="">Todas</option>${opts(POSORD, f.pos)}</select></label><label>OVR mínimo<input type="number" data-chg="f" data-k="min" value="${f.min}"></label><label>Nombre<input data-chg="f" data-k="q" value="${f.q}"></label></div><h3>Jugadores disponibles</h3>${pTable(res, p => `<small>${p.clubId ? this.tn(p.clubId) : 'Libre'}</small> <input id="o${p.id}" type="number" step="10000" value="${p.val}" style="width:100px"> <button data-act="buy" data-id="${p.id}">Ofertar</button>`)}<h3>Vender</h3>${pTable(squadOf(g, c.id), p => `<button data-act="sell" data-id="${p.id}">Vender</button>`)}`; }
-    v_entrenamiento() { const g = this.g, sq = squadOf(g, g.userClubId); return `<h2>Entrenamiento</h2><label>Foco<select data-chg="train">${opts(['Equilibrado', 'Físico', 'Técnico', 'Descanso'], g.training)}</select></label><p>Condición media: ${Math.round(sq.reduce((s, p) => s + p.cond, 0) / sq.length)}% · Lesionados: ${sq.filter(p => p.lesion > 0).length}</p><p>Físico mejora físico, resistencia y velocidad. Técnico mejora técnica, pase y tiro. Descanso acelera la recuperación.</p>`; }
-    v_finanzas() { const g = this.g, c = g.clubs[g.userClubId], w = wageBill(g, c.id); return `<h2>Finanzas</h2><div class="cards"><div><b>Presupuesto</b>${fmt(c.presupuesto)}</div><div><b>Masa salarial anual</b>${fmt(w)}</div><div><b>Sueldos por jornada</b>${fmt(w / g.league.fixtures.length)}</div><div><b>Ingresos por entradas</b>${fmt(g.fin.ing)}</div><div><b>Gasto en sueldos</b>${fmt(g.fin.gas)}</div><div><b>Valor de plantilla</b>${fmt(squadValue(g, c.id))}</div></div>`; }
-    v_guardar() { return `<h2>Guardar partida</h2><p><button data-act="save">Guardar partida</button> <button data-act="load">Cargar partida</button> <button data-act="new">Nueva partida</button></p>`; }
+import {endSeason,renew} from './season.js';
+const MENU=[['inicio','Inicio'],['plantilla','Plantilla'],['tacticas','Tácticas'],['calendario','Calendario'],['resultados','Resultados'],['liga','Liga'],['mercado','Mercado'],['entrenamiento','Entrenamiento'],['finanzas','Finanzas'],['guardar','Guardar partida']];
+const POSORD=['POR','DFC','LI','LD','MCD','MC','MCO','MI','MD','EI','ED','DC'];
+const COLS=[['pos','Pos'],['nombre','Nombre'],['edad','Edad'],['ovr','OVR'],['pot','POT'],['vel','VEL'],['ace','ACE'],['pas','PAS'],['tec','TEC'],['tir','TIR'],['def','DEF'],['fis','FIS'],['res','RES'],['men','MEN'],['exp','EXP'],['mor','MOR'],['cond','CON'],['gol','Gol']];
+const cell=(p,k)=>k==='nombre'&&p.lesion>0?`${p.nombre} 🩹${p.lesion}d`:(p[k]??0);
+const pTable=(ps,extra)=>`<div class="tw"><table><tr>${COLS.map(c=>`<th>${c[1]}</th>`).join('')}<th>Salario</th><th>Valor</th><th>Contrato</th>${extra?'<th></th>':''}</tr>${ps.map(p=>`<tr class="${p.lesion>0?'inj':''}">${COLS.map(c=>`<td>${cell(p,c[0])}</td>`).join('')}<td>${fmt(p.sal)}</td><td>${fmt(p.val)}</td><td>${p.contrato}</td>${extra?`<td>${extra(p)}</td>`:''}</tr>`).join('')}</table></div>`;
+const opts=(a,v)=>a.map(x=>`<option ${x==v?'selected':''}>${x}</option>`).join('');
+export class UI{
+ constructor(el){this.el=el;this.view='inicio';this.f={pos:'',q:'',min:0};this.jr=null;this.sd='';this.lv=null;
+  el.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(b)this.act(b.dataset.act,b.dataset)});
+  el.addEventListener('change',e=>{const b=e.target.closest('[data-chg]');if(b)this.chg(b.dataset.chg,b.dataset,b.value)})}
+ get g(){return this.game}
+ tn(id){return this.g.clubs[id].nombre}
+ toast(m){const t=document.getElementById('toast');t.textContent=m;t.className='show';clearTimeout(this._t);this._t=setTimeout(()=>t.className='',3500)}
+ start(){this.game=null;this.el.innerHTML=`<div class="start"><h1>Manager Argentina <small>v0.1</small></h1><p>Elegí tu club. Todos los datos son ficticios.</p>${hasSave()?'<p><button data-act="load">Cargar partida</button></p>':''}<label>División<select data-chg="sd"><option value="">Todas</option>${opts(this.data.leagues.map(l=>l.nombre),this.sd)}</select></label><div class="tw"><table><tr><th>Club</th><th>Ciudad</th><th>División</th><th>Reputación</th><th>Presupuesto</th><th>Plantilla</th><th></th></tr>${this.data.clubs.filter(c=>!this.sd||c.division==this.sd).map(c=>`<tr><td>${c.nombre}</td><td>${c.ciudad}, ${c.provincia}</td><td>${c.division}</td><td>${c.reputacion}</td><td>${fmt(c.presupuesto)}</td><td>${fmt(c.valorPlantilla)}</td><td><button data-act="pick" data-id="${c.id}">Elegir</button></td></tr>`).join('')}</table></div></div>`}
+ render(){const g=this.g;this.el.innerHTML=`<aside class="side"><div class="brand">${this.tn(g.userClubId)}<small>${g.date}</small></div>${MENU.map(([k,t])=>`<button class="${k==this.view?'on':''}" data-act="nav" data-v="${k}">${t}</button>`).join('')}</aside><main>${this['v_'+this.view]()}</main>`}
+ act(a,d){const g=this.g;switch(a){
+  case'pick':this.game=Game.create(structuredClone(this.data),+d.id);this.view='inicio';this.render();break;
+  case'load':{const s=load();if(s){this.game=s;this.view='inicio';this.render();this.toast('Partida cargada')}else this.toast('No hay partida guardada');break}
+  case'nav':this.view=d.v;this.render();break;
+  case'day':g.advanceDay();this.render();break;
+  case'next':{let p;do{p=g.advanceDay()}while(!p&&!g.allDone);this.render();this.toast(g.news.at(-1));break}
+  case'save':this.toast(save(g)?'Partida guardada':'No se pudo guardar');break;
+  case'new':this.start();break;
+  case'rep':this.report(+d.i);break;
+  case'auto':g.lineup=autoLineup(squadOf(g,g.userClubId),g.tactic.formacion);this.render();break;
+  case'buy':{const[ok,m]=T.buy(g,+d.id,+document.getElementById('o'+d.id).value);this.toast(m);this.render();break}
+  case'endseason':endSeason(g);this.view='inicio';this.render();this.toast('Comienza la temporada '+g.year);break;
+  case'renew':this.toast(renew(g,g.players[d.id]));this.render();break;
+  case'sell':{const o=T.sellOffer(g,+d.id),p=g.players[d.id];if(!o)this.toast('Sin ofertas o plantilla mínima (16)');else if(confirm(`${this.tn(o.to)} ofrece ${fmt(o.price)} por ${p.nombre}. ¿Vender?`))this.toast(T.sell(g,p.id,o)[1]);this.render();break}}}
+ chg(a,d,v){const g=this.g;if(a==='sd'){this.sd=v;return this.start()}if(a==='lv'){this.lv=v;return this.render()}
+  if(a==='form'){g.tactic.formacion=v;g.lineup=autoLineup(squadOf(g,g.userClubId),v)}
+  else if(a==='tac')g.tactic[d.k]=v;
+  else if(a==='slot'){const[t,i]=d.s.split(':'),L=g.lineup,arr=[L.xi,L.bench],A=t==='xi'?L.xi:L.bench;v=+v;for(const X of arr){const j=X.indexOf(v);if(j>=0)X[j]=A[i]}A[i]=v}
+  else if(a==='f')this.f[d.k]=v;else if(a==='train')g.training=v;else if(a==='jr')this.jr=+v;
+  this.render()}
+ resRow(r,i){return`<div class="res">J${r.j} · <b>${this.tn(r.h)} ${r.hg} - ${r.ag} ${this.tn(r.a)}</b> <button data-act="rep" data-i="${i}">Ver</button></div>`}
+ report(i){const r=this.g.league.results[i],s=r.st,n=id=>this.tn(id),dl=document.getElementById('dlg'),row=(l,k,f=x=>x)=>`<tr><td>${f(s[0][k])}</td><th>${l}</th><td>${f(s[1][k])}</td></tr>`;
+  dl.innerHTML=`<h3>${n(r.h)} ${r.hg} - ${r.ag} ${n(r.a)}</h3><small>Jornada ${r.j} · ${r.date}</small><table class="stats">${row('Posesión','poss',x=>x+'%')}${row('Tiros','shots')}${row('Al arco','sot')}${row('Faltas','fouls')}${row('Amarillas','yel')}${row('Rojas','red')}${row('Córners','corners')}</table><h4>Crónica</h4><div class="ev">${r.ev.map(e=>`<div class="${e.t}">MIN ${e.min} — ${e.txt}</div>`).join('')}<b>FINAL ${n(r.h)} ${r.hg} - ${r.ag} ${n(r.a)}</b></div><h4>Jugadores destacados</h4>${r.top.map(p=>`<div>${p.n} (${n(p.c)}) — ${p.r.toFixed(1)}</div>`).join('')}<form method="dialog"><p><button>Cerrar</button></p></form>`;dl.showModal()}
+ v_inicio(){const g=this.g,c=g.clubs[g.userClubId],L=g.league,m=(L.fixtures[L.j]||[]).find(x=>x.h==c.id||x.a==c.id),pos=L.sorted().findIndex(r=>r.id==c.id)+1,li=L.results.findLastIndex(r=>r.h==c.id||r.a==c.id);
+  return`<h2>${c.nombre}</h2><div class="cards"><div><b>Temporada</b>${g.year} · ${c.division}</div><div><b>Fecha</b>${g.date}</div><div><b>Posición</b>${pos}º de ${L.ids.length}</div><div><b>Presupuesto</b>${fmt(c.presupuesto)}</div><div><b>Estadio</b>${c.estadio} (${c.capacidad.toLocaleString('es-AR')})</div></div><p>${m?`Jornada ${L.j+1} (${L.date(L.j)}): <b>${this.tn(m.h)} vs ${this.tn(m.a)}</b>`:'Temporada finalizada'}</p>${g.allDone?`<p>Terminaron todas las ligas. Contratos por vencer en tu plantilla: ${g.expiring().length}. <button data-act="endseason">Cerrar temporada</button></p>`:'<p><button data-act="day">Avanzar día</button> <button data-act="next">Jugar hasta la próxima jornada</button></p>'}${li>=0?`<h3>Último partido</h3>${this.resRow(L.results[li],li)}`:''}<h3>Novedades</h3><ul>${g.news.slice(-6).reverse().map(n=>`<li>${n}</li>`).join('')}</ul>`}
+ v_plantilla(){const g=this.g;return`<h2>Plantilla</h2>${pTable([...squadOf(g,g.userClubId)].sort((a,b)=>POSORD.indexOf(a.pos)-POSORD.indexOf(b.pos)||b.ovr-a.ovr),p=>p.contrato<=g.year+1?`<button data-act="renew" data-id="${p.id}">Renovar</button>`:'')}`}
+ v_tacticas(){const g=this.g,t=g.tactic,sq=squadOf(g,g.userClubId),F=FORMATIONS[t.formacion],
+  sel=(s,id,l)=>`<label>${l}<select data-chg="slot" data-s="${s}">${sq.map(p=>`<option value="${p.id}" ${p.id==id?'selected':''}>${p.pos} ${p.nombre} (${p.ovr}${p.lesion>0?' 🩹':''})</option>`).join('')}</select></label>`;
+  return`<h2>Tácticas</h2><div class="grid"><label>Formación<select data-chg="form">${opts(Object.keys(FORMATIONS),t.formacion)}</select></label>${Object.keys(OPTIONS).map(k=>`<label>${LBL[k]}<select data-chg="tac" data-k="${k}">${opts(OPTIONS[k],t[k])}</select></label>`).join('')}</div><h3>Once titular</h3><div class="grid">${g.lineup.xi.map((id,i)=>sel('xi:'+i,id,F[i])).join('')}</div><h3>Suplentes</h3><div class="grid">${g.lineup.bench.map((id,i)=>sel('bench:'+i,id,'Banco '+(i+1))).join('')}</div><p><button data-act="auto">Elegir el mejor equipo</button></p>`}
+ v_calendario(){const g=this.g,id=g.userClubId,L=g.league;return`<h2>Calendario</h2><table><tr><th>J</th><th>Fecha</th><th>Partido</th><th>Resultado</th></tr>${L.fixtures.map((fx,i)=>{const m=fx.find(x=>x.h==id||x.a==id);if(!m)return`<tr><td>${i+1}</td><td>${L.date(i)}</td><td>Libre</td><td>-</td></tr>`;const ri=L.results.findIndex(r=>r.j==i+1&&r.h==m.h),r=L.results[ri];return`<tr class="${i==L.j?'hl':''}"><td>${i+1}</td><td>${L.date(i)}</td><td>${this.tn(m.h)} vs ${this.tn(m.a)}</td><td>${r?`${r.hg}-${r.ag} <button data-act="rep" data-i="${ri}">Ver</button>`:'-'}</td></tr>`}).join('')}</table>`}
+ v_resultados(){const L=this.g.league,j=this.jr||L.j;if(!j)return'<h2>Resultados</h2><p>Todavía no se jugó ninguna jornada.</p>';return`<h2>Resultados</h2><label>Jornada<select data-chg="jr">${Array.from({length:L.j},(_,i)=>`<option ${i+1==j?'selected':''}>${i+1}</option>`).join('')}</select></label>${L.results.map((r,i)=>r.j==j?this.resRow(r,i):'').join('')}`}
+ v_liga(){const g=this.g,L=g.leagues[this.lv]||g.league,gs=Object.values(g.players).filter(p=>p.gol&&g.clubs[p.clubId].liga==L.def.id).sort((a,b)=>b.gol-a.gol).slice(0,5);return`<h2>${L.def.nombre}</h2><label>Liga<select data-chg="lv">${Object.values(g.leagues).map(l=>`<option value="${l.def.id}" ${l===L?'selected':''}>${l.def.nombre}</option>`).join('')}</select></label><div class="tw"><table><tr><th>#</th><th>Club</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>GF</th><th>GC</th><th>DG</th><th>Pts</th></tr>${L.sorted().map((r,i)=>`<tr class="${r.id==g.userClubId?'hl':''}"><td>${i+1}</td><td>${this.tn(r.id)}</td><td>${r.pj}</td><td>${r.g}</td><td>${r.e}</td><td>${r.p}</td><td>${r.gf}</td><td>${r.gc}</td><td>${r.gf-r.gc}</td><td><b>${r.pts}</b></td></tr>`).join('')}</table></div><h3>Goleadores</h3>${gs.map(p=>`<div>${p.nombre} (${this.tn(p.clubId)}) — ${p.gol}</div>`).join('')||'<p>Sin goles todavía.</p>'}<h3>Campeones de Primera</h3>${g.hist.map(h=>`<div>${h.y}: ${h.camp}</div>`).join('')||'<p>Todavía no hay temporadas completas.</p>'}`}
+ v_mercado(){const g=this.g,f=this.f,c=g.clubs[g.userClubId],res=T.search(g,{pos:f.pos,q:f.q,min:+f.min});return`<h2>Mercado</h2><p>Presupuesto: <b>${fmt(c.presupuesto)}</b> · Plantilla: ${c.plantilla.length}/30</p><div class="grid"><label>Posición<select data-chg="f" data-k="pos"><option value="">Todas</option>${opts(POSORD,f.pos)}</select></label><label>OVR mínimo<input type="number" data-chg="f" data-k="min" value="${f.min}"></label><label>Nombre<input data-chg="f" data-k="q" value="${f.q}"></label></div><h3>Jugadores disponibles</h3>${pTable(res,p=>`<small>${p.clubId?this.tn(p.clubId):'Libre'}</small> <input id="o${p.id}" type="number" step="10000" value="${p.val}" style="width:100px"> <button data-act="buy" data-id="${p.id}">Ofertar</button>`)}<h3>Vender</h3>${pTable(squadOf(g,c.id),p=>`<button data-act="sell" data-id="${p.id}">Vender</button>`)}`}
+ v_entrenamiento(){const g=this.g,sq=squadOf(g,g.userClubId);return`<h2>Entrenamiento</h2><label>Foco<select data-chg="train">${opts(['Equilibrado','Físico','Técnico','Descanso'],g.training)}</select></label><p>Condición media: ${Math.round(sq.reduce((s,p)=>s+p.cond,0)/sq.length)}% · Lesionados: ${sq.filter(p=>p.lesion>0).length}</p><p>Físico mejora físico, resistencia y velocidad. Técnico mejora técnica, pase y tiro. Descanso acelera la recuperación.</p>`}
+ v_finanzas(){const g=this.g,c=g.clubs[g.userClubId],w=wageBill(g,c.id);return`<h2>Finanzas</h2><div class="cards"><div><b>Presupuesto</b>${fmt(c.presupuesto)}</div><div><b>Masa salarial anual</b>${fmt(w)}</div><div><b>Sueldos por jornada</b>${fmt(w/g.league.fixtures.length)}</div><div><b>Ingresos por entradas</b>${fmt(g.fin.ing)}</div><div><b>Gasto en sueldos</b>${fmt(g.fin.gas)}</div><div><b>Valor de plantilla</b>${fmt(squadValue(g,c.id))}</div></div>`}
+ v_guardar(){return`<h2>Guardar partida</h2><p><button data-act="save">Guardar partida</button> <button data-act="load">Cargar partida</button> <button data-act="new">Nueva partida</button></p>`}
 }
