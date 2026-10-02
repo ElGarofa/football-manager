@@ -16,10 +16,10 @@ export class LiveMatch{
  swap(t,p,why){const b=this.T[t].bench.find(x=>!this.played[t].has(x.id)&&lineOf(x.pos)==lineOf(p.pos));if(!b||this.subs[t]>=5)return false;this.doSub(t,p,b,why);return true}
  sub(t,oid,iid){const p=this.cur[t].find(x=>x.id==oid),b=this.T[t].bench.find(x=>x.id==iid&&!this.played[t].has(x.id));if(!p||!b||this.subs[t]>=5||this.out[t].has(p.id))return false;this.doSub(t,p,b,'');return true}
  step(){const min=++this.min,T=this.T,st=this.st,k=st.map(x=>x.mid*x.k),pr=C(k[0]/(k[0]+k[1])+st[0].m.poss-st[1].m.poss,.25,.75),o=Math.random()<pr?0:1,a=st[o],b=st[1-o],q=a.att*a.k/(b.def*b.k);
-  a.poss++;
-  if(Math.random()<.25*a.m.tempo*C(q,.6,1.6)){a.shots++;
+  a.poss++;this.lo=o;this.shot=null;
+  if(Math.random()<.25*a.m.tempo*C(q,.6,1.6)){a.shots++;this.shot={o,g:false};
    if(Math.random()<C(.36+(a.att-60)/250,.2,.6)){a.sot++;
-    if(Math.random()<C(.22*q**1.3*(65/b.gk)**1.2,.05,.7)){const ps=this.live(o),s=pick(ps,ps.map(p=>GW[lineOf(p.pos)]*p.tir/60*(p.rasgo==='Goleador'?1.6:1)));a.goals++;this.gp[s.id]=(this.gp[s.id]||0)+1;this.gl.push(s.id);this.add('gol',`¡GOOOL de ${T[o].club.nombre}! ${s.nombre} — ${T[0].club.nombre} ${st[0].goals} - ${st[1].goals} ${T[1].club.nombre}`)}
+    if(Math.random()<C(.22*q**1.3*(65/b.gk)**1.2,.05,.7)){const ps=this.live(o),s=pick(ps,ps.map(p=>GW[lineOf(p.pos)]*p.tir/60*(p.rasgo==='Goleador'?1.6:1)));a.goals++;this.shot.g=true;this.gp[s.id]=(this.gp[s.id]||0)+1;this.gl.push(s.id);this.add('gol',`¡GOOOL de ${T[o].club.nombre}! ${s.nombre} — ${T[0].club.nombre} ${st[0].goals} - ${st[1].goals} ${T[1].club.nombre}`)}
     else if(Math.random()<.25)a.corners++}
    else if(Math.random()<.2)a.corners++}
   for(const t of[0,1]){const x=st[t],pf=T[t].club.cuerpoTecnico.preparadorFisico;

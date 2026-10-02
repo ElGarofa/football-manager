@@ -9,3 +9,9 @@ export function autoLineup(squad,form,rot){const used=new Set(),xi=[];for(const 
  return{xi,bench:squad.filter(p=>!used.has(p.id)&&p.lesion<=0).sort((a,b)=>b.ovr-a.ovr).slice(0,7).map(p=>p.id)}}
 const E={mentalidad:{Defensiva:{att:.92,def:1.08},Ofensiva:{att:1.08,def:.92}},actitud:{Conservadora:{att:.97,def:1.03},Arriesgada:{att:1.04,def:.96,foul:1.1}},presion:{Alta:{mid:1.05,fat:1.2,foul:1.25},Baja:{mid:.96,fat:.85,foul:.8}},pase:{Corto:{poss:.04,att:.98},Largo:{poss:-.04,tempo:1.05}},linea:{Alta:{def:.97,mid:1.03,att:1.02},Baja:{def:1.03,att:.97}},ritmo:{Lento:{tempo:.88,fat:.9},Rápido:{tempo:1.12,fat:1.15}}};
 export function mods(t){const m={att:1,mid:1,def:1,poss:0,tempo:1,foul:1,fat:1};for(const k in E){const e=E[k][t[k]];if(e)for(const x in e)x==='poss'?m.poss+=e[x]:m[x]*=e[x]}return m}
+export const COORDS={};
+const BX={POR:.06,DFC:.22,LI:.26,LD:.26,MCD:.38,MC:.5,MCO:.64,MI:.52,MD:.52,EI:.78,ED:.78,DC:.86},BY={LI:.1,LD:.9,MI:.12,MD:.88,EI:.12,ED:.88};
+export function layout(names){const cnt={},seen={};names.forEach(n=>cnt[n]=(cnt[n]||0)+1);return names.map(n=>{const k=seen[n]=(seen[n]||0)+1,c=cnt[n];return{x:BX[n],y:BY[n]??(c==1?.5:.28+.44*(k-1)/(c-1))}})}
+export const coords=n=>COORDS[n]||(COORDS[n]=layout(FORMATIONS[n]));
+export function posFromXY(x,y,i){if(i===0)return'POR';const w=y<.22?-1:y>.78?1:0,s=(a,b)=>w<0?a:b;if(x<.33)return w?s('LI','LD'):'DFC';if(x<.45)return w?s('LI','LD'):'MCD';if(x<.6)return w?s('MI','MD'):'MC';if(x<.75)return w?s('MI','MD'):'MCO';return w?s('EI','ED'):'DC'}
+export function setFormation(name,slots){FORMATIONS[name]=slots.map((s,i)=>posFromXY(s.x,s.y,i));COORDS[name]=slots}

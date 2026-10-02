@@ -17,3 +17,5 @@ Al terminar todas las ligas aparece "Cerrar temporada": ascienden y descienden 2
 - Partido en vivo con pausa (táctica y cambios). Rasgos de jugador (Goleador, Gambeteador, Pasador, Muro, Reflejos, Incansable, Capitán, Frágil). Lesiones por tipo, con vuelta al 70% de condición. Rotación de cansados.
 - Mercado: contraofertas, cláusulas de rescisión, préstamos (entrada y salida), ofertas por tus jugadores y fichajes entre clubes de IA.
 - Directiva: objetivo por temporada y confianza (te pueden despedir). Instalaciones y cuerpo técnico con efecto, mejorables desde Finanzas.
+## v0.6
+Nuevo estilo visual y escudos SVG propios (iniciales y colores por club). Cancha cenital en el partido en vivo (22 círculos numerados que se mueven según posesión, táctica y jugadas). Pizarra táctica en Tácticas: arrastrá jugadores para armar formaciones libres (ej. 4-2-1-2-1), elegí jugadores desde la lista y guardá formaciones con nombre.

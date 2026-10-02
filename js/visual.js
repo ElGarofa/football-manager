@@ -1,0 +1,3 @@
+export function colors(c){let h=0;for(const ch of c.nombre)h=(h*31+ch.charCodeAt(0))%360;return[`hsl(${h} 55% 36%)`,`hsl(${(h+150)%360} 60% 90%)`]}
+export function badge(c,s=28){const[a,b]=colors(c),ini=c.nombre.replace(/\(.*?\)/g,'').split(/\s+/).filter(w=>w.length>2).slice(0,2).map(w=>w[0]).join('').toUpperCase()||c.nombre[0];
+ return`<svg viewBox="0 0 40 46" width="${s}" height="${Math.round(s*1.15)}"><path d="M3 3h34v22c0 10-9 16-17 20C12 41 3 35 3 25z" fill="${a}" stroke="${b}" stroke-width="2"/><text x="20" y="28" text-anchor="middle" font-size="${ini.length>1?15:19}" font-weight="700" fill="${b}" font-family="system-ui,sans-serif">${ini}</text></svg>`}
