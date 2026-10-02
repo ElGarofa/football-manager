@@ -13,3 +13,7 @@ Ascensos y descensos, varias divisiones, Copa Argentina, contratos y renovacione
 - `python tools/import_players.py data/jugadores_reales.csv` reemplaza la plantilla de los clubes que aparezcan en el CSV (columnas en `data/plantilla_importacion.csv`; atributos opcionales). Correrlo después de generate_data.
 ## v0.3: ciclo de temporada
 Al terminar todas las ligas aparece "Cerrar temporada": ascienden y descienden 2 equipos por categoría, los jugadores envejecen y evolucionan (los jóvenes tienden a su potencial, los veteranos bajan), se retiran los mayores, vencen contratos (renová desde Plantilla), entran juveniles y agentes libres, y se acreditan ingresos por sponsors. Las ligas de más de 24 clubes se juegan a una sola rueda.
+## v0.4 y v0.5
+- Partido en vivo con pausa (táctica y cambios). Rasgos de jugador (Goleador, Gambeteador, Pasador, Muro, Reflejos, Incansable, Capitán, Frágil). Lesiones por tipo, con vuelta al 70% de condición. Rotación de cansados.
+- Mercado: contraofertas, cláusulas de rescisión, préstamos (entrada y salida), ofertas por tus jugadores y fichajes entre clubes de IA.
+- Directiva: objetivo por temporada y confianza (te pueden despedir). Instalaciones y cuerpo técnico con efecto, mejorables desde Finanzas.

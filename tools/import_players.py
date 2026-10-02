@@ -20,6 +20,8 @@ for cid,rs in touched.items():
         p={"id":pid,"clubId":cid,"nombre":r["nombre"],"nacionalidad":r.get("nacionalidad") or "Argentina","pos":r["pos"].strip().upper()}
         for k in NUM:
             if r.get(k) not in(None,""):p[k]=int(r[k])
+        for k in("rasgo","pie"):
+            if r.get(k):p[k]=r[k]
         p.setdefault("edad",25);p.setdefault("ovr",60);p.setdefault("pot",p["ovr"])
         keep.append(attrs(p));c["plantilla"].append(pid);pid+=1
     c["valorPlantilla"]=sum(p["val"] for p in keep if p["clubId"]==cid)
