@@ -1,0 +1,12 @@
+{"codigo":"CGO","pais":"Congo","continente":"África","bandera":"🇨🇬","divisiones":[
+  {"nombre":"Ligue 1","nivel":1,"completo":false,"clubes":[
+   {"n":"AS Otôho","c":"Oyo","r":22},
+   {"n":"Diables Noirs","c":"Brazzaville","r":22},
+   {"n":"AC Léopards","c":"Dolisie","r":22},
+   {"n":"Étoile du Congo","c":"Brazzaville","r":20},
+   {"n":"Inter Club","c":"Brazzaville","r":18},
+   {"n":"V Club Mokanda","c":"Pointe-Noire","r":16},
+   {"n":"CARA","c":"Brazzaville","r":20},
+   {"n":"Nico-Nicoyé","c":"Pointe-Noire","r":14}
+  ]}
+]}

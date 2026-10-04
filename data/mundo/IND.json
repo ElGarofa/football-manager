@@ -1,0 +1,39 @@
+{"codigo":"IND","pais":"India","continente":"Asia","bandera":"🇮🇳","divisiones":[
+{"nombre":"Indian Super League","nivel":1,"completo":false,"clubes":[
+{"n":"Mohun Bagan Super Giant","c":"Calcuta","r":50},
+{"n":"East Bengal","c":"Calcuta","r":44},
+{"n":"Mumbai City","c":"Bombay","r":44},
+{"n":"FC Goa","c":"Margao","r":44},
+{"n":"Bengaluru FC","c":"Bangalore","r":44},
+{"n":"Kerala Blasters","c":"Kochi","r":42},
+{"n":"Jamshedpur FC","c":"Jamshedpur","r":38},
+{"n":"NorthEast United","c":"Guwahati","r":36},
+{"n":"Odisha FC","c":"Bhubaneswar","r":38},
+{"n":"Chennaiyin FC","c":"Chennai","r":38},
+{"n":"Punjab FC","c":"Chandigarh","r":36},
+{"n":"Mohammedan SC","c":"Calcuta","r":36},
+{"n":"Inter Kashi","c":"Benarés","r":30},
+{"n":"Sporting Club Delhi","c":"Delhi","r":28}
+]},
+{"nombre":"I-League","nivel":2,"completo":false,"clubes":[
+{"n":"Churchill Brothers","c":"Margao","r":28},
+{"n":"Gokulam Kerala","c":"Kozhikode","r":28},
+{"n":"Rajasthan United","c":"Jaipur","r":24},
+{"n":"Sreenidi Deccan","c":"Hyderabad","r":26},
+{"n":"Real Kashmir","c":"Srinagar","r":26},
+{"n":"NEROCA","c":"Imphal","r":22},
+{"n":"TRAU","c":"Imphal","r":22},
+{"n":"Aizawl FC","c":"Aizol","r":24},
+{"n":"Shillong Lajong","c":"Shillong","r":22},
+{"n":"Delhi FC","c":"Delhi","r":20},
+{"n":"Dempo","c":"Panaji","r":22},
+{"n":"Namdhari","c":"Bhadaur","r":20}
+]},
+{"nombre":"I-League 2","nivel":3,"completo":false,"clubes":[
+{"n":"Sudeva Delhi","c":"Delhi","r":16},
+{"n":"Kenkre FC","c":"Bombay","r":14},
+{"n":"Bhawanipore FC","c":"Calcuta","r":14},
+{"n":"Diamond Harbour","c":"Diamond Harbour","r":16},
+{"n":"Bengaluru United","c":"Bangalore","r":14}
+]}
+]}

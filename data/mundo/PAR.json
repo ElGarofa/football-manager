@@ -1,0 +1,24 @@
+{"codigo": "PAR", "pais": "Paraguay", "continente": "América del Sur", "bandera": "🇵🇾", "divisiones": [
+{"nombre": "Primera División", "nivel": 1, "completo": false, "clubes": [
+{"n": "Cerro Porteño", "c": "Asunción", "r": 66}, 
+{"n": "Olimpia", "c": "Asunción", "r": 68}, 
+{"n": "Libertad", "c": "Asunción", "r": 64}, 
+{"n": "Guaraní", "c": "Asunción", "r": 52}, 
+{"n": "Nacional", "c": "Asunción", "r": 52}, 
+{"n": "Sportivo Luqueño", "c": "Luque", "r": 44}, 
+{"n": "Sol de América", "c": "Villa Elisa", "r": 40}, 
+{"n": "Sportivo Trinidense", "c": "Asunción", "r": 38}, 
+{"n": "Sportivo Ameliano", "c": "Capiatá", "r": 34}, 
+{"n": "General Caballero JLM", "c": "Juan León Mallorquín", "r": 34}, 
+{"n": "Recoleta", "c": "Asunción", "r": 34}, 
+{"n": "Tacuary", "c": "Asunción", "r": 34}]}, 
+{"nombre": "División Intermedia", "nivel": 2, "completo": false, "clubes": [
+{"n": "Rubio Ñu", "c": "Asunción", "r": 28}, 
+{"n": "River Plate", "c": "Asunción", "r": 26}, 
+{"n": "Resistencia", "c": "Asunción", "r": 26}, 
+{"n": "12 de Octubre", "c": "Itauguá", "r": 26}, 
+{"n": "Guaireña", "c": "Villarrica", "r": 26}, 
+{"n": "Fernando de la Mora", "c": "Fernando de la Mora", "r": 24}, 
+{"n": "Martín Ledesma", "c": "Asunción", "r": 20}, 
+{"n": "Deportivo Santaní", "c": "Santaní", "r": 22}, 
+{"n": "Deportivo Capiatá", "c": "Capiatá", "r": 26}]}]}

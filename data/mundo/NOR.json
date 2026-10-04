@@ -1,0 +1,44 @@
+{"codigo":"NOR","pais":"Noruega","continente":"Europa","bandera":"🇳🇴","divisiones":[{"nombre":"Eliteserien","nivel":1,"completo":false,"clubes":[
+{"n":"FK Bodø/Glimt","c":"Bodø","r":68},
+{"n":"SK Brann","c":"Bergen","r":60},
+{"n":"Viking FK","c":"Stavanger","r":58},
+{"n":"Rosenborg BK","c":"Trondheim","r":58},
+{"n":"Molde FK","c":"Molde","r":58},
+{"n":"Vålerenga Fotball","c":"Oslo","r":52},
+{"n":"Lillestrøm SK","c":"Lillestrøm","r":48},
+{"n":"Tromsø IL","c":"Tromsø","r":46},
+{"n":"Sarpsborg 08 FF","c":"Sarpsborg","r":44},
+{"n":"Fredrikstad FK","c":"Fredrikstad","r":42},
+{"n":"KFUM Oslo","c":"Oslo","r":38},
+{"n":"Kristiansund BK","c":"Kristiansund","r":38},
+{"n":"Sandefjord Fotball","c":"Sandefjord","r":38},
+{"n":"HamKam","c":"Hamar","r":38},
+{"n":"IK Start","c":"Kristiansand","r":36},
+{"n":"Strømsgodset IF","c":"Drammen","r":42},
+{"n":"Aalesunds FK","c":"Ålesund","r":38}
+]},
+{"nombre":"OBOS-ligaen","nivel":2,"completo":false,"clubes":[
+{"n":"Odds BK","c":"Skien","r":36},
+{"n":"FK Haugesund","c":"Haugesund","r":36},
+{"n":"Stabæk Fotball","c":"Bærum","r":32},
+{"n":"Sogndal Fotball","c":"Sogndal","r":30},
+{"n":"Ranheim Fotball","c":"Trondheim","r":28},
+{"n":"Mjøndalen IF","c":"Mjøndalen","r":28},
+{"n":"Kongsvinger IL","c":"Kongsvinger","r":28},
+{"n":"Raufoss IL","c":"Raufoss","r":26},
+{"n":"Bryne FK","c":"Bryne","r":28},
+{"n":"Egersunds IK","c":"Egersund","r":26},
+{"n":"Åsane Fotball","c":"Bergen","r":26},
+{"n":"Lyn Fotball","c":"Oslo","r":26},
+{"n":"Skeid Fotball","c":"Oslo","r":26},
+{"n":"Moss FK","c":"Moss","r":24},
+{"n":"Strømmen IF","c":"Strømmen","r":24}
+]},
+{"nombre":"2. divisjon","nivel":3,"completo":false,"clubes":[
+{"n":"Jerv","c":"Grimstad","r":20},
+{"n":"Sandnes Ulf","c":"Sandnes","r":22},
+{"n":"Levanger FK","c":"Levanger","r":18},
+{"n":"Notodden FK","c":"Notodden","r":18},
+{"n":"Ullensaker/Kisa IL","c":"Jessheim","r":22}
+]}
+]}

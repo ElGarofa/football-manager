@@ -1,0 +1,16 @@
+{"codigo":"MWI","pais":"Malaui","continente":"África","bandera":"🇲🇼","divisiones":[
+  {"nombre":"TNM Super League","nivel":1,"completo":false,"clubes":[
+   {"n":"Silver Strikers","c":"Lilongüe","r":28},
+   {"n":"Nyasa Big Bullets","c":"Blantyre","r":30},
+   {"n":"Mighty Wanderers","c":"Blantyre","r":26},
+   {"n":"Moyale Barracks","c":"Mzuzu","r":20},
+   {"n":"Civo United","c":"Lilongüe","r":20},
+   {"n":"Karonga United","c":"Karonga","r":18},
+   {"n":"Creck Sporting","c":"Lilongüe","r":18},
+   {"n":"Blue Eagles","c":"Lilongüe","r":18},
+   {"n":"Kamuzu Barracks","c":"Lilongüe","r":18},
+   {"n":"MAFCO","c":"Salima","r":18},
+   {"n":"Dedza Dynamos","c":"Dedza","r":18},
+   {"n":"Red Lions","c":"Zomba","r":16}
+  ]}
+]}

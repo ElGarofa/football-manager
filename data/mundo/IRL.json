@@ -1,0 +1,26 @@
+{"codigo":"IRL","pais":"Irlanda","continente":"Europa","bandera":"🇮🇪","divisiones":[
+{"nombre":"Premier Division","nivel":1,"completo":false,"clubes":[
+{"n":"Shamrock Rovers","c":"Dublín","r":42},
+{"n":"Shelbourne","c":"Dublín","r":36},
+{"n":"Derry City","c":"Derry","r":36},
+{"n":"Bohemians","c":"Dublín","r":34},
+{"n":"St Patrick's Athletic","c":"Dublín","r":34},
+{"n":"Drogheda United","c":"Drogheda","r":28},
+{"n":"Sligo Rovers","c":"Sligo","r":28},
+{"n":"Galway United","c":"Galway","r":26},
+{"n":"Dundalk","c":"Dundalk","r":28},
+{"n":"Waterford","c":"Waterford","r":24}
+]},
+{"nombre":"First Division","nivel":2,"completo":false,"clubes":[
+{"n":"Cork City","c":"Cork","r":26},
+{"n":"Bray Wanderers","c":"Bray","r":18},
+{"n":"Wexford","c":"Wexford","r":16},
+{"n":"Athlone Town","c":"Athlone","r":16},
+{"n":"Cobh Ramblers","c":"Cobh","r":15},
+{"n":"Finn Harps","c":"Ballybofey","r":16},
+{"n":"Kerry","c":"Tralee","r":15},
+{"n":"Longford Town","c":"Longford","r":15},
+{"n":"Treaty United","c":"Limerick","r":14},
+{"n":"UCD","c":"Dublín","r":15}
+]}
+]}

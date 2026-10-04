@@ -1,0 +1,18 @@
+{"codigo":"ETH","pais":"Etiopía","continente":"África","bandera":"🇪🇹","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Saint George","c":"Adís Abeba","r":32},
+   {"n":"Ethiopian Coffee","c":"Adís Abeba","r":28},
+   {"n":"Fasil Kenema","c":"Gondar","r":26},
+   {"n":"Bahir Dar Kenema","c":"Bahir Dar","r":26},
+   {"n":"Hawassa City","c":"Hawassa","r":22},
+   {"n":"Sidama Coffee","c":"Hawassa","r":24},
+   {"n":"Wolaitta Dicha","c":"Sodo","r":20},
+   {"n":"Dire Dawa City","c":"Dire Dawa","r":20},
+   {"n":"Mechal","c":"Adís Abeba","r":20},
+   {"n":"Adama City","c":"Adama","r":20},
+   {"n":"Arba Minch City","c":"Arba Minch","r":18},
+   {"n":"Hadiya Hossana","c":"Hosaena","r":18},
+   {"n":"Shashemene City","c":"Shashamane","r":18},
+   {"n":"Ethio Electric","c":"Adís Abeba","r":18}
+  ]}
+]}

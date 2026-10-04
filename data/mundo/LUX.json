@@ -1,0 +1,26 @@
+{"codigo":"LUX","pais":"Luxemburgo","continente":"Europa","bandera":"🇱🇺","divisiones":[
+{"nombre":"BGL Ligue","nivel":1,"completo":false,"clubes":[
+{"n":"FC Differdange 03","c":"Differdange","r":38},
+{"n":"F91 Dudelange","c":"Dudelange","r":36},
+{"n":"Swift Hesperange","c":"Hesperange","r":36},
+{"n":"Fola Esch","c":"Esch-sur-Alzette","r":34},
+{"n":"Racing FC Union Luxembourg","c":"Luxemburgo","r":34},
+{"n":"FC Progrès Niederkorn","c":"Niederkorn","r":32},
+{"n":"Jeunesse Esch","c":"Esch-sur-Alzette","r":30},
+{"n":"FC Víktoria Rosport","c":"Rosport","r":28},
+{"n":"UNA Strassen","c":"Strassen","r":26},
+{"n":"US Mondorf-les-Bains","c":"Mondorf-les-Bains","r":24},
+{"n":"Käerjéng 97","c":"Bascharage","r":24},
+{"n":"FC Wiltz 71","c":"Wiltz","r":22},
+{"n":"FC Rodange 91","c":"Rodange","r":22},
+{"n":"Etzella Ettelbruck","c":"Ettelbruck","r":22}
+]},
+{"nombre":"Ligue 1","nivel":2,"completo":false,"clubes":[
+{"n":"Union Titus Pétange","c":"Pétange","r":20},
+{"n":"Jeunesse Canach","c":"Canach","r":18},
+{"n":"FC Mamer 32","c":"Mamer","r":18},
+{"n":"Berdenia Berbourg","c":"Berbourg","r":16},
+{"n":"Atert Bissen","c":"Bissen","r":16},
+{"n":"CS Mondercange","c":"Mondercange","r":16}
+]}
+]}

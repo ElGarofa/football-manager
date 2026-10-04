@@ -1,0 +1,21 @@
+{"codigo":"EGY","pais":"Egipto","continente":"África","bandera":"🇪🇬","divisiones":[
+{"nombre":"Liga Premier de Egipto","nivel":1,"completo":false,"clubes":[
+{"n":"Al Ahly","c":"El Cairo","r":72},
+{"n":"Zamalek","c":"El Cairo","r":62},
+{"n":"Pyramids FC","c":"El Cairo","r":58},
+{"n":"Al Masry","c":"Port Said","r":42},
+{"n":"Al Ittihad Alexandria","c":"Alejandría","r":38},
+{"n":"Enppi","c":"El Cairo","r":36},
+{"n":"Smouha","c":"Alejandría","r":34},
+{"n":"Ceramica Cleopatra","c":"El Cairo","r":36},
+{"n":"Future FC","c":"El Cairo","r":38},
+{"n":"Zed FC","c":"El Cairo","r":30},
+{"n":"El Gouna","c":"El Gouna","r":30},
+{"n":"Haras El Hodoud","c":"Alejandría","r":28},
+{"n":"Ghazl El Mahalla","c":"El Mahalla","r":28},
+{"n":"Pharco FC","c":"Alejandría","r":27},
+{"n":"Petrojet","c":"Suez","r":26},
+{"n":"Tala'ea El Gaish","c":"El Cairo","r":28},
+{"n":"Bank Al Ahly","c":"El Cairo","r":27}
+]}
+]}

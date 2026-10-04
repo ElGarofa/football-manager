@@ -1,0 +1,11 @@
+{"codigo":"SEY","pais":"Seychelles","continente":"África","bandera":"🇸🇨","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Saint Michel United","c":"Mahé","r":12},
+   {"n":"Côte d'Or FC","c":"Praslin","r":12},
+   {"n":"La Passe FC","c":"La Digue","r":10},
+   {"n":"Northern Dynamo","c":"Mahé","r":10},
+   {"n":"Anse Réunion FC","c":"Mahé","r":10},
+   {"n":"Foresters FC","c":"Mahé","r":9},
+   {"n":"Light Stars FC","c":"Mahé","r":9}
+  ]}
+]}

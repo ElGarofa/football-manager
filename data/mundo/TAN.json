@@ -1,0 +1,19 @@
+{"codigo":"TAN","pais":"Tanzania","continente":"África","bandera":"🇹🇿","divisiones":[
+  {"nombre":"Ligi Kuu","nivel":1,"completo":false,"clubes":[
+   {"n":"Young Africans","c":"Dar es Salaam","r":50},
+   {"n":"Simba SC","c":"Dar es Salaam","r":48},
+   {"n":"Azam FC","c":"Dar es Salaam","r":38},
+   {"n":"Singida Black Stars","c":"Singida","r":30},
+   {"n":"Tabora United","c":"Tabora","r":24},
+   {"n":"Coastal Union","c":"Tanga","r":24},
+   {"n":"Namungo","c":"Ruangwa","r":24},
+   {"n":"Mashujaa FC","c":"Kigoma","r":20},
+   {"n":"KMC","c":"Dar es Salaam","r":22},
+   {"n":"Pamba Jiji","c":"Mwanza","r":22},
+   {"n":"Kagera Sugar","c":"Bukoba","r":22},
+   {"n":"Mtibwa Sugar","c":"Morogoro","r":22},
+   {"n":"Tanzania Prisons","c":"Mbeya","r":22},
+   {"n":"Fountain Gate","c":"Babati","r":22},
+   {"n":"JKT Tanzania","c":"Dar es Salaam","r":20}
+  ]}
+]}

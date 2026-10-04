@@ -1,0 +1,11 @@
+{"codigo":"SDN","pais":"Sudán","continente":"África","bandera":"🇸🇩","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Al-Hilal Omdurmán","c":"Omdurmán","r":46},
+   {"n":"Al-Merreikh Omdurmán","c":"Omdurmán","r":42},
+   {"n":"Al-Ahli Shendi","c":"Shendi","r":28},
+   {"n":"Hay Al-Arab","c":"Puerto Sudán","r":26},
+   {"n":"Al-Hilal El Obeid","c":"El Obeid","r":28},
+   {"n":"Al-Ahli Merowe","c":"Merowe","r":22},
+   {"n":"Al-Ahli Jartum","c":"Jartum","r":26}
+  ]}
+]}

@@ -1,0 +1,35 @@
+{"codigo":"CZE","pais":"Chequia","continente":"Europa","bandera":"🇨🇿","divisiones":[
+{"nombre":"Chance Liga","nivel":1,"completo":false,"clubes":[
+{"n":"Slavia Praga","c":"Praga","r":70},
+{"n":"Sparta Praga","c":"Praga","r":68},
+{"n":"Viktoria Plzeň","c":"Plzeň","r":62},
+{"n":"Baník Ostrava","c":"Ostrava","r":50},
+{"n":"Sigma Olomouc","c":"Olomouc","r":47},
+{"n":"Slovan Liberec","c":"Liberec","r":46},
+{"n":"Mladá Boleslav","c":"Mladá Boleslav","r":46},
+{"n":"FK Jablonec","c":"Jablonec nad Nisou","r":45},
+{"n":"Hradec Králové","c":"Hradec Králové","r":44},
+{"n":"Bohemians 1905","c":"Praga","r":40},
+{"n":"Slovácko","c":"Uherské Hradiště","r":42},
+{"n":"Teplice","c":"Teplice","r":40},
+{"n":"Karviná","c":"Karviná","r":37},
+{"n":"Pardubice","c":"Pardubice","r":35},
+{"n":"Dukla Praga","c":"Praga","r":34}
+]},
+{"nombre":"Národní liga","nivel":2,"completo":false,"clubes":[
+{"n":"FC Zlín","c":"Zlín","r":34},
+{"n":"Dynamo České Budějovice","c":"České Budějovice","r":35},
+{"n":"Příbram","c":"Příbram","r":28},
+{"n":"Vlašim","c":"Vlašim","r":22},
+{"n":"Táborsko","c":"Tábor","r":22},
+{"n":"Chrudim","c":"Chrudim","r":20},
+{"n":"Ústí nad Labem","c":"Ústí nad Labem","r":22},
+{"n":"Prostějov","c":"Prostějov","r":20},
+{"n":"Opava","c":"Opava","r":28},
+{"n":"Jihlava","c":"Jihlava","r":27},
+{"n":"Viktoria Žižkov","c":"Praga","r":26},
+{"n":"Varnsdorf","c":"Varnsdorf","r":20},
+{"n":"Líšeň","c":"Brno","r":21},
+{"n":"Třinec","c":"Třinec","r":24}
+]}
+]}

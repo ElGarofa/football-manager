@@ -1,0 +1,14 @@
+{"codigo":"COD","pais":"RD del Congo","continente":"África","bandera":"🇨🇩","divisiones":[
+  {"nombre":"Linafoot","nivel":1,"completo":false,"clubes":[
+   {"n":"TP Mazembe","c":"Lubumbashi","r":62},
+   {"n":"AS Vita Club","c":"Kinsasa","r":48},
+   {"n":"DC Motema Pembe","c":"Kinsasa","r":42},
+   {"n":"FC Lupopo","c":"Lubumbashi","r":34},
+   {"n":"AS Maniema Union","c":"Kindu","r":30},
+   {"n":"Sanga Balende","c":"Mbuji-Mayi","r":28},
+   {"n":"Don Bosco","c":"Lubumbashi","r":28},
+   {"n":"Céleste FC","c":"Mbuji-Mayi","r":22},
+   {"n":"Étoile du Kivu","c":"Bukavu","r":22},
+   {"n":"JS Groupe Bazano","c":"Lubumbashi","r":20}
+  ]}
+]}

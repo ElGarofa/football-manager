@@ -1,0 +1,43 @@
+{"codigo":"NIR","pais":"Irlanda del Norte","continente":"Europa","bandera":"🇬🇧","divisiones":[
+{"nombre":"NIFL Premiership","nivel":1,"completo":false,"clubes":[
+{"n":"Linfield","c":"Belfast","r":36},
+{"n":"Larne","c":"Larne","r":34},
+{"n":"Cliftonville","c":"Belfast","r":30},
+{"n":"Glentoran","c":"Belfast","r":32},
+{"n":"Crusaders","c":"Belfast","r":30},
+{"n":"Coleraine","c":"Coleraine","r":28},
+{"n":"Glenavon","c":"Lurgan","r":26},
+{"n":"Portadown","c":"Portadown","r":26},
+{"n":"Dungannon Swifts","c":"Dungannon","r":22},
+{"n":"Carrick Rangers","c":"Carrickfergus","r":22},
+{"n":"Ballymena United","c":"Ballymena","r":24},
+{"n":"Loughgall","c":"Loughgall","r":20}
+]},
+{"nombre":"NIFL Championship","nivel":2,"completo":false,"clubes":[
+{"n":"Ards","c":"Newtownards","r":18},
+{"n":"Annagh United","c":"Portadown","r":16},
+{"n":"Ballyclare Comrades","c":"Ballyclare","r":14},
+{"n":"Bangor","c":"Bangor","r":14},
+{"n":"Dundela","c":"Belfast","r":14},
+{"n":"Institute","c":"Derry","r":16},
+{"n":"Knockbreda","c":"Belfast","r":14},
+{"n":"Newry City","c":"Newry","r":14},
+{"n":"Warrenpoint Town","c":"Warrenpoint","r":14},
+{"n":"Queen's University","c":"Belfast","r":12},
+{"n":"Harland & Wolff Welders","c":"Belfast","r":12},
+{"n":"Lisburn Distillery","c":"Lisburn","r":15}
+]},
+{"nombre":"NIFL Premier Intermediate League","nivel":3,"completo":false,"clubes":[
+{"n":"Armagh City","c":"Armagh","r":10},
+{"n":"Banbridge Town","c":"Banbridge","r":10},
+{"n":"Barn United","c":"Carrickfergus","r":8},
+{"n":"Ballinamallard United","c":"Ballinamallard","r":10},
+{"n":"Dollingstown","c":"Dollingstown","r":8},
+{"n":"Lurgan Celtic","c":"Lurgan","r":8},
+{"n":"Moyola Park","c":"Castledawson","r":9},
+{"n":"Newington","c":"Belfast","r":8},
+{"n":"Portstewart","c":"Portstewart","r":8},
+{"n":"Tobermore United","c":"Tobermore","r":9},
+{"n":"Limavady United","c":"Limavady","r":9}
+]}
+]}

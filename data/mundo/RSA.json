@@ -1,0 +1,25 @@
+{"codigo":"RSA","pais":"Sudáfrica","continente":"África","bandera":"🇿🇦","divisiones":[
+  {"nombre":"Betway Premiership","nivel":1,"completo":false,"clubes":[
+   {"n":"Mamelodi Sundowns","c":"Pretoria","r":62},
+   {"n":"Orlando Pirates","c":"Johannesburgo","r":58},
+   {"n":"Kaizer Chiefs","c":"Johannesburgo","r":56},
+   {"n":"Stellenbosch FC","c":"Stellenbosch","r":40},
+   {"n":"Sekhukhune United","c":"Burgersfort","r":36},
+   {"n":"AmaZulu","c":"Durban","r":36},
+   {"n":"Cape Town City","c":"Ciudad del Cabo","r":36},
+   {"n":"Polokwane City","c":"Polokwane","r":30},
+   {"n":"TS Galaxy","c":"Kabokweni","r":30},
+   {"n":"Magesi FC","c":"Polokwane","r":28},
+   {"n":"Richards Bay","c":"Richards Bay","r":30},
+   {"n":"Golden Arrows","c":"Durban","r":32},
+   {"n":"Chippa United","c":"Puerto Elizabeth","r":30},
+   {"n":"Orbit College","c":"Rustenburg","r":24}
+  ]},
+  {"nombre":"Motsepe Foundation Championship","nivel":2,"completo":false,"clubes":[
+   {"n":"Cape Town Spurs","c":"Ciudad del Cabo","r":24},
+   {"n":"Jomo Cosmos","c":"Johannesburgo","r":24},
+   {"n":"Black Leopards","c":"Thohoyandou","r":22},
+   {"n":"Milford FC","c":"Durban","r":20},
+   {"n":"Pretoria Callies","c":"Pretoria","r":20}
+  ]}
+]}

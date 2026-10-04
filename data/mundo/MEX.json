@@ -1,0 +1,38 @@
+{"codigo":"MEX","pais":"México","continente":"América del Norte y Central","bandera":"🇲🇽","divisiones":[
+{"nombre":"Liga MX","nivel":1,"completo":true,"clubes":[
+  {"n":"Club América","c":"Ciudad de México","r":82},
+  {"n":"Guadalajara","c":"Guadalajara","r":79},
+  {"n":"Cruz Azul","c":"Ciudad de México","r":76},
+  {"n":"Pumas UNAM","c":"Ciudad de México","r":72},
+  {"n":"Tigres UANL","c":"San Nicolás de los Garza","r":79},
+  {"n":"Monterrey","c":"Monterrey","r":79},
+  {"n":"Toluca","c":"Toluca","r":72},
+  {"n":"Santos Laguna","c":"Torreón","r":62},
+  {"n":"León","c":"León","r":66},
+  {"n":"Pachuca","c":"Pachuca","r":68},
+  {"n":"Atlas","c":"Guadalajara","r":60},
+  {"n":"Necaxa","c":"Aguascalientes","r":52},
+  {"n":"Querétaro","c":"Querétaro","r":52},
+  {"n":"Mazatlán","c":"Mazatlán","r":46},
+  {"n":"FC Juárez","c":"Ciudad Juárez","r":48},
+  {"n":"Puebla","c":"Puebla","r":56},
+  {"n":"Tijuana","c":"Tijuana","r":56},
+  {"n":"Atlético San Luis","c":"San Luis Potosí","r":54}
+]},
+{"nombre":"Liga de Expansión MX","nivel":2,"completo":false,"clubes":[
+  {"n":"Atlante","c":"Ciudad de México","r":40},
+  {"n":"Atlético Morelia","c":"Morelia","r":40},
+  {"n":"Tapatío","c":"Guadalajara","r":34},
+  {"n":"Tepatitlán","c":"Tepatitlán de Morelos","r":30},
+  {"n":"Cancún FC","c":"Cancún","r":32},
+  {"n":"Celaya","c":"Celaya","r":32},
+  {"n":"Correcaminos UAT","c":"Ciudad Victoria","r":32},
+  {"n":"Dorados de Sinaloa","c":"Culiacán","r":36},
+  {"n":"Leones Negros UdeG","c":"Guadalajara","r":34},
+  {"n":"Mineros de Zacatecas","c":"Zacatecas","r":32},
+  {"n":"Venados","c":"Mérida","r":32},
+  {"n":"Alebrijes de Oaxaca","c":"Oaxaca","r":32},
+  {"n":"Tlaxcala FC","c":"Tlaxcala","r":28},
+  {"n":"Cimarrones de Sonora","c":"Hermosillo","r":30}
+]}
+]}

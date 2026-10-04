@@ -1,0 +1,26 @@
+{"codigo":"HUN","pais":"Hungría","continente":"Europa","bandera":"🇭🇺","divisiones":[
+{"nombre":"NB I","nivel":1,"completo":false,"clubes":[
+{"n":"Ferencváros","c":"Budapest","r":62},
+{"n":"Paks","c":"Paks","r":44},
+{"n":"Debrecen","c":"Debrecen","r":45},
+{"n":"Puskás Akadémia","c":"Felcsút","r":43},
+{"n":"Győr","c":"Győr","r":40},
+{"n":"Zalaegerszeg","c":"Zalaegerszeg","r":39},
+{"n":"Kisvárda","c":"Kisvárda","r":36},
+{"n":"MTK Budapest","c":"Budapest","r":42},
+{"n":"Diósgyőr","c":"Miskolc","r":40},
+{"n":"Nyíregyháza","c":"Nyíregyháza","r":34},
+{"n":"Újpest","c":"Budapest","r":42}
+]},
+{"nombre":"NB II","nivel":2,"completo":false,"clubes":[
+{"n":"Kecskemét","c":"Kecskemét","r":30},
+{"n":"Mezőkövesd","c":"Mezőkövesd","r":30},
+{"n":"Szeged-Csanád","c":"Szeged","r":24},
+{"n":"Békéscsaba","c":"Békéscsaba","r":26},
+{"n":"Soroksár","c":"Budapest","r":24},
+{"n":"Vasas","c":"Budapest","r":30},
+{"n":"Budafok","c":"Budapest","r":22},
+{"n":"Tiszakécske","c":"Tiszakécske","r":20},
+{"n":"Gyirmót","c":"Győr","r":24}
+]}
+]}

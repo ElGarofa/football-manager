@@ -1,0 +1,17 @@
+{"codigo":"MAS","pais":"Malasia","continente":"Asia","bandera":"🇲🇾","divisiones":[
+{"nombre":"Malaysia Super League","nivel":1,"completo":false,"clubes":[
+{"n":"Johor Darul Ta'zim","c":"Johor Bahru","r":50},
+{"n":"Selangor","c":"Shah Alam","r":36},
+{"n":"Kuala Lumpur City","c":"Kuala Lumpur","r":34},
+{"n":"Terengganu","c":"Kuala Terengganu","r":34},
+{"n":"Sabah","c":"Kota Kinabalu","r":32},
+{"n":"Kedah Darul Aman","c":"Alor Setar","r":32},
+{"n":"Perak","c":"Ipoh","r":30},
+{"n":"Sri Pahang","c":"Kuantan","r":30},
+{"n":"Negeri Sembilan","c":"Seremban","r":28},
+{"n":"Penang","c":"George Town","r":28},
+{"n":"Kelantan Darul Naim","c":"Kota Bharu","r":26},
+{"n":"Kuching City","c":"Kuching","r":24},
+{"n":"Melaka","c":"Malaca","r":24},
+{"n":"PDRM","c":"Kuala Lumpur","r":22},
+{"n":"Perlis","c":"Kangar","r":14}]}]}

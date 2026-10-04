@@ -1,0 +1,23 @@
+{"codigo":"NGA","pais":"Nigeria","continente":"África","bandera":"🇳🇬","divisiones":[
+{"nombre":"Liga Premier de Nigeria","nivel":1,"completo":false,"clubes":[
+{"n":"Enyimba","c":"Aba","r":50},
+{"n":"Remo Stars","c":"Ikenne","r":40},
+{"n":"Rivers United","c":"Port Harcourt","r":40},
+{"n":"Shooting Stars","c":"Ibadán","r":36},
+{"n":"Kano Pillars","c":"Kano","r":36},
+{"n":"Plateau United","c":"Jos","r":36},
+{"n":"Rangers International","c":"Enugu","r":38},
+{"n":"Lobi Stars","c":"Makurdi","r":34},
+{"n":"Heartland","c":"Owerri","r":34},
+{"n":"Bendel Insurance","c":"Benin City","r":32},
+{"n":"Abia Warriors","c":"Umuahia","r":28},
+{"n":"Sunshine Stars","c":"Akure","r":28},
+{"n":"Katsina United","c":"Katsina","r":26},
+{"n":"Nasarawa United","c":"Lafia","r":26},
+{"n":"El-Kanemi Warriors","c":"Maiduguri","r":26},
+{"n":"Niger Tornadoes","c":"Minna","r":24},
+{"n":"Kwara United","c":"Ilorin","r":26},
+{"n":"Wikki Tourists","c":"Bauchi","r":26},
+{"n":"Akwa United","c":"Uyo","r":30}
+]}
+]}

@@ -1,0 +1,12 @@
+{"codigo":"MRI","pais":"Mauricio","continente":"África","bandera":"🇲🇺","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Pamplemousses SC","c":"Pamplemousses","r":20},
+   {"n":"Cercle de Joachim","c":"Curepipe","r":18},
+   {"n":"Petite Rivière Noire","c":"Petite Rivière","r":18},
+   {"n":"AS Port-Louis 2000","c":"Port Louis","r":18},
+   {"n":"Savanne SC","c":"Souillac","r":16},
+   {"n":"Curepipe Starlight","c":"Curepipe","r":16},
+   {"n":"Bolton City","c":"Port Louis","r":14},
+   {"n":"Rivière du Rempart SC","c":"Rivière du Rempart","r":14}
+  ]}
+]}

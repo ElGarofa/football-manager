@@ -1,0 +1,16 @@
+{"codigo":"ANG","pais":"Angola","continente":"África","bandera":"🇦🇴","divisiones":[
+  {"nombre":"Girabola","nivel":1,"completo":false,"clubes":[
+   {"n":"Petro de Luanda","c":"Luanda","r":40},
+   {"n":"Primeiro de Agosto","c":"Luanda","r":40},
+   {"n":"Sagrada Esperança","c":"Dundo","r":28},
+   {"n":"Interclube","c":"Luanda","r":30},
+   {"n":"Kabuscorp","c":"Luanda","r":26},
+   {"n":"Académica do Lobito","c":"Lobito","r":24},
+   {"n":"Bravos do Maquis","c":"Luena","r":24},
+   {"n":"Desportivo da Huíla","c":"Lubango","r":24},
+   {"n":"Recreativo do Libolo","c":"Calulo","r":26},
+   {"n":"Sporting de Cabinda","c":"Cabinda","r":22},
+   {"n":"Domant FC","c":"Bocoio","r":20},
+   {"n":"Wiliete SC","c":"Benguela","r":22}
+  ]}
+]}

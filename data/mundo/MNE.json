@@ -1,0 +1,22 @@
+{"codigo":"MNE","pais":"Montenegro","continente":"Europa","bandera":"🇲🇪","divisiones":[
+{"nombre":"Prva CFL","nivel":1,"completo":false,"clubes":[
+{"n":"Budućnost","c":"Podgorica","r":38},
+{"n":"Sutjeska","c":"Nikšić","r":36},
+{"n":"Mornar","c":"Bar","r":30},
+{"n":"Dečić","c":"Tuzi","r":30},
+{"n":"Rudar Pljevlja","c":"Pljevlja","r":30},
+{"n":"Iskra","c":"Danilovgrad","r":28},
+{"n":"Arsenal Tivat","c":"Tivat","r":28},
+{"n":"Jedinstvo Bijelo Polje","c":"Bijelo Polje","r":26},
+{"n":"Podgorica","c":"Podgorica","r":26},
+{"n":"Jezero","c":"Plav","r":26}
+]},
+{"nombre":"Druga CFL","nivel":2,"completo":false,"clubes":[
+{"n":"Otrant","c":"Ulcinj","r":18},
+{"n":"Zeta","c":"Golubovci","r":20},
+{"n":"Bokelj","c":"Kotor","r":20},
+{"n":"Berane","c":"Berane","r":18},
+{"n":"Kom","c":"Podgorica","r":20},
+{"n":"Lovćen","c":"Cetinje","r":22}
+]}
+]}

@@ -1,0 +1,23 @@
+{"codigo":"ALB","pais":"Albania","continente":"Europa","bandera":"🇦🇱","divisiones":[
+{"nombre":"Kategoria Superiore","nivel":1,"completo":false,"clubes":[
+{"n":"Partizani","c":"Tirana","r":36},
+{"n":"Egnatia","c":"Rrogozhinë","r":36},
+{"n":"Tirana","c":"Tirana","r":36},
+{"n":"Dinamo City","c":"Tirana","r":32},
+{"n":"Vllaznia","c":"Shkodër","r":32},
+{"n":"Teuta","c":"Durrës","r":32},
+{"n":"Laçi","c":"Laç","r":28},
+{"n":"Elbasani","c":"Elbasan","r":28},
+{"n":"Bylis","c":"Ballsh","r":28},
+{"n":"Skënderbeu","c":"Korçë","r":28}
+]},
+{"nombre":"Kategoria e Parë","nivel":2,"completo":false,"clubes":[
+{"n":"Flamurtari","c":"Vlorë","r":26},
+{"n":"Kukësi","c":"Kukës","r":26},
+{"n":"Apolonia","c":"Fier","r":22},
+{"n":"Luftëtari","c":"Gjirokastër","r":22},
+{"n":"Besa","c":"Kavajë","r":20},
+{"n":"Tomori","c":"Berat","r":20},
+{"n":"Erzeni","c":"Shijak","r":20}
+]}
+]}

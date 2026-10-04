@@ -1,0 +1,12 @@
+{"codigo":"CAN","pais":"Canadá","continente":"América del Norte y Central","bandera":"🇨🇦","divisiones":[
+{"nombre":"Canadian Premier League","nivel":1,"completo":true,"clubes":[
+  {"n":"Forge FC","c":"Hamilton","r":34},
+  {"n":"Cavalry FC","c":"Calgary","r":32},
+  {"n":"HFX Wanderers","c":"Halifax","r":26},
+  {"n":"Pacific FC","c":"Langford","r":28},
+  {"n":"Valour FC","c":"Winnipeg","r":22},
+  {"n":"York United","c":"Toronto","r":24},
+  {"n":"Atlético Ottawa","c":"Ottawa","r":28},
+  {"n":"Vancouver FC","c":"Langley","r":22}
+]}
+]}

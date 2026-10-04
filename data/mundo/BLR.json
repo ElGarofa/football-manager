@@ -1,0 +1,28 @@
+{"codigo":"BLR","pais":"Bielorrusia","continente":"Europa","bandera":"🇧🇾","divisiones":[
+{"nombre":"Vysshaya Liga","nivel":1,"completo":false,"clubes":[
+{"n":"BATE Borisov","c":"Borisov","r":44},
+{"n":"Dinamo Minsk","c":"Minsk","r":40},
+{"n":"Shakhtyor Soligorsk","c":"Soligorsk","r":40},
+{"n":"Neman Grodno","c":"Grodno","r":34},
+{"n":"Dinamo Brest","c":"Brest","r":36},
+{"n":"Torpedo-BelAZ Zhodino","c":"Zhodino","r":30},
+{"n":"Slavia Mozyr","c":"Mozyr","r":28},
+{"n":"Isloch","c":"Minsk","r":28},
+{"n":"Gomel","c":"Gomel","r":30},
+{"n":"Minsk","c":"Minsk","r":26},
+{"n":"Vitebsk","c":"Vitebsk","r":26},
+{"n":"Dnepr Mogilev","c":"Mogilev","r":24},
+{"n":"Naftan Novopolotsk","c":"Novopolotsk","r":24},
+{"n":"Belshina Bobruisk","c":"Bobruisk","r":24},
+{"n":"Arsenal Dzerzhinsk","c":"Dzerzhinsk","r":22},
+{"n":"Slutsk","c":"Slutsk","r":20}
+]},
+{"nombre":"Pervaya Liga","nivel":2,"completo":false,"clubes":[
+{"n":"Lokomotiv Gomel","c":"Gomel","r":14},
+{"n":"Orsha","c":"Orsha","r":12},
+{"n":"Smorgon","c":"Smorgon","r":12},
+{"n":"Volna Pinsk","c":"Pinsk","r":12},
+{"n":"Energetik-BGU","c":"Minsk","r":14},
+{"n":"Molodechno","c":"Molodechno","r":14}
+]}
+]}

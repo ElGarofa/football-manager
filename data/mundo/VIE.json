@@ -1,0 +1,24 @@
+{"codigo":"VIE","pais":"Vietnam","continente":"Asia","bandera":"🇻🇳","divisiones":[
+{"nombre":"V.League 1","nivel":1,"completo":false,"clubes":[
+{"n":"Thể Công-Viettel","c":"Hanói","r":36},
+{"n":"Hanoi FC","c":"Hanói","r":34},
+{"n":"Công An Hà Nội","c":"Hanói","r":34},
+{"n":"Nam Định","c":"Nam Định","r":34},
+{"n":"Becamex Bình Dương","c":"Thu Dau Mot","r":30},
+{"n":"Hoàng Anh Gia Lai","c":"Pleiku","r":30},
+{"n":"Sông Lam Nghệ An","c":"Vinh","r":30},
+{"n":"Hải Phòng","c":"Hai Phong","r":30},
+{"n":"Thanh Hóa","c":"Thanh Hóa","r":30},
+{"n":"Ho Chi Minh City FC","c":"Ciudad Ho Chi Minh","r":28},
+{"n":"SHB Đà Nẵng","c":"Da Nang","r":28},
+{"n":"Hà Tĩnh","c":"Ha Tinh","r":26}]},
+{"nombre":"V.League 2","nivel":2,"completo":false,"clubes":[
+{"n":"Khánh Hòa","c":"Nha Trang","r":20},
+{"n":"PVF-CAND","c":"Hung Yen","r":20},
+{"n":"Phù Đổng Ninh Bình","c":"Ninh Binh","r":20},
+{"n":"Long An","c":"Tan An","r":20},
+{"n":"Bà Rịa Vũng Tàu","c":"Vung Tau","r":18},
+{"n":"Đồng Tháp","c":"Cao Lanh","r":18},
+{"n":"Đồng Nai","c":"Bien Hoa","r":18},
+{"n":"Quảng Nam","c":"Tam Ky","r":18},
+{"n":"Hòa Bình","c":"Hoa Binh","r":16}]}]}

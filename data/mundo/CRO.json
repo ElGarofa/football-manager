@@ -1,0 +1,29 @@
+{"codigo":"CRO","pais":"Croacia","continente":"Europa","bandera":"🇭🇷","divisiones":[
+{"nombre":"HNL","nivel":1,"completo":true,"clubes":[
+{"n":"Dinamo Zagreb","c":"Zagreb","r":68},
+{"n":"Hajduk Split","c":"Split","r":58},
+{"n":"Rijeka","c":"Rijeka","r":52},
+{"n":"Osijek","c":"Osijek","r":46},
+{"n":"Lokomotiva Zagreb","c":"Zagreb","r":42},
+{"n":"Gorica","c":"Velika Gorica","r":38},
+{"n":"Istra 1961","c":"Pula","r":38},
+{"n":"Varaždin","c":"Varaždin","r":36},
+{"n":"Slaven Belupo","c":"Koprivnica","r":36},
+{"n":"Vukovar 1991","c":"Vukovar","r":30}
+]},
+{"nombre":"Prva NL","nivel":2,"completo":false,"clubes":[
+{"n":"Šibenik","c":"Šibenik","r":28},
+{"n":"Cibalia","c":"Vinkovci","r":26},
+{"n":"Rudeš","c":"Zagreb","r":26},
+{"n":"Dugopolje","c":"Dugopolje","r":24},
+{"n":"Inter Zaprešić","c":"Zaprešić","r":26},
+{"n":"Orijent 1919","c":"Rijeka","r":24},
+{"n":"Solin","c":"Solin","r":22},
+{"n":"Sesvete","c":"Sesvete","r":24},
+{"n":"Opatija","c":"Opatija","r":22},
+{"n":"Karlovac 1919","c":"Karlovac","r":22},
+{"n":"Kustošija","c":"Zagreb","r":22},
+{"n":"Dinamo Zagreb II","c":"Zagreb","r":30},
+{"n":"Hajduk Split II","c":"Split","r":27}
+]}
+]}

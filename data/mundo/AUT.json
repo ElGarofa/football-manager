@@ -1,0 +1,45 @@
+{"codigo":"AUT","pais":"Austria","continente":"Europa","bandera":"🇦🇹","divisiones":[
+{"nombre":"Bundesliga","nivel":1,"completo":false,"clubes":[
+{"n":"FC Red Bull Salzburg","c":"Salzburgo","r":75},
+{"n":"SK Sturm Graz","c":"Graz","r":66},
+{"n":"SK Rapid Wien","c":"Viena","r":64},
+{"n":"FK Austria Wien","c":"Viena","r":60},
+{"n":"LASK","c":"Linz","r":58},
+{"n":"Wolfsberger AC","c":"Wolfsberg","r":54},
+{"n":"TSV Hartberg","c":"Hartberg","r":44},
+{"n":"SCR Altach","c":"Altach","r":42},
+{"n":"WSG Tirol","c":"Wattens","r":42},
+{"n":"FC Blau-Weiß Linz","c":"Linz","r":40},
+{"n":"Grazer AK","c":"Graz","r":40},
+{"n":"SV Ried","c":"Ried im Innkreis","r":40}
+]},
+{"nombre":"2. Liga","nivel":2,"completo":false,"clubes":[
+{"n":"SK Austria Klagenfurt","c":"Klagenfurt","r":40},
+{"n":"FC Liefering","c":"Salzburgo","r":36},
+{"n":"SV Lafnitz","c":"Lafnitz","r":28},
+{"n":"Kapfenberger SV","c":"Kapfenberg","r":28},
+{"n":"SKU Amstetten","c":"Amstetten","r":26},
+{"n":"SK Vorwärts Steyr","c":"Steyr","r":28},
+{"n":"SV Horn","c":"Horn","r":26},
+{"n":"SV Stripfing","c":"Stripfing","r":22},
+{"n":"SC Austria Lustenau","c":"Lustenau","r":34},
+{"n":"FC Wacker Innsbruck","c":"Innsbruck","r":32},
+{"n":"SKN St. Pölten","c":"Sankt Pölten","r":34},
+{"n":"FC Admira Wacker","c":"Maria Enzersdorf","r":32},
+{"n":"Floridsdorfer AC","c":"Viena","r":28},
+{"n":"FC Dornbirn 1913","c":"Dornbirn","r":22},
+{"n":"FK Austria Wien Amateure","c":"Viena","r":20}
+]},
+{"nombre":"Regionalliga","nivel":3,"completo":false,"clubes":[
+{"n":"SK Rapid Wien II","c":"Viena","r":24},
+{"n":"SV Austria Salzburg","c":"Salzburgo","r":20},
+{"n":"SK Sturm Graz II","c":"Graz","r":22},
+{"n":"SV Wals-Grünau","c":"Wals-Siezenheim","r":15},
+{"n":"SV Oberwart","c":"Oberwart","r":15},
+{"n":"Wiener Sport-Club","c":"Viena","r":24},
+{"n":"FavAC","c":"Viena","r":18},
+{"n":"SC Wiener Neustadt","c":"Wiener Neustadt","r":24},
+{"n":"ASK Ebreichsdorf","c":"Ebreichsdorf","r":16},
+{"n":"SV Gmunden","c":"Gmunden","r":14}
+]}
+]}

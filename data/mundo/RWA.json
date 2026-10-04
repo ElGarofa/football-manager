@@ -1,0 +1,17 @@
+{"codigo":"RWA","pais":"Ruanda","continente":"África","bandera":"🇷🇼","divisiones":[
+  {"nombre":"Primera División","nivel":1,"completo":false,"clubes":[
+   {"n":"APR FC","c":"Kigali","r":34},
+   {"n":"Rayon Sports","c":"Kigali","r":32},
+   {"n":"AS Kigali","c":"Kigali","r":26},
+   {"n":"Police FC","c":"Kigali","r":24},
+   {"n":"Mukura Victory Sports","c":"Huye","r":24},
+   {"n":"Gasogi United","c":"Kigali","r":20},
+   {"n":"Musanze FC","c":"Musanze","r":22},
+   {"n":"Bugesera FC","c":"Nyamata","r":22},
+   {"n":"Marines FC","c":"Rubavu","r":20},
+   {"n":"Amagaju","c":"Nyamagabe","r":20},
+   {"n":"Etincelles","c":"Rubavu","r":20},
+   {"n":"Gorilla FC","c":"Kigali","r":18},
+   {"n":"Kiyovu Sports","c":"Kigali","r":22}
+  ]}
+]}

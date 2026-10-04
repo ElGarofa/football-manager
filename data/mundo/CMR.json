@@ -1,0 +1,17 @@
+{"codigo":"CMR","pais":"Camerún","continente":"África","bandera":"🇨🇲","divisiones":[
+  {"nombre":"Elite One","nivel":1,"completo":false,"clubes":[
+   {"n":"Coton Sport","c":"Garoua","r":38},
+   {"n":"Canon Yaoundé","c":"Yaundé","r":36},
+   {"n":"Union Douala","c":"Duala","r":30},
+   {"n":"Fovu Club","c":"Baham","r":26},
+   {"n":"Aigle Royal de la Menoua","c":"Dschang","r":24},
+   {"n":"Colombe Sportive","c":"Sangmélima","r":22},
+   {"n":"Bamboutos","c":"Mbouda","r":22},
+   {"n":"Stade Renard","c":"Melong","r":20},
+   {"n":"Victoria United","c":"Limbe","r":20},
+   {"n":"PWD Bamenda","c":"Bamenda","r":22},
+   {"n":"Panthère du Ndé","c":"Bangangté","r":20},
+   {"n":"Racing Bafoussam","c":"Bafoussam","r":20},
+   {"n":"Yong Sports Academy","c":"Bamenda","r":18}
+  ]}
+]}

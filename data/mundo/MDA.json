@@ -1,0 +1,19 @@
+{"codigo":"MDA","pais":"Moldavia","continente":"Europa","bandera":"🇲🇩","divisiones":[
+{"nombre":"Super Liga","nivel":1,"completo":false,"clubes":[
+{"n":"Sheriff Tiraspol","c":"Tiraspol","r":42},
+{"n":"Petrocub Hîncești","c":"Hîncești","r":30},
+{"n":"Milsami Orhei","c":"Orhei","r":30},
+{"n":"Zimbru Chișinău","c":"Chișinău","r":28},
+{"n":"Dacia Buiucani","c":"Chișinău","r":24},
+{"n":"Bălți","c":"Bălți","r":24},
+{"n":"Florești","c":"Florești","r":20},
+{"n":"Sfîntul Gheorghe","c":"Suruceni","r":22}
+]},
+{"nombre":"Liga 1","nivel":2,"completo":false,"clubes":[
+{"n":"Speranța Nisporeni","c":"Nisporeni","r":12},
+{"n":"Saksan","c":"Ciorescu","r":10},
+{"n":"Real Succes","c":"Chișinău","r":12},
+{"n":"Victoria Chișinău","c":"Chișinău","r":10},
+{"n":"Dinamo-Auto Tiraspol","c":"Tiraspol","r":14}
+]}
+]}

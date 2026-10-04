@@ -1,0 +1,33 @@
+{"codigo":"GRE","pais":"Grecia","continente":"Europa","bandera":"🇬🇷","divisiones":[
+{"nombre":"Super League","nivel":1,"completo":false,"clubes":[
+{"n":"Olympiacos","c":"El Pireo","r":76},
+{"n":"AEK Atenas","c":"Atenas","r":70},
+{"n":"PAOK","c":"Salónica","r":70},
+{"n":"Panathinaikos","c":"Atenas","r":68},
+{"n":"Aris","c":"Salónica","r":52},
+{"n":"OFI","c":"Heraclión","r":42},
+{"n":"Asteras Trípoli","c":"Trípoli","r":42},
+{"n":"Atromitos","c":"Atenas","r":40},
+{"n":"Volos","c":"Volos","r":38},
+{"n":"Panetolikos","c":"Agrinio","r":38},
+{"n":"Panserraikos","c":"Serres","r":36},
+{"n":"Lamia","c":"Lamía","r":36},
+{"n":"Levadiakos","c":"Livadiá","r":36},
+{"n":"AEL Larisa","c":"Larisa","r":38}
+]},
+{"nombre":"Super League 2","nivel":2,"completo":false,"clubes":[
+{"n":"Iraklis","c":"Salónica","r":28},
+{"n":"Kalamata","c":"Kalamata","r":26},
+{"n":"Apollon Smyrnis","c":"Atenas","r":28},
+{"n":"Egaleo","c":"Atenas","r":24},
+{"n":"Ergotelis","c":"Heraclión","r":26},
+{"n":"Niki Volos","c":"Volos","r":22},
+{"n":"Panachaiki","c":"Patras","r":24},
+{"n":"Panionios","c":"Atenas","r":30},
+{"n":"Athens Kallithea","c":"Atenas","r":26},
+{"n":"Chania","c":"La Canea","r":24},
+{"n":"Doxa Drama","c":"Drama","r":24},
+{"n":"Kavala","c":"Kavala","r":24},
+{"n":"Anagennisi Karditsa","c":"Karditsa","r":22}
+]}
+]}

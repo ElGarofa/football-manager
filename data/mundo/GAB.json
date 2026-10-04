@@ -1,0 +1,11 @@
+{"codigo":"GAB","pais":"Gabón","continente":"África","bandera":"🇬🇦","divisiones":[
+  {"nombre":"Championnat National D1","nivel":1,"completo":false,"clubes":[
+   {"n":"Mangasport","c":"Moanda","r":26},
+   {"n":"AS Pélican","c":"Lambaréné","r":22},
+   {"n":"FC 105 Libreville","c":"Libreville","r":22},
+   {"n":"AS Stade Mandji","c":"Port-Gentil","r":22},
+   {"n":"US Bitam","c":"Bitam","r":20},
+   {"n":"CF Mounana","c":"Mounana","r":24},
+   {"n":"Akanda FC","c":"Libreville","r":20}
+  ]}
+]}

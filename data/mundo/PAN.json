@@ -1,0 +1,14 @@
+{"codigo":"PAN","pais":"Panamá","continente":"América del Norte y Central","bandera":"🇵🇦","divisiones":[
+{"nombre":"Liga Panameña de Fútbol","nivel":1,"completo":false,"clubes":[
+  {"n":"Tauro FC","c":"Ciudad de Panamá","r":40},
+  {"n":"Plaza Amador","c":"Ciudad de Panamá","r":38},
+  {"n":"CD Universitario","c":"Ciudad de Panamá","r":34},
+  {"n":"Sporting San Miguelito","c":"San Miguelito","r":34},
+  {"n":"Independiente","c":"La Chorrera","r":34},
+  {"n":"Alianza FC","c":"Ciudad de Panamá","r":30},
+  {"n":"Árabe Unido","c":"Colón","r":34},
+  {"n":"Costa del Este","c":"Ciudad de Panamá","r":30},
+  {"n":"Herrera FC","c":"Chitré","r":28},
+  {"n":"Ciudad de Panamá FC","c":"Ciudad de Panamá","r":26}
+]}
+]}

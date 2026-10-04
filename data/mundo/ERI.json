@@ -1,0 +1,11 @@
+{"codigo":"ERI","pais":"Eritrea","continente":"África","bandera":"🇪🇷","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Red Sea FC","c":"Asmara","r":14},
+   {"n":"Adulis Club","c":"Asmara","r":12},
+   {"n":"Asmara Brewery","c":"Asmara","r":12},
+   {"n":"Hintsa","c":"Asmara","r":10},
+   {"n":"Tesfa","c":"Asmara","r":10},
+   {"n":"Denden FC","c":"Asmara","r":12},
+   {"n":"Geza Banda","c":"Asmara","r":10}
+  ]}
+]}

@@ -1,0 +1,44 @@
+{"codigo":"SWE","pais":"Suecia","continente":"Europa","bandera":"🇸🇪","divisiones":[{"nombre":"Allsvenskan","nivel":1,"completo":false,"clubes":[
+{"n":"Malmö FF","c":"Malmö","r":62},
+{"n":"AIK","c":"Solna","r":58},
+{"n":"Djurgårdens IF","c":"Stockholm","r":60},
+{"n":"Hammarby IF","c":"Stockholm","r":58},
+{"n":"IFK Göteborg","c":"Gothenburg","r":55},
+{"n":"BK Häcken","c":"Gothenburg","r":56},
+{"n":"IF Elfsborg","c":"Borås","r":54},
+{"n":"IFK Norrköping","c":"Norrköping","r":50},
+{"n":"Mjällby AIF","c":"Hällevik","r":48},
+{"n":"Kalmar FF","c":"Kalmar","r":45},
+{"n":"IF Brommapojkarna","c":"Stockholm","r":42},
+{"n":"Halmstads BK","c":"Halmstad","r":40},
+{"n":"Degerfors IF","c":"Degerfors","r":36},
+{"n":"GAIS","c":"Gothenburg","r":40},
+{"n":"Örgryte IS","c":"Gothenburg","r":36},
+{"n":"IK Sirius","c":"Uppsala","r":42},
+{"n":"Västerås SK","c":"Västerås","r":34}
+]},
+{"nombre":"Superettan","nivel":2,"completo":false,"clubes":[
+{"n":"Östers IF","c":"Växjö","r":34},
+{"n":"Helsingborgs IF","c":"Helsingborg","r":38},
+{"n":"Varbergs BoIS","c":"Varberg","r":32},
+{"n":"GIF Sundsvall","c":"Sundsvall","r":32},
+{"n":"Landskrona BoIS","c":"Landskrona","r":30},
+{"n":"Örebro SK","c":"Örebro","r":32},
+{"n":"Utsiktens BK","c":"Gothenburg","r":28},
+{"n":"Trelleborgs FF","c":"Trelleborg","r":28},
+{"n":"Falkenbergs FF","c":"Falkenberg","r":28},
+{"n":"Norrby IF","c":"Borås","r":26},
+{"n":"Östersunds FK","c":"Östersund","r":32},
+{"n":"Gefle IF","c":"Gävle","r":26},
+{"n":"Oddevold","c":"Uddevalla","r":22},
+{"n":"AFC Eskilstuna","c":"Eskilstuna","r":26}
+]},
+{"nombre":"Ettan","nivel":3,"completo":false,"clubes":[
+{"n":"Syrianska FC","c":"Södertälje","r":22},
+{"n":"Dalkurd FF","c":"Borlänge","r":20},
+{"n":"IK Brage","c":"Borlänge","r":20},
+{"n":"Jönköpings Södra IF","c":"Jönköping","r":24},
+{"n":"Ängelholms FF","c":"Ängelholm","r":18},
+{"n":"Skövde AIK","c":"Skövde","r":18}
+]}
+]}

@@ -1,0 +1,17 @@
+{"codigo":"HKG","pais":"Hong Kong","continente":"Asia","bandera":"🇭🇰","divisiones":[
+{"nombre":"Hong Kong Premier League","nivel":1,"completo":false,"clubes":[
+{"n":"Kitchee","c":"Hong Kong","r":34},
+{"n":"Eastern","c":"Hong Kong","r":30},
+{"n":"Lee Man","c":"Hong Kong","r":30},
+{"n":"Tai Po","c":"Tai Po","r":26},
+{"n":"Southern","c":"Hong Kong","r":26},
+{"n":"Rangers","c":"Hong Kong","r":24},
+{"n":"North District","c":"Hong Kong","r":20},
+{"n":"Resources Capital","c":"Hong Kong","r":20},
+{"n":"Dreams FC","c":"Hong Kong","r":20},
+{"n":"Kowloon City","c":"Hong Kong","r":18}]},
+{"nombre":"Hong Kong First Division","nivel":2,"completo":false,"clubes":[
+{"n":"Citizen","c":"Hong Kong","r":18},
+{"n":"Yuen Long","c":"Yuen Long","r":18},
+{"n":"Sham Shui Po","c":"Hong Kong","r":17},
+{"n":"Wofoo Tai Po","c":"Tai Po","r":16}]}]}

@@ -1,0 +1,11 @@
+{"codigo":"LES","pais":"Lesoto","continente":"África","bandera":"🇱🇸","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Bantu","c":"Mafeteng","r":16},
+   {"n":"Matlama","c":"Maseru","r":18},
+   {"n":"Lesotho Defence Force","c":"Maseru","r":16},
+   {"n":"Lioli","c":"Teyateyaneng","r":16},
+   {"n":"Linare","c":"Leribe","r":14},
+   {"n":"Lesotho Correctional Services","c":"Maseru","r":14},
+   {"n":"Likhopo","c":"Maseru","r":14}
+  ]}
+]}

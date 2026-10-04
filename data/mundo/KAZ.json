@@ -1,0 +1,26 @@
+{"codigo":"KAZ","pais":"Kazajistán","continente":"Europa","bandera":"🇰🇿","divisiones":[
+{"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+{"n":"Kairat","c":"Almaty","r":48},
+{"n":"Astana","c":"Astaná","r":48},
+{"n":"Tobol","c":"Kostanay","r":38},
+{"n":"Aktobe","c":"Aktobe","r":36},
+{"n":"Ordabasy","c":"Shymkent","r":36},
+{"n":"Kaisar","c":"Kyzylorda","r":32},
+{"n":"Zhetysu","c":"Taldykorgan","r":32},
+{"n":"Atyrau","c":"Atyrau","r":32},
+{"n":"Kyzylzhar","c":"Petropavl","r":30},
+{"n":"Okzhetpes","c":"Kokshetau","r":30},
+{"n":"Elimai","c":"Semey","r":30},
+{"n":"Zhenys","c":"Astaná","r":28},
+{"n":"Ulytau","c":"Zhezkazgan","r":28},
+{"n":"Aksu","c":"Aksu","r":26}
+]},
+{"nombre":"First League","nivel":2,"completo":false,"clubes":[
+{"n":"Shakhter Karagandy","c":"Karagandá","r":30},
+{"n":"Taraz","c":"Taraz","r":28},
+{"n":"Kaspiy","c":"Aktau","r":24},
+{"n":"Ekibastuz","c":"Ekibastuz","r":20},
+{"n":"Altai Semey","c":"Semey","r":20},
+{"n":"Arys","c":"Arys","r":18}
+]}
+]}

@@ -19,7 +19,7 @@ for line in open(os.path.join(D,"clubs_reales.csv"),encoding="utf-8"):
     nombre,ciudad,pv=line.split(",");L=leagues[-1];cid=len(clubs)+1
     rep=min(90,random.randint(*BASE[min(len(leagues)-1,4)])+BIG.get(nombre,0));ids=[];tot=0
     for pos in POS:
-        age=random.randint(18,35);ovr=cl(30+rep*.55+random.randint(-8,8),35,90)
+        age=random.randint(18,35);ovr=cl(30+rep*.55+random.randint(-13,13),35,90)
         p={"id":pid,"clubId":cid,"nombre":random.choice(FN)+" "+random.choice(LN),"edad":age,"nacionalidad":"Argentina" if random.random()<.9 else random.choice(EX),"pos":pos,"ovr":ovr,"pot":min(95,ovr+max(0,int((27-age)*random.uniform(.5,2)))+random.randint(0,3))}
         players.append(attrs(p));ids.append(pid);tot+=p["val"];pid+=1
     L["clubes"].append(cid)

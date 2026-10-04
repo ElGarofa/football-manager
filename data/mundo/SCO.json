@@ -1,0 +1,83 @@
+{"codigo":"SCO","pais":"Escocia","continente":"Europa","bandera":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","divisiones":[
+{"nombre":"Premiership","nivel":1,"completo":true,"clubes":[
+{"n":"Celtic","c":"Glasgow","r":80},
+{"n":"Rangers","c":"Glasgow","r":77},
+{"n":"Heart of Midlothian","c":"Edimburgo","r":58},
+{"n":"Aberdeen","c":"Aberdeen","r":57},
+{"n":"Hibernian","c":"Edimburgo","r":56},
+{"n":"Dundee United","c":"Dundee","r":48},
+{"n":"Motherwell","c":"Motherwell","r":48},
+{"n":"Kilmarnock","c":"Kilmarnock","r":46},
+{"n":"St Mirren","c":"Paisley","r":46},
+{"n":"Dundee","c":"Dundee","r":46},
+{"n":"Falkirk","c":"Falkirk","r":42},
+{"n":"Ross County","c":"Dingwall","r":38}
+]},
+{"nombre":"Championship","nivel":2,"completo":false,"clubes":[
+{"n":"Livingston","c":"Livingston","r":38},
+{"n":"St Johnstone","c":"Perth","r":40},
+{"n":"Dunfermline Athletic","c":"Dunfermline","r":36},
+{"n":"Partick Thistle","c":"Glasgow","r":36},
+{"n":"Raith Rovers","c":"Kirkcaldy","r":32},
+{"n":"Ayr United","c":"Ayr","r":32},
+{"n":"Greenock Morton","c":"Greenock","r":32},
+{"n":"Hamilton Academical","c":"Hamilton","r":30},
+{"n":"Airdrieonians","c":"Airdrie","r":30},
+{"n":"Arbroath","c":"Arbroath","r":28},
+{"n":"Queen's Park","c":"Glasgow","r":30}
+]},
+{"nombre":"League One","nivel":3,"completo":false,"clubes":[
+{"n":"Inverness Caledonian Thistle","c":"Inverness","r":26},
+{"n":"Alloa Athletic","c":"Alloa","r":22},
+{"n":"Cove Rangers","c":"Aberdeen","r":22},
+{"n":"East Fife","c":"Methil","r":20},
+{"n":"Kelty Hearts","c":"Kelty","r":20},
+{"n":"Montrose","c":"Montrose","r":20},
+{"n":"Stenhousemuir","c":"Stenhousemuir","r":19},
+{"n":"Dumbarton","c":"Dumbarton","r":20},
+{"n":"Peterhead","c":"Peterhead","r":20},
+{"n":"Queen of the South","c":"Dumfries","r":22}
+]},
+{"nombre":"League Two","nivel":4,"completo":false,"clubes":[
+{"n":"Annan Athletic","c":"Annan","r":15},
+{"n":"Clyde","c":"Cumbernauld","r":16},
+{"n":"Edinburgh City","c":"Edimburgo","r":14},
+{"n":"Elgin City","c":"Elgin","r":15},
+{"n":"Forfar Athletic","c":"Forfar","r":16},
+{"n":"Stirling Albion","c":"Stirling","r":16},
+{"n":"The Spartans","c":"Edimburgo","r":14},
+{"n":"Stranraer","c":"Stranraer","r":15}
+]},
+{"nombre":"Highland League","nivel":5,"completo":false,"clubes":[
+{"n":"Brora Rangers","c":"Brora","r":12},
+{"n":"Buckie Thistle","c":"Buckie","r":11},
+{"n":"Clachnacuddin","c":"Inverness","r":10},
+{"n":"Deveronvale","c":"Banff","r":10},
+{"n":"Forres Mechanics","c":"Forres","r":10},
+{"n":"Fraserburgh","c":"Fraserburgh","r":11},
+{"n":"Formartine United","c":"Pitmedden","r":11},
+{"n":"Huntly","c":"Huntly","r":10},
+{"n":"Inverurie Loco Works","c":"Inverurie","r":10},
+{"n":"Keith","c":"Keith","r":10},
+{"n":"Lossiemouth","c":"Lossiemouth","r":9},
+{"n":"Nairn County","c":"Nairn","r":9},
+{"n":"Rothes","c":"Rothes","r":9},
+{"n":"Turriff United","c":"Turriff","r":9},
+{"n":"Wick Academy","c":"Wick","r":9},
+{"n":"Brechin City","c":"Brechin","r":11}
+]},
+{"nombre":"Lowland League","nivel":6,"completo":false,"clubes":[
+{"n":"Berwick Rangers","c":"Berwick-upon-Tweed","r":10},
+{"n":"Bonnyrigg Rose Athletic","c":"Bonnyrigg","r":9},
+{"n":"Civil Service Strollers","c":"Edimburgo","r":8},
+{"n":"Cowdenbeath","c":"Cowdenbeath","r":11},
+{"n":"Gala Fairydean Rovers","c":"Galashiels","r":8},
+{"n":"East Kilbride","c":"East Kilbride","r":10},
+{"n":"Albion Rovers","c":"Coatbridge","r":10},
+{"n":"Dalbeattie Star","c":"Dalbeattie","r":8},
+{"n":"Tranent","c":"Tranent","r":8},
+{"n":"University of Stirling","c":"Stirling","r":8},
+{"n":"Hawick Royal Albert","c":"Hawick","r":8},
+{"n":"Vale of Leithen","c":"Innerleithen","r":8}
+]}
+]}

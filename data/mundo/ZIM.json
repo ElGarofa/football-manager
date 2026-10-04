@@ -1,0 +1,16 @@
+{"codigo":"ZIM","pais":"Zimbabue","continente":"África","bandera":"🇿🇼","divisiones":[
+  {"nombre":"Premier Soccer League","nivel":1,"completo":false,"clubes":[
+   {"n":"Dynamos","c":"Harare","r":34},
+   {"n":"Highlanders","c":"Bulawayo","r":32},
+   {"n":"CAPS United","c":"Harare","r":32},
+   {"n":"FC Platinum","c":"Zvishavane","r":32},
+   {"n":"Scottland FC","c":"Harare","r":22},
+   {"n":"Ngezi Platinum","c":"Mhondoro-Ngezi","r":26},
+   {"n":"Herentals","c":"Harare","r":22},
+   {"n":"Chicken Inn","c":"Bulawayo","r":24},
+   {"n":"Manica Diamonds","c":"Mutare","r":20},
+   {"n":"Simba Bhora","c":"Shamva","r":20},
+   {"n":"Hardrock","c":"Bulawayo","r":18},
+   {"n":"TelOne","c":"Gweru","r":18}
+  ]}
+]}

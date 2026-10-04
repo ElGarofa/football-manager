@@ -1,0 +1,19 @@
+{"codigo":"KEN","pais":"Kenia","continente":"África","bandera":"🇰🇪","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Gor Mahia","c":"Nairobi","r":34},
+   {"n":"AFC Leopards","c":"Nairobi","r":30},
+   {"n":"Tusker","c":"Nairobi","r":28},
+   {"n":"Kenya Police","c":"Nairobi","r":24},
+   {"n":"KCB","c":"Nairobi","r":24},
+   {"n":"Bandari","c":"Mombasa","r":26},
+   {"n":"Kakamega Homeboyz","c":"Kakamega","r":24},
+   {"n":"Sofapaka","c":"Nairobi","r":24},
+   {"n":"Mathare United","c":"Nairobi","r":24},
+   {"n":"Posta Rangers","c":"Nairobi","r":20},
+   {"n":"Nzoia Sugar","c":"Bungoma","r":20},
+   {"n":"Ulinzi Stars","c":"Nakuru","r":20},
+   {"n":"Shabana","c":"Kisii","r":18},
+   {"n":"Bidco United","c":"Thika","r":18},
+   {"n":"Muhoroni Youth","c":"Muhoroni","r":16}
+  ]}
+]}

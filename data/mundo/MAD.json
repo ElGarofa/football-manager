@@ -1,0 +1,12 @@
+{"codigo":"MAD","pais":"Madagascar","continente":"África","bandera":"🇲🇬","divisiones":[
+  {"nombre":"Pro League","nivel":1,"completo":false,"clubes":[
+   {"n":"Elgeco Plus","c":"Antananarivo","r":18},
+   {"n":"CNaPS Sport","c":"Antananarivo","r":20},
+   {"n":"Fosa Juniors","c":"Antananarivo","r":20},
+   {"n":"AS Adema","c":"Antananarivo","r":18},
+   {"n":"Ajesaia","c":"Antananarivo","r":16},
+   {"n":"Japan Actuel's","c":"Antananarivo","r":16},
+   {"n":"Uscafoot Antananarivo","c":"Antananarivo","r":14},
+   {"n":"Disciples FC","c":"Antananarivo","r":14}
+  ]}
+]}

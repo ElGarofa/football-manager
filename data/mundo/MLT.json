@@ -1,0 +1,18 @@
+{"codigo":"MLT","pais":"Malta","continente":"Europa","bandera":"🇲🇹","divisiones":[
+{"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+{"n":"Ħamrun Spartans","c":"Ħamrun","r":30},
+{"n":"Valletta","c":"La Valeta","r":28},
+{"n":"Floriana","c":"Floriana","r":26},
+{"n":"Birkirkara","c":"Birkirkara","r":25},
+{"n":"Sliema Wanderers","c":"Sliema","r":24},
+{"n":"Hibernians","c":"Paola","r":24},
+{"n":"Gżira United","c":"Gżira","r":22},
+{"n":"Marsaxlokk","c":"Marsaxlokk","r":20},
+{"n":"Mosta","c":"Mosta","r":20},
+{"n":"Balzan","c":"Balzan","r":18},
+{"n":"Żebbuġ Rangers","c":"Żebbuġ","r":16},
+{"n":"Santa Lucia","c":"Santa Luċija","r":15},
+{"n":"Naxxar Lions","c":"Naxxar","r":15},
+{"n":"Tarxien Rainbows","c":"Tarxien","r":14}
+]}
+]}

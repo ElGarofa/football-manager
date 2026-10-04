@@ -1,0 +1,42 @@
+{"codigo":"AUS","pais":"Australia","continente":"Oceanía","bandera":"🇦🇺","divisiones":[
+{"nombre":"A-League Men","nivel":1,"completo":true,"clubes":[
+{"n":"Sydney FC","c":"Sídney","r":55},
+{"n":"Melbourne City","c":"Melbourne","r":56},
+{"n":"Melbourne Victory","c":"Melbourne","r":52},
+{"n":"Central Coast Mariners","c":"Gosford","r":48},
+{"n":"Western Sydney Wanderers","c":"Sídney","r":50},
+{"n":"Adelaide United","c":"Adelaida","r":48},
+{"n":"Auckland FC","c":"Auckland","r":50},
+{"n":"Brisbane Roar","c":"Brisbane","r":45},
+{"n":"Macarthur FC","c":"Campbelltown","r":42},
+{"n":"Newcastle Jets","c":"Newcastle","r":43},
+{"n":"Perth Glory","c":"Perth","r":44},
+{"n":"Wellington Phoenix","c":"Wellington","r":43},
+{"n":"Western United","c":"Melbourne","r":40}
+]},
+{"nombre":"NPL (ligas estatales)","nivel":2,"completo":false,"clubes":[
+{"n":"South Melbourne","c":"Melbourne","r":28},
+{"n":"Heidelberg United","c":"Melbourne","r":26},
+{"n":"Oakleigh Cannons","c":"Melbourne","r":25},
+{"n":"Bentleigh Greens","c":"Melbourne","r":24},
+{"n":"Green Gully","c":"Melbourne","r":24},
+{"n":"Melbourne Knights","c":"Melbourne","r":24},
+{"n":"Avondale FC","c":"Melbourne","r":23},
+{"n":"Hume City","c":"Melbourne","r":22},
+{"n":"Sydney United 58","c":"Sídney","r":26},
+{"n":"APIA Leichhardt","c":"Sídney","r":26},
+{"n":"Marconi Stallions","c":"Sídney","r":25},
+{"n":"Blacktown City","c":"Sídney","r":24},
+{"n":"Sydney Olympic","c":"Sídney","r":25},
+{"n":"Rockdale Ilinden","c":"Sídney","r":22},
+{"n":"Wollongong Wolves","c":"Wollongong","r":22},
+{"n":"Brisbane City","c":"Brisbane","r":20},
+{"n":"Lions FC","c":"Brisbane","r":20},
+{"n":"Olympic FC","c":"Brisbane","r":20},
+{"n":"Gold Coast Knights","c":"Gold Coast","r":19},
+{"n":"Adelaide City","c":"Adelaida","r":22},
+{"n":"Campbelltown City","c":"Adelaida","r":18},
+{"n":"Perth SC","c":"Perth","r":20},
+{"n":"Floreat Athena","c":"Perth","r":19}
+]}
+]}

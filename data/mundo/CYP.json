@@ -1,0 +1,29 @@
+{"codigo":"CYP","pais":"Chipre","continente":"Europa","bandera":"🇨🇾","divisiones":[
+{"nombre":"Primera División","nivel":1,"completo":false,"clubes":[
+{"n":"APOEL","c":"Nicosia","r":48},
+{"n":"Omonia","c":"Nicosia","r":48},
+{"n":"AEK Larnaca","c":"Larnaca","r":46},
+{"n":"Apollon Limassol","c":"Limassol","r":44},
+{"n":"Pafos","c":"Pafos","r":44},
+{"n":"Anorthosis","c":"Larnaca","r":42},
+{"n":"AEL Limassol","c":"Limassol","r":40},
+{"n":"Aris Limassol","c":"Limassol","r":38},
+{"n":"Enosis Neon Paralimni","c":"Paralimni","r":32},
+{"n":"Ethnikos Achna","c":"Achna","r":30},
+{"n":"Olympiakos Nicosia","c":"Nicosia","r":30},
+{"n":"Nea Salamis","c":"Famagusta","r":30},
+{"n":"Doxa Katokopias","c":"Katokopia","r":28},
+{"n":"Krasava ENY Ypsonas","c":"Ypsonas","r":28}
+]},
+{"nombre":"Segunda División","nivel":2,"completo":false,"clubes":[
+{"n":"Karmiotissa","c":"Polemidia","r":26},
+{"n":"Akritas Chlorakas","c":"Chlorakas","r":24},
+{"n":"Digenis Morphou","c":"Morphou","r":24},
+{"n":"Othellos Athienou","c":"Athienou","r":22},
+{"n":"ASIL Lysi","c":"Lysi","r":20},
+{"n":"Ermis Aradippou","c":"Aradippou","r":22},
+{"n":"Omonia Aradippou","c":"Aradippou","r":22},
+{"n":"PAEEK","c":"Nicosia","r":20},
+{"n":"Spartakos Kitiou","c":"Kiti","r":18}
+]}
+]}

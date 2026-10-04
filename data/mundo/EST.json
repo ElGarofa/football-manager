@@ -1,0 +1,18 @@
+{"codigo":"EST","pais":"Estonia","continente":"Europa","bandera":"🇪🇪","divisiones":[{"nombre":"Meistriliiga","nivel":1,"completo":false,"clubes":[
+{"n":"FC Flora Tallinn","c":"Tallinn","r":38},
+{"n":"FCI Levadia","c":"Tallinn","r":36},
+{"n":"Paide Linnameeskond","c":"Paide","r":32},
+{"n":"Nõmme Kalju FC","c":"Tallinn","r":30},
+{"n":"Tallinna Kalev","c":"Tallinn","r":26},
+{"n":"JK Narva Trans","c":"Narva","r":28},
+{"n":"Tartu JK Tammeka","c":"Tartu","r":26},
+{"n":"Pärnu JK Vaprus","c":"Pärnu","r":22},
+{"n":"Harju JK Laagri","c":"Laagri","r":18}
+]},
+{"nombre":"Esiliiga","nivel":2,"completo":false,"clubes":[
+{"n":"Maardu Linnameeskond","c":"Maardu","r":16},
+{"n":"Viljandi JK Tulevik","c":"Viljandi","r":16},
+{"n":"Tallinna JK Legion","c":"Tallinn","r":14},
+{"n":"Rakvere JK Tarvas","c":"Rakvere","r":14}
+]}
+]}

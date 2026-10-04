@@ -1,0 +1,34 @@
+{"codigo":"SRB","pais":"Serbia","continente":"Europa","bandera":"🇷🇸","divisiones":[
+{"nombre":"SuperLiga","nivel":1,"completo":false,"clubes":[
+{"n":"Crvena zvezda","c":"Belgrado","r":66},
+{"n":"Partizan","c":"Belgrado","r":55},
+{"n":"Vojvodina","c":"Novi Sad","r":45},
+{"n":"TSC","c":"Bačka Topola","r":42},
+{"n":"Čukarički","c":"Belgrado","r":40},
+{"n":"Novi Pazar","c":"Novi Pazar","r":36},
+{"n":"Radnički 1923","c":"Kragujevac","r":36},
+{"n":"Radnički Niš","c":"Niš","r":36},
+{"n":"Spartak Subotica","c":"Subotica","r":36},
+{"n":"Napredak Kruševac","c":"Kruševac","r":34},
+{"n":"Mladost Lučani","c":"Lučani","r":33},
+{"n":"OFK Beograd","c":"Belgrado","r":33},
+{"n":"Javor-Matis","c":"Ivanjica","r":32},
+{"n":"Železničar Pančevo","c":"Pančevo","r":32},
+{"n":"Radnik Surdulica","c":"Surdulica","r":32},
+{"n":"IMT","c":"Belgrado","r":30}
+]},
+{"nombre":"Prva liga Srbije","nivel":2,"completo":false,"clubes":[
+{"n":"Voždovac","c":"Belgrado","r":30},
+{"n":"Metalac","c":"Gornji Milanovac","r":28},
+{"n":"Borac Čačak","c":"Čačak","r":28},
+{"n":"Kolubara","c":"Lazarevac","r":26},
+{"n":"Zlatibor","c":"Čajetina","r":26},
+{"n":"Jedinstvo Ub","c":"Ub","r":25},
+{"n":"Grafičar","c":"Belgrado","r":24},
+{"n":"Zemun","c":"Belgrado","r":25},
+{"n":"Mačva Šabac","c":"Šabac","r":25},
+{"n":"Trayal","c":"Kruševac","r":22},
+{"n":"Dubočica","c":"Leskovac","r":24},
+{"n":"Sloga Užice","c":"Užice","r":22}
+]}
+]}

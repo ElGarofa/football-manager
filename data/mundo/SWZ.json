@@ -1,0 +1,12 @@
+{"codigo":"SWZ","pais":"Esuatini","continente":"África","bandera":"🇸🇿","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Mbabane Swallows","c":"Mbabane","r":16},
+   {"n":"Royal Leopards","c":"Simunye","r":16},
+   {"n":"Green Mamba","c":"Manzini","r":14},
+   {"n":"Mbabane Highlanders","c":"Mbabane","r":16},
+   {"n":"Manzini Wanderers","c":"Manzini","r":14},
+   {"n":"Manzini Sundowns","c":"Manzini","r":14},
+   {"n":"Moneni Pirates","c":"Moneni","r":12},
+   {"n":"Denver Sundowns","c":"Manzini","r":12}
+  ]}
+]}

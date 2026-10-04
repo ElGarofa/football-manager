@@ -1,0 +1,16 @@
+{"codigo":"LBN","pais":"Líbano","continente":"Asia","bandera":"🇱🇧","divisiones":[
+{"nombre":"Lebanese Premier League","nivel":1,"completo":false,"clubes":[
+{"n":"Al-Ahed","c":"Beirut","r":38},
+{"n":"Nejmeh","c":"Beirut","r":38},
+{"n":"Ansar","c":"Beirut","r":38},
+{"n":"Safa","c":"Beirut","r":32},
+{"n":"Racing Beirut","c":"Beirut","r":26},
+{"n":"Tadamon Sour","c":"Tiro","r":28},
+{"n":"Salam Zgharta","c":"Zgharta","r":28},
+{"n":"Bekaa","c":"Zahlé","r":24},
+{"n":"Shabab Sahel","c":"Beirut","r":24},
+{"n":"Akhaa Ahli Aley","c":"Aley","r":26},
+{"n":"Sagesse","c":"Beirut","r":24},
+{"n":"Tripoli SC","c":"Trípoli","r":24}
+]}
+]}

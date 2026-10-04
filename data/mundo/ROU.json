@@ -1,0 +1,33 @@
+{"codigo":"ROU","pais":"Rumania","continente":"Europa","bandera":"🇷🇴","divisiones":[
+{"nombre":"SuperLiga","nivel":1,"completo":false,"clubes":[
+{"n":"FCSB","c":"Bucarest","r":60},
+{"n":"CFR Cluj","c":"Cluj-Napoca","r":56},
+{"n":"Universitatea Craiova","c":"Craiova","r":52},
+{"n":"Rapid Bucarest","c":"Bucarest","r":50},
+{"n":"Dinamo Bucarest","c":"Bucarest","r":46},
+{"n":"Universitatea Cluj","c":"Cluj-Napoca","r":42},
+{"n":"Farul Constanța","c":"Constanța","r":44},
+{"n":"Argeș Pitești","c":"Pitești","r":34},
+{"n":"Petrolul Ploiești","c":"Ploiești","r":36},
+{"n":"UTA Arad","c":"Arad","r":38},
+{"n":"Oțelul Galați","c":"Galați","r":34},
+{"n":"Botoșani","c":"Botoșani","r":33},
+{"n":"Hermannstadt","c":"Sibiu","r":33},
+{"n":"Csíkszereda","c":"Miercurea Ciuc","r":28},
+{"n":"Unirea Slobozia","c":"Slobozia","r":27}
+]},
+{"nombre":"Liga II","nivel":2,"completo":false,"clubes":[
+{"n":"Steaua Bucarest (CSA)","c":"Bucarest","r":35},
+{"n":"Politehnica Iași","c":"Iași","r":34},
+{"n":"Politehnica Timișoara","c":"Timișoara","r":32},
+{"n":"Corvinul Hunedoara","c":"Hunedoara","r":27},
+{"n":"Gloria Buzău","c":"Buzău","r":25},
+{"n":"Concordia Chiajna","c":"Chiajna","r":24},
+{"n":"Câmpulung Muscel","c":"Câmpulung","r":20},
+{"n":"Ceahlăul Piatra Neamț","c":"Piatra Neamț","r":25},
+{"n":"Bihor Oradea","c":"Oradea","r":22},
+{"n":"Voluntari","c":"Voluntari","r":28},
+{"n":"Chindia Târgoviște","c":"Târgoviște","r":27},
+{"n":"Sepsi OSK","c":"Sfântu Gheorghe","r":32}
+]}
+]}

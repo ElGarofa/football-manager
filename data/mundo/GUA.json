@@ -1,0 +1,16 @@
+{"codigo":"GUA","pais":"Guatemala","continente":"América del Norte y Central","bandera":"🇬🇹","divisiones":[
+{"nombre":"Liga Nacional","nivel":1,"completo":false,"clubes":[
+  {"n":"Comunicaciones","c":"Ciudad de Guatemala","r":52},
+  {"n":"Municipal","c":"Ciudad de Guatemala","r":52},
+  {"n":"Antigua GFC","c":"Antigua Guatemala","r":42},
+  {"n":"Xelajú MC","c":"Quetzaltenango","r":42},
+  {"n":"Cobán Imperial","c":"Cobán","r":36},
+  {"n":"Mixco","c":"Mixco","r":34},
+  {"n":"Malacateco","c":"Malacatán","r":34},
+  {"n":"Guastatoya","c":"Guastatoya","r":34},
+  {"n":"Achuapa","c":"El Progreso","r":28},
+  {"n":"Zacapa","c":"Zacapa","r":28},
+  {"n":"Aurora FC","c":"Ciudad de Guatemala","r":28},
+  {"n":"Deportivo Mictlán","c":"Asunción Mita","r":26}
+]}
+]}

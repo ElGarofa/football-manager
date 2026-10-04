@@ -1,0 +1,31 @@
+{"codigo":"FIN","pais":"Finlandia","continente":"Europa","bandera":"🇫🇮","divisiones":[{"nombre":"Veikkausliiga","nivel":1,"completo":false,"clubes":[
+{"n":"HJK Helsinki","c":"Helsinki","r":48},
+{"n":"KuPS","c":"Kuopio","r":44},
+{"n":"FC Inter Turku","c":"Turku","r":40},
+{"n":"FC Lahti","c":"Lahti","r":36},
+{"n":"Ilves","c":"Tampere","r":38},
+{"n":"SJK","c":"Seinäjoki","r":36},
+{"n":"VPS","c":"Vaasa","r":34},
+{"n":"AC Oulu","c":"Oulu","r":32},
+{"n":"FC Haka","c":"Valkeakoski","r":32},
+{"n":"IFK Mariehamn","c":"Mariehamn","r":30},
+{"n":"Gnistan","c":"Helsinki","r":28},
+{"n":"FF Jaro","c":"Jakobstad","r":28}
+]},
+{"nombre":"Ykkönen","nivel":2,"completo":false,"clubes":[
+{"n":"KTP","c":"Kotka","r":24},
+{"n":"TPS","c":"Turku","r":24},
+{"n":"EIF","c":"Ekenäs","r":22},
+{"n":"PK-35","c":"Vantaa","r":22},
+{"n":"FC Honka","c":"Espoo","r":24},
+{"n":"RoPS","c":"Rovaniemi","r":26},
+{"n":"Kuopion Palloseura Akatemia","c":"Kuopio","r":16},
+{"n":"JäPS","c":"Järvenpää","r":18}
+]},
+{"nombre":"Kakkonen","nivel":3,"completo":false,"clubes":[
+{"n":"FC Reipas","c":"Lahti","r":15},
+{"n":"MP","c":"Mikkeli","r":15},
+{"n":"KäPa","c":"Helsinki","r":14},
+{"n":"Atlantis FC","c":"Helsinki","r":14}
+]}
+]}

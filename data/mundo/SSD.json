@@ -1,0 +1,9 @@
+{"codigo":"SSD","pais":"Sudán del Sur","continente":"África","bandera":"🇸🇸","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Atlabara","c":"Yuba","r":12},
+   {"n":"Al-Merreikh Juba","c":"Yuba","r":11},
+   {"n":"Al Malakia","c":"Yuba","r":12},
+   {"n":"Amarat United","c":"Yuba","r":10},
+   {"n":"Wau Salaam","c":"Wau","r":10}
+  ]}
+]}

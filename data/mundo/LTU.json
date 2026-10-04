@@ -1,0 +1,19 @@
+{"codigo":"LTU","pais":"Lituania","continente":"Europa","bandera":"🇱🇹","divisiones":[{"nombre":"A lyga","nivel":1,"completo":false,"clubes":[
+{"n":"FK Žalgiris","c":"Vilnius","r":34},
+{"n":"FK Panevėžys","c":"Panevėžys","r":30},
+{"n":"FA Šiauliai","c":"Šiauliai","r":26},
+{"n":"Kauno Žalgiris","c":"Kaunas","r":26},
+{"n":"FK Riteriai","c":"Vilnius","r":22},
+{"n":"FK Sūduva","c":"Marijampolė","r":26},
+{"n":"FK Banga","c":"Gargždai","r":24},
+{"n":"FK Dainava","c":"Alytus","r":20},
+{"n":"FK Džiugas","c":"Telšiai","r":20},
+{"n":"FK Hegelmann","c":"Kaunas","r":22}
+]},
+{"nombre":"I lyga","nivel":2,"completo":false,"clubes":[
+{"n":"FK Kauno Žalgiris B","c":"Kaunas","r":12},
+{"n":"FK Jonava","c":"Jonava","r":16},
+{"n":"FK Minija","c":"Kretinga","r":14},
+{"n":"FK Atmosfera","c":"Mažeikiai","r":15}
+]}
+]}

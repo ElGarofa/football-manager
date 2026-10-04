@@ -1,0 +1,32 @@
+{"codigo":"BUL","pais":"Bulgaria","continente":"Europa","bandera":"🇧🇬","divisiones":[
+{"nombre":"Parva Liga","nivel":1,"completo":false,"clubes":[
+{"n":"Ludogorets","c":"Razgrad","r":55},
+{"n":"CSKA Sofía","c":"Sofía","r":45},
+{"n":"Levski Sofía","c":"Sofía","r":46},
+{"n":"CSKA 1948","c":"Sofía","r":35},
+{"n":"Lokomotiv Plovdiv","c":"Plovdiv","r":36},
+{"n":"Botev Plovdiv","c":"Plovdiv","r":36},
+{"n":"Cherno More","c":"Varna","r":35},
+{"n":"Slavia Sofía","c":"Sofía","r":33},
+{"n":"Arda","c":"Kardzhali","r":34},
+{"n":"Beroe","c":"Stara Zagora","r":32},
+{"n":"Lokomotiv Sofía","c":"Sofía","r":30},
+{"n":"Botev Vratsa","c":"Vratsa","r":27},
+{"n":"Montana","c":"Montana","r":26},
+{"n":"Dobrudzha","c":"Dobrich","r":25},
+{"n":"Spartak Varna","c":"Varna","r":24},
+{"n":"Septemvri Sofía","c":"Sofía","r":24}
+]},
+{"nombre":"Vtora Liga","nivel":2,"completo":false,"clubes":[
+{"n":"Etar","c":"Veliko Tarnovo","r":24},
+{"n":"Pirin","c":"Blagoevgrad","r":24},
+{"n":"Minyor Pernik","c":"Pernik","r":20},
+{"n":"Hebar","c":"Pazardzhik","r":20},
+{"n":"Yantra","c":"Gabrovo","r":20},
+{"n":"Sozopol","c":"Sozopol","r":17},
+{"n":"Maritsa","c":"Plovdiv","r":18},
+{"n":"Neftochimic","c":"Burgas","r":20},
+{"n":"Vihren","c":"Sandanski","r":17},
+{"n":"Spartak Pleven","c":"Pleven","r":18}
+]}
+]}

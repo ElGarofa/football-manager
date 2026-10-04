@@ -1,0 +1,31 @@
+{"codigo":"UKR","pais":"Ucrania","continente":"Europa","bandera":"🇺🇦","divisiones":[
+{"nombre":"Premier Liga","nivel":1,"completo":false,"clubes":[
+{"n":"Shakhtar Donetsk","c":"Donetsk","r":68},
+{"n":"Dinamo Kiev","c":"Kiev","r":62},
+{"n":"Polissya Zhytomyr","c":"Zhytomyr","r":40},
+{"n":"Oleksandriya","c":"Oleksandriya","r":36},
+{"n":"Zorya Lugansk","c":"Lugansk","r":40},
+{"n":"Kolos Kovalivka","c":"Kovalivka","r":36},
+{"n":"Veres Rivne","c":"Rivne","r":30},
+{"n":"Karpaty Lviv","c":"Lviv","r":36},
+{"n":"Rukh Lviv","c":"Lviv","r":36},
+{"n":"LNZ Cherkasy","c":"Cherkasy","r":30},
+{"n":"Kryvbas Kryvyi Rih","c":"Kryvyi Rih","r":36},
+{"n":"Obolon Kiev","c":"Kiev","r":28},
+{"n":"Epitsentr Kamianets-Podilskyi","c":"Kamianets-Podilskyi","r":32},
+{"n":"Metalist 1925 Járkov","c":"Járkov","r":34},
+{"n":"Vorskla Poltava","c":"Poltava","r":34}
+]},
+{"nombre":"Persha Liha","nivel":2,"completo":false,"clubes":[
+{"n":"Prykarpattia Ivano-Frankivsk","c":"Ivano-Frankivsk","r":24},
+{"n":"Nyva Ternopil","c":"Ternopil","r":20},
+{"n":"Podillya Khmelnytskyi","c":"Khmelnytskyi","r":20},
+{"n":"Bukovyna Chernivtsi","c":"Chernivtsi","r":22},
+{"n":"Volyn Lutsk","c":"Lutsk","r":28},
+{"n":"Skala Stryi","c":"Stryi","r":18},
+{"n":"Livyi Bereh Kiev","c":"Kiev","r":22},
+{"n":"Metalurh Zaporizhzhia","c":"Zaporizhzhia","r":22},
+{"n":"Chornomorets Odesa","c":"Odesa","r":32},
+{"n":"Viktoriya Sumy","c":"Sumy","r":18}
+]}
+]}

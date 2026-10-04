@@ -1,0 +1,31 @@
+{"codigo":"ISR","pais":"Israel","continente":"Europa","bandera":"🇮🇱","divisiones":[
+{"nombre":"Ligat ha'Al","nivel":1,"completo":false,"clubes":[
+{"n":"Maccabi Tel Aviv","c":"Tel Aviv","r":52},
+{"n":"Maccabi Haifa","c":"Haifa","r":52},
+{"n":"Hapoel Be'er Sheva","c":"Beerseba","r":50},
+{"n":"Hapoel Tel Aviv","c":"Tel Aviv","r":42},
+{"n":"Beitar Jerusalem","c":"Jerusalén","r":42},
+{"n":"Hapoel Haifa","c":"Haifa","r":36},
+{"n":"Maccabi Netanya","c":"Netanya","r":36},
+{"n":"Bnei Sakhnin","c":"Sakhnin","r":34},
+{"n":"Ironi Kiryat Shmona","c":"Kiryat Shmona","r":34},
+{"n":"Hapoel Jerusalem","c":"Jerusalén","r":32},
+{"n":"FC Ashdod","c":"Ashdod","r":32},
+{"n":"Ironi Tiberias","c":"Tiberíades","r":28},
+{"n":"Maccabi Bnei Reineh","c":"Reineh","r":28},
+{"n":"Hapoel Petah Tikva","c":"Petah Tikva","r":28}
+]},
+{"nombre":"Liga Leumit","nivel":2,"completo":false,"clubes":[
+{"n":"Hapoel Ra'anana","c":"Ra'anana","r":24},
+{"n":"Hapoel Acre","c":"Acre","r":24},
+{"n":"Hapoel Kfar Saba","c":"Kfar Saba","r":22},
+{"n":"Hapoel Nof HaGalil","c":"Nof HaGalil","r":22},
+{"n":"Maccabi Petah Tikva","c":"Petah Tikva","r":26},
+{"n":"Hapoel Ramat Gan","c":"Ramat Gan","r":22},
+{"n":"Hapoel Afula","c":"Afula","r":20},
+{"n":"Hapoel Rishon LeZion","c":"Rishon LeZion","r":22},
+{"n":"Hapoel Umm al-Fahm","c":"Umm al-Fahm","r":20},
+{"n":"Hapoel Hadera","c":"Hadera","r":24},
+{"n":"Maccabi Jaffa","c":"Jaffa","r":22}
+]}
+]}

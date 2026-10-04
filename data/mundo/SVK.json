@@ -1,0 +1,25 @@
+{"codigo":"SVK","pais":"Eslovaquia","continente":"Europa","bandera":"🇸🇰","divisiones":[
+{"nombre":"Niké liga","nivel":1,"completo":false,"clubes":[
+{"n":"Slovan Bratislava","c":"Bratislava","r":58},
+{"n":"Spartak Trnava","c":"Trnava","r":44},
+{"n":"DAC Dunajská Streda","c":"Dunajská Streda","r":43},
+{"n":"MŠK Žilina","c":"Žilina","r":42},
+{"n":"Ružomberok","c":"Ružomberok","r":38},
+{"n":"AS Trenčín","c":"Trenčín","r":37},
+{"n":"Zemplín Michalovce","c":"Michalovce","r":33},
+{"n":"Podbrezová","c":"Podbrezová","r":33},
+{"n":"Skalica","c":"Skalica","r":30},
+{"n":"Komárno","c":"Komárno","r":28},
+{"n":"Košice","c":"Košice","r":32}
+]},
+{"nombre":"2. liga","nivel":2,"completo":false,"clubes":[
+{"n":"Dukla Banská Bystrica","c":"Banská Bystrica","r":27},
+{"n":"Tatran Prešov","c":"Prešov","r":27},
+{"n":"Pohronie","c":"Žiar nad Hronom","r":22},
+{"n":"Šamorín","c":"Šamorín","r":20},
+{"n":"Rača","c":"Bratislava","r":19},
+{"n":"Petržalka","c":"Bratislava","r":24},
+{"n":"Liptovský Mikuláš","c":"Liptovský Mikuláš","r":20},
+{"n":"Slavoj Trebišov","c":"Trebišov","r":18}
+]}
+]}

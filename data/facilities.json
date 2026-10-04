@@ -1,0 +1,11 @@
+{"zonas":[
+{"id":"medica","nombre":"Zona médica","icono":"🏥","costo":14000,"desc":"Menos lesiones, lesiones más cortas y mejor recuperación diaria."},
+{"id":"entrenamiento","nombre":"Centro de entrenamiento","icono":"🏋️","costo":16000,"desc":"El entrenamiento rinde más y los jóvenes crecen más rápido."},
+{"id":"cantera","nombre":"Cantera","icono":"🌱","costo":12000,"desc":"Más juveniles por año y de mejor calidad."},
+{"id":"estadio","nombre":"Estadio","icono":"🏟️","costo":24000,"desc":"Cada nivel suma 8% de capacidad: más entradas vendidas."},
+{"id":"concentracion","nombre":"Concentración y descanso","icono":"🛏️","costo":10000,"desc":"El plantel se recupera antes y la moral cae menos tras una derrota."},
+{"id":"tienda","nombre":"Tienda y museo del club","icono":"🛍️","costo":9000,"desc":"Más ingresos por merchandising."},
+{"id":"palcos","nombre":"Palcos y hospitalidad","icono":"🥂","costo":13000,"desc":"Ingreso extra por cada partido de local."},
+{"id":"oficinas","nombre":"Oficinas y administración","icono":"🗂️","costo":9000,"desc":"Baja el mantenimiento y mejora el valor de las ofertas de sponsors."},
+{"id":"scouting","nombre":"Centro de scouting","icono":"🔭","costo":11000,"desc":"Más ojeadores (1 a 6) y informes más precisos."}],
+"topePorNivel":[10,8,6,5,4],"obraDias":{"base":30,"porNivel":12},"obrasMax":2}

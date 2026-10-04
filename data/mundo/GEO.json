@@ -1,0 +1,25 @@
+{"codigo":"GEO","pais":"Georgia","continente":"Europa","bandera":"🇬🇪","divisiones":[
+{"nombre":"Erovnuli Liga","nivel":1,"completo":false,"clubes":[
+{"n":"Dinamo Batumi","c":"Batumi","r":38},
+{"n":"Dinamo Tbilisi","c":"Tbilisi","r":36},
+{"n":"Torpedo Kutaisi","c":"Kutaisi","r":34},
+{"n":"Iberia 1999","c":"Tbilisi","r":30},
+{"n":"Dila Gori","c":"Gori","r":30},
+{"n":"Saburtalo","c":"Tbilisi","r":30},
+{"n":"Gagra","c":"Tbilisi","r":28},
+{"n":"Telavi","c":"Telavi","r":28},
+{"n":"Samgurali Tskaltubo","c":"Tskaltubo","r":26},
+{"n":"Kolkheti Poti","c":"Poti","r":26},
+{"n":"Spaeri","c":"Tbilisi","r":26}
+]},
+{"nombre":"Erovnuli Liga 2","nivel":2,"completo":false,"clubes":[
+{"n":"Sioni Bolnisi","c":"Bolnisi","r":22},
+{"n":"Merani Martvili","c":"Martvili","r":20},
+{"n":"Locomotive Tbilisi","c":"Tbilisi","r":22},
+{"n":"Rustavi","c":"Rustavi","r":20},
+{"n":"Gonio","c":"Batumi","r":18},
+{"n":"Chikhura Sachkhere","c":"Sachkhere","r":20},
+{"n":"Shukura Kobuleti","c":"Kobuleti","r":18},
+{"n":"WIT Georgia","c":"Tbilisi","r":18}
+]}
+]}

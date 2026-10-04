@@ -1,0 +1,39 @@
+{"codigo":"DEN","pais":"Dinamarca","continente":"Europa","bandera":"🇩🇰","divisiones":[{"nombre":"Superliga","nivel":1,"completo":false,"clubes":[
+{"n":"FC København","c":"Copenhagen","r":78},
+{"n":"FC Midtjylland","c":"Herning","r":72},
+{"n":"Brøndby IF","c":"Brøndby","r":68},
+{"n":"AGF","c":"Aarhus","r":60},
+{"n":"FC Nordsjælland","c":"Farum","r":58},
+{"n":"Silkeborg IF","c":"Silkeborg","r":52},
+{"n":"Randers FC","c":"Randers","r":50},
+{"n":"Viborg FF","c":"Viborg","r":50},
+{"n":"Sønderjyske","c":"Haderslev","r":44},
+{"n":"Vejle BK","c":"Vejle","r":44},
+{"n":"FC Fredericia","c":"Fredericia","r":38},
+{"n":"Odense Boldklub","c":"Odense","r":52}
+]},
+{"nombre":"1. Division","nivel":2,"completo":false,"clubes":[
+{"n":"AaB","c":"Aalborg","r":48},
+{"n":"Lyngby BK","c":"Lyngby","r":40},
+{"n":"Hvidovre IF","c":"Hvidovre","r":36},
+{"n":"Esbjerg fB","c":"Esbjerg","r":40},
+{"n":"Horsens","c":"Horsens","r":38},
+{"n":"Hobro IK","c":"Hobro","r":30},
+{"n":"Kolding IF","c":"Kolding","r":30},
+{"n":"Middelfart","c":"Middelfart","r":28},
+{"n":"B.93","c":"Copenhagen","r":27},
+{"n":"Hillerød","c":"Hillerød","r":27},
+{"n":"Aarhus Fremad","c":"Aarhus","r":25},
+{"n":"Fremad Amager","c":"Copenhagen","r":26}
+]},
+{"nombre":"2. Division","nivel":3,"completo":false,"clubes":[
+{"n":"Næstved BK","c":"Næstved","r":20},
+{"n":"HB Køge","c":"Køge","r":24},
+{"n":"Roskilde","c":"Roskilde","r":20},
+{"n":"Thisted FC","c":"Thisted","r":18},
+{"n":"Skive IK","c":"Skive","r":18},
+{"n":"B 1903","c":"Copenhagen","r":20},
+{"n":"Brabrand IF","c":"Aarhus","r":17},
+{"n":"Nykøbing FC","c":"Nykøbing Falster","r":20}
+]}
+]}

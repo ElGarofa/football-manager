@@ -1,0 +1,26 @@
+{"codigo": "ECU", "pais": "Ecuador", "continente": "América del Sur", "bandera": "🇪🇨", "divisiones": [
+{"nombre": "Serie A", "nivel": 1, "completo": false, "clubes": [
+{"n": "Liga de Quito", "c": "Quito", "r": 66}, 
+{"n": "Barcelona SC", "c": "Guayaquil", "r": 66}, 
+{"n": "Independiente del Valle", "c": "Sangolquí", "r": 68}, 
+{"n": "Emelec", "c": "Guayaquil", "r": 58}, 
+{"n": "Aucas", "c": "Quito", "r": 44}, 
+{"n": "Delfín", "c": "Manta", "r": 40}, 
+{"n": "Orense", "c": "Machala", "r": 38}, 
+{"n": "Mushuc Runa", "c": "Ambato", "r": 34}, 
+{"n": "Macará", "c": "Ambato", "r": 38}, 
+{"n": "Universidad Católica", "c": "Quito", "r": 38}, 
+{"n": "Libertad", "c": "Loja", "r": 32}, 
+{"n": "Técnico Universitario", "c": "Ambato", "r": 34}, 
+{"n": "Deportivo Cuenca", "c": "Cuenca", "r": 38}, 
+{"n": "Leones del Norte", "c": "Quito", "r": 26}, 
+{"n": "Vinotinto", "c": "Quito", "r": 26}]}, 
+{"nombre": "Serie B", "nivel": 2, "completo": false, "clubes": [
+{"n": "Cumbayá", "c": "Cumbayá", "r": 26}, 
+{"n": "Deportivo Quito", "c": "Quito", "r": 32}, 
+{"n": "Manta", "c": "Manta", "r": 26}, 
+{"n": "Imbabura", "c": "Ibarra", "r": 26}, 
+{"n": "9 de Octubre", "c": "Guayaquil", "r": 24}, 
+{"n": "Guayaquil City", "c": "Guayaquil", "r": 26}, 
+{"n": "Gualaceo", "c": "Gualaceo", "r": 24}, 
+{"n": "El Nacional", "c": "Quito", "r": 34}]}]}

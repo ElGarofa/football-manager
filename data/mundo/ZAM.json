@@ -1,0 +1,18 @@
+{"codigo":"ZAM","pais":"Zambia","continente":"África","bandera":"🇿🇲","divisiones":[
+  {"nombre":"Super League","nivel":1,"completo":false,"clubes":[
+   {"n":"Power Dynamos","c":"Kitwe","r":32},
+   {"n":"Zesco United","c":"Ndola","r":36},
+   {"n":"Nkana","c":"Kitwe","r":32},
+   {"n":"Red Arrows","c":"Lusaka","r":26},
+   {"n":"Zanaco","c":"Lusaka","r":28},
+   {"n":"Green Eagles","c":"Choma","r":22},
+   {"n":"Forest Rangers","c":"Ndola","r":20},
+   {"n":"Kabwe Warriors","c":"Kabwe","r":24},
+   {"n":"Nkwazi","c":"Lusaka","r":22},
+   {"n":"Green Buffaloes","c":"Lusaka","r":26},
+   {"n":"Mufulira Wanderers","c":"Mufulira","r":22},
+   {"n":"Kansanshi Dynamos","c":"Solwezi","r":20},
+   {"n":"Konkola Blades","c":"Chingola","r":20},
+   {"n":"Napsa Stars","c":"Lusaka","r":22}
+  ]}
+]}

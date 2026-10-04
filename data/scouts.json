@@ -1,0 +1,4 @@
+{"nombres":["Raúl","Hugo","Omar","Néstor","Walter","Daniel","Marcelo","Gustavo","Ricardo","Alberto","Sergio","Carlos","Fabián","Julio","Mario","Roberto"],
+"apellidos":["Sosa","Bermúdez","Ledesma","Cardozo","Ferreyra","Ibáñez","Montenegro","Pereyra","Quiroga","Rivero","Salvatierra","Toledo","Villarreal","Zalazar","Arce","Bustamante"],
+"regiones":["Buenos Aires","Litoral","Córdoba","Cuyo","NOA","NEA","Patagonia","Sudamérica"],
+"provincias":{"CABA":"Buenos Aires","Buenos Aires":"Buenos Aires","Santa Fe":"Litoral","Entre Ríos":"Litoral","Córdoba":"Córdoba","Mendoza":"Cuyo","San Juan":"Cuyo","Tucumán":"NOA","Santiago del Estero":"NOA","Jujuy":"NOA","Salta":"NOA","Chaco":"NEA","Corrientes":"NEA","Misiones":"NEA","Chubut":"Patagonia","Neuquén":"Patagonia","Tierra del Fuego":"Patagonia"}}

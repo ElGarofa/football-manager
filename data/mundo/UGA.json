@@ -1,0 +1,17 @@
+{"codigo":"UGA","pais":"Uganda","continente":"África","bandera":"🇺🇬","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Vipers SC","c":"Entebbe","r":32},
+   {"n":"KCCA","c":"Kampala","r":32},
+   {"n":"SC Villa","c":"Kampala","r":28},
+   {"n":"URA","c":"Kampala","r":26},
+   {"n":"Express FC","c":"Kampala","r":26},
+   {"n":"BUL FC","c":"Jinja","r":22},
+   {"n":"Police FC","c":"Kampala","r":22},
+   {"n":"Maroons","c":"Luzira","r":22},
+   {"n":"Kitara FC","c":"Hoima","r":20},
+   {"n":"Mbarara City","c":"Mbarara","r":20},
+   {"n":"Arua Hill","c":"Arua","r":20},
+   {"n":"Wakiso Giants","c":"Wakiso","r":20},
+   {"n":"Busoga United","c":"Jinja","r":20}
+  ]}
+]}

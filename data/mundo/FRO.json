@@ -1,0 +1,20 @@
+{"codigo":"FRO","pais":"Islas Feroe","continente":"Europa","bandera":"🇫🇴","divisiones":[{"nombre":"Betri deildin","nivel":1,"completo":false,"clubes":[
+{"n":"KÍ Klaksvík","c":"Klaksvík","r":30},
+{"n":"HB Tórshavn","c":"Tórshavn","r":26},
+{"n":"B36 Tórshavn","c":"Tórshavn","r":24},
+{"n":"NSÍ Runavík","c":"Runavík","r":22},
+{"n":"EB/Streymur","c":"Streymoy","r":20},
+{"n":"Víkingur Gøta","c":"Gøta","r":20},
+{"n":"07 Vestur","c":"Sørvágur","r":16},
+{"n":"TB Tvøroyri","c":"Tvøroyri","r":16},
+{"n":"Skála ÍF","c":"Skáli","r":16}
+]},
+{"nombre":"1. deild","nivel":2,"completo":false,"clubes":[
+{"n":"AB Argir","c":"Argir","r":12},
+{"n":"B71 Sandoy","c":"Sandur","r":12},
+{"n":"FC Suðuroy","c":"Tvøroyri","r":12},
+{"n":"Toftir","c":"Toftir","r":11},
+{"n":"ÍF Fuglafjørður","c":"Fuglafjørður","r":12},
+{"n":"Víkingur Gøta II","c":"Gøta","r":8}
+]}
+]}

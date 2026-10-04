@@ -1,0 +1,22 @@
+{"codigo":"AZE","pais":"Azerbaiyán","continente":"Europa","bandera":"🇦🇿","divisiones":[
+{"nombre":"Premyer Liqa","nivel":1,"completo":false,"clubes":[
+{"n":"Qarabağ","c":"Agdam","r":58},
+{"n":"Neftçi","c":"Bakú","r":42},
+{"n":"Sabah","c":"Bakú","r":42},
+{"n":"Zira","c":"Bakú","r":38},
+{"n":"Araz-Naxçıvan","c":"Najicheván","r":34},
+{"n":"Gabala","c":"Gabala","r":34},
+{"n":"Kapaz","c":"Ganyá","r":32},
+{"n":"Sumgayit","c":"Sumqayit","r":32},
+{"n":"Turan Tovuz","c":"Tovuz","r":30},
+{"n":"Şamaxı","c":"Shamakhi","r":28},
+{"n":"Səbail","c":"Bakú","r":28},
+{"n":"Karvan","c":"Evlakh","r":26}
+]},
+{"nombre":"Birinci Divizion","nivel":2,"completo":false,"clubes":[
+{"n":"Zaqatala","c":"Zaqatala","r":20},
+{"n":"Shahdag Qusar","c":"Qusar","r":18},
+{"n":"MOIK Baku","c":"Bakú","r":18},
+{"n":"Qaradağ Lökbatan","c":"Bakú","r":18}
+]}
+]}

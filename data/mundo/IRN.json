@@ -1,0 +1,31 @@
+{"codigo":"IRN","pais":"Irán","continente":"Asia","bandera":"🇮🇷","divisiones":[
+{"nombre":"Persian Gulf Pro League","nivel":1,"completo":false,"clubes":[
+{"n":"Persepolis","c":"Teherán","r":62},
+{"n":"Esteghlal","c":"Teherán","r":60},
+{"n":"Sepahan","c":"Isfahán","r":56},
+{"n":"Tractor","c":"Tabriz","r":54},
+{"n":"Foolad","c":"Ahvaz","r":48},
+{"n":"Gol Gohar","c":"Sirjan","r":46},
+{"n":"Zob Ahan","c":"Isfahán","r":44},
+{"n":"Malavan","c":"Bandar Anzali","r":38},
+{"n":"Nassaji Mazandaran","c":"Qaemshahr","r":38},
+{"n":"Aluminium Arak","c":"Arak","r":36},
+{"n":"Mes Rafsanjan","c":"Rafsanjan","r":36},
+{"n":"Havadar","c":"Teherán","r":34},
+{"n":"Chadormalu","c":"Ardakan","r":34},
+{"n":"Paykan","c":"Teherán","r":40},
+{"n":"Shams Azar","c":"Qazvín","r":30},
+{"n":"Kheybar Khorramabad","c":"Khorramabad","r":30},
+{"n":"Esteghlal Khuzestan","c":"Ahvaz","r":36},
+{"n":"Fajr Sepasi","c":"Shiraz","r":32}
+]},
+{"nombre":"Azadegan League","nivel":2,"completo":false,"clubes":[
+{"n":"Sanat Naft","c":"Abadán","r":30},
+{"n":"Saipa","c":"Teherán","r":32},
+{"n":"Naft Masjed Soleyman","c":"Masjed Soleyman","r":28},
+{"n":"Khooshe Talaei","c":"Saveh","r":24},
+{"n":"Mes Kerman","c":"Kermán","r":30},
+{"n":"Machine Sazi","c":"Tabriz","r":28},
+{"n":"Nassaji Qaemshahr","c":"Qaemshahr","r":22}
+]}
+]}

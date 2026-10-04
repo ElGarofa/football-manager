@@ -1,0 +1,40 @@
+{"codigo":"RUS","pais":"Rusia","continente":"Europa","bandera":"🇷🇺","divisiones":[
+{"nombre":"Premier Liga","nivel":1,"completo":false,"clubes":[
+{"n":"Krasnodar","c":"Krasnodar","r":62},
+{"n":"Zenit San Petersburgo","c":"San Petersburgo","r":66},
+{"n":"Spartak Moscú","c":"Moscú","r":58},
+{"n":"CSKA Moscú","c":"Moscú","r":58},
+{"n":"Dinamo Moscú","c":"Moscú","r":54},
+{"n":"Lokomotiv Moscú","c":"Moscú","r":56},
+{"n":"Rubin Kazán","c":"Kazán","r":46},
+{"n":"Akhmat Grozny","c":"Grozny","r":44},
+{"n":"Baltika Kaliningrado","c":"Kaliningrado","r":40},
+{"n":"Krylia Sovetov Samara","c":"Samara","r":42},
+{"n":"Orenburg","c":"Orenburg","r":34},
+{"n":"Pari Nizhny Novgorod","c":"Nizhni Nóvgorod","r":36},
+{"n":"Akron Tolyatti","c":"Tolyatti","r":32},
+{"n":"Sochi","c":"Sochi","r":36},
+{"n":"Dinamo Majachkalá","c":"Majachkalá","r":34},
+{"n":"Rostov","c":"Rostov del Don","r":44}
+]},
+{"nombre":"Liga Nacional de Fútbol (FNL)","nivel":2,"completo":false,"clubes":[
+{"n":"Torpedo Moscú","c":"Moscú","r":32},
+{"n":"Fakel Vorónezh","c":"Vorónezh","r":30},
+{"n":"Ural","c":"Ekaterimburgo","r":34},
+{"n":"Shinnik","c":"Yaroslavl","r":22},
+{"n":"Khimki","c":"Jimki","r":32},
+{"n":"Sokol Saratov","c":"Sarátov","r":22},
+{"n":"Chernomorets Novorossiysk","c":"Novorosíisk","r":20},
+{"n":"Spartak Kostroma","c":"Kostromá","r":16},
+{"n":"Chelyabinsk","c":"Cheliábinsk","r":20},
+{"n":"SKA-Khabarovsk","c":"Jabárovsk","r":22},
+{"n":"Rodina Moscú","c":"Moscú","r":20},
+{"n":"Volga Uliánovsk","c":"Uliánovsk","r":18},
+{"n":"Yenisey Krasnoyarsk","c":"Krasnoyarsk","r":22},
+{"n":"Neftekhimik Nizhnekamsk","c":"Nizhnekamsk","r":20},
+{"n":"KamAZ Naberezhnye Chelny","c":"Naberezhnye Chelny","r":18},
+{"n":"Alania Vladikavkaz","c":"Vladikavkaz","r":22},
+{"n":"Tom Tomsk","c":"Tomsk","r":20},
+{"n":"Arsenal Tula","c":"Tula","r":28}
+]}
+]}

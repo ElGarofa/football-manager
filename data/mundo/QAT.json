@@ -1,0 +1,23 @@
+{"codigo":"QAT","pais":"Catar","continente":"Asia","bandera":"🇶🇦","divisiones":[
+{"nombre":"Qatar Stars League","nivel":1,"completo":false,"clubes":[
+{"n":"Al-Sadd","c":"Doha","r":62},
+{"n":"Al-Duhail","c":"Doha","r":58},
+{"n":"Al-Rayyan","c":"Al Rayyan","r":52},
+{"n":"Al-Gharafa","c":"Doha","r":50},
+{"n":"Al-Arabi","c":"Doha","r":46},
+{"n":"Qatar SC","c":"Doha","r":42},
+{"n":"Al-Wakrah","c":"Al Wakrah","r":44},
+{"n":"Al-Ahli","c":"Doha","r":40},
+{"n":"Al-Shamal","c":"Madinat ash Shamal","r":36},
+{"n":"Umm Salal","c":"Umm Salal","r":36},
+{"n":"Al-Khor","c":"Al Khor","r":34},
+{"n":"Al-Sailiya","c":"Doha","r":34},
+{"n":"Al-Shahaniya","c":"Al Shahaniya","r":30}
+]},
+{"nombre":"Qatar Second Division","nivel":2,"completo":false,"clubes":[
+{"n":"Muaither","c":"Muaither","r":22},
+{"n":"Al-Markhiya","c":"Doha","r":26},
+{"n":"Al-Kharaitiyat","c":"Al Kharaitiyat","r":24},
+{"n":"Al-Mesaimeer","c":"Doha","r":20}
+]}
+]}

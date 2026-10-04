@@ -1,0 +1,14 @@
+{"codigo":"PAK","pais":"Pakistán","continente":"Asia","bandera":"🇵🇰","divisiones":[
+{"nombre":"Pakistan Premier League","nivel":1,"completo":false,"clubes":[
+{"n":"WAPDA","c":"Lahore","r":22},
+{"n":"Khan Research Laboratories","c":"Rawalpindi","r":20},
+{"n":"Karachi Port Trust","c":"Karachi","r":18},
+{"n":"Pakistan Army","c":"Rawalpindi","r":20},
+{"n":"Pakistan Navy","c":"Karachi","r":18},
+{"n":"Pakistan Air Force","c":"Islamabad","r":18},
+{"n":"K-Electric","c":"Karachi","r":18},
+{"n":"Sui Southern Gas","c":"Karachi","r":18},
+{"n":"SNGPL","c":"Lahore","r":16},
+{"n":"Pakistan Police","c":"Lahore","r":16}
+]}
+]}

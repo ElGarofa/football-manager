@@ -1,0 +1,45 @@
+{"codigo":"WAL","pais":"Gales","continente":"Europa","bandera":"🏴󠁧󠁢󠁷󠁬󠁳󠁿","divisiones":[
+{"nombre":"Cymru Premier","nivel":1,"completo":false,"clubes":[
+{"n":"The New Saints","c":"Oswestry","r":32},
+{"n":"Bala Town","c":"Bala","r":22},
+{"n":"Connah's Quay Nomads","c":"Connah's Quay","r":22},
+{"n":"Penybont","c":"Bridgend","r":22},
+{"n":"Caernarfon Town","c":"Caernarfon","r":20},
+{"n":"Cardiff Metropolitan University","c":"Cardiff","r":20},
+{"n":"Colwyn Bay","c":"Colwyn Bay","r":20},
+{"n":"Haverfordwest County","c":"Haverfordwest","r":20},
+{"n":"Barry Town United","c":"Barry","r":20},
+{"n":"Newtown","c":"Newtown","r":18},
+{"n":"Llanelli Town","c":"Llanelli","r":17}
+]},
+{"nombre":"Cymru North","nivel":2,"completo":false,"clubes":[
+{"n":"Flint Town United","c":"Flint","r":14},
+{"n":"Rhyl 1879","c":"Rhyl","r":14},
+{"n":"Bangor 1876","c":"Bangor","r":14},
+{"n":"Prestatyn Town","c":"Prestatyn","r":13},
+{"n":"Denbigh Town","c":"Denbigh","r":11},
+{"n":"Llandudno","c":"Llandudno","r":11},
+{"n":"Mold Alexandra","c":"Mold","r":10},
+{"n":"Airbus UK Broughton","c":"Broughton","r":11},
+{"n":"Caersws","c":"Caersws","r":10},
+{"n":"Porthmadog","c":"Porthmadog","r":10},
+{"n":"Guilsfield","c":"Guilsfield","r":9},
+{"n":"Holywell Town","c":"Holywell","r":9},
+{"n":"Llangefni Town","c":"Llangefni","r":9},
+{"n":"Aberystwyth Town","c":"Aberystwyth","r":15}
+]},
+{"nombre":"Cymru South","nivel":3,"completo":false,"clubes":[
+{"n":"Taff's Well","c":"Taff's Well","r":10},
+{"n":"Pontypridd United","c":"Pontypridd","r":11},
+{"n":"Briton Ferry Llansawel","c":"Briton Ferry","r":10},
+{"n":"Cwmbran Celtic","c":"Cwmbran","r":10},
+{"n":"Goytre United","c":"Goytre","r":9},
+{"n":"Cambrian & Clydach Vale","c":"Clydach Vale","r":9},
+{"n":"Trefelin","c":"Trefelin","r":8},
+{"n":"Afan Lido","c":"Port Talbot","r":9},
+{"n":"Swansea University","c":"Swansea","r":8},
+{"n":"Baglan Dragons","c":"Baglan","r":8},
+{"n":"Llantwit Major","c":"Llantwit Major","r":8},
+{"n":"Cardiff Draconians","c":"Cardiff","r":8}
+]}
+]}

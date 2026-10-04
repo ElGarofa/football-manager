@@ -1,0 +1,36 @@
+{"codigo":"SAU","pais":"Arabia Saudita","continente":"Asia","bandera":"🇸🇦","divisiones":[
+{"nombre":"Saudi Pro League","nivel":1,"completo":false,"clubes":[
+{"n":"Al-Hilal","c":"Riad","r":78},
+{"n":"Al-Nassr","c":"Riad","r":77},
+{"n":"Al-Ittihad","c":"Yeda","r":74},
+{"n":"Al-Ahli","c":"Yeda","r":73},
+{"n":"Al-Qadsiah","c":"Al Khobar","r":62},
+{"n":"Al-Shabab","c":"Riad","r":58},
+{"n":"Al-Ettifaq","c":"Dammam","r":58},
+{"n":"Al-Taawoun","c":"Buraidah","r":52},
+{"n":"Al-Fateh","c":"Al-Hasa","r":48},
+{"n":"Al-Fayha","c":"Al Majmaah","r":46},
+{"n":"Damac","c":"Khamis Mushait","r":47},
+{"n":"Al-Khaleej","c":"Saihat","r":46},
+{"n":"Al-Riyadh","c":"Riad","r":44},
+{"n":"Al-Okhdood","c":"Najran","r":42},
+{"n":"Al-Kholood","c":"Ar Rass","r":44},
+{"n":"Neom","c":"Neom","r":45},
+{"n":"Al-Najma","c":"Unaizah","r":36},
+{"n":"Al-Hazem","c":"Ar Rass","r":38}
+]},
+{"nombre":"Yelo League","nivel":2,"completo":false,"clubes":[
+{"n":"Al-Wehda","c":"La Meca","r":42},
+{"n":"Al-Raed","c":"Buraidah","r":40},
+{"n":"Al-Orobah","c":"Sakaka","r":34},
+{"n":"Abha","c":"Abha","r":36},
+{"n":"Al-Batin","c":"Hafar Al-Batin","r":30},
+{"n":"Al-Faisaly","c":"Harmah","r":34},
+{"n":"Al-Jabalain","c":"Medina","r":26},
+{"n":"Al-Arabi","c":"Unaizah","r":24},
+{"n":"Al-Zulfi","c":"Zulfi","r":24},
+{"n":"Hajer","c":"Al-Hasa","r":26},
+{"n":"Jeddah","c":"Yeda","r":28},
+{"n":"Al-Adalah","c":"Al-Hasa","r":28}
+]}
+]}

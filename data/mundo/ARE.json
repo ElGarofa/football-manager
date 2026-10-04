@@ -1,0 +1,24 @@
+{"codigo":"ARE","pais":"Emiratos Árabes Unidos","continente":"Asia","bandera":"🇦🇪","divisiones":[
+{"nombre":"UAE Pro League","nivel":1,"completo":false,"clubes":[
+{"n":"Shabab Al-Ahli","c":"Dubái","r":56},
+{"n":"Al-Ain","c":"Al Ain","r":58},
+{"n":"Al-Wahda","c":"Abu Dabi","r":52},
+{"n":"Al-Jazira","c":"Abu Dabi","r":54},
+{"n":"Sharjah","c":"Sharjah","r":54},
+{"n":"Al-Wasl","c":"Dubái","r":50},
+{"n":"Baniyas","c":"Abu Dabi","r":40},
+{"n":"Al-Nasr","c":"Dubái","r":42},
+{"n":"Ajman","c":"Ajmán","r":38},
+{"n":"Khor Fakkan","c":"Khor Fakkan","r":40},
+{"n":"Kalba","c":"Kalba","r":36},
+{"n":"Al-Bataeh","c":"Al Bataeh","r":34},
+{"n":"Dibba Al-Fujairah","c":"Dibba Al-Fujairah","r":34},
+{"n":"Al-Dhafra","c":"Madinat Zayed","r":34}
+]},
+{"nombre":"UAE First Division","nivel":2,"completo":false,"clubes":[
+{"n":"Hatta","c":"Hatta","r":26},
+{"n":"Al-Fujairah","c":"Fujairah","r":28},
+{"n":"Emirates Club","c":"Ras al-Jaima","r":28},
+{"n":"Masafi","c":"Masafi","r":22}
+]}
+]}

@@ -1,0 +1,20 @@
+{"codigo": "VEN", "pais": "Venezuela", "continente": "América del Sur", "bandera": "🇻🇪", "divisiones": [
+{"nombre": "Liga FUTVE", "nivel": 1, "completo": false, "clubes": [
+{"n": "Caracas", "c": "Caracas", "r": 42}, 
+{"n": "Deportivo Táchira", "c": "San Cristóbal", "r": 42}, 
+{"n": "Carabobo", "c": "Valencia", "r": 38}, 
+{"n": "Monagas", "c": "Maturín", "r": 36}, 
+{"n": "Metropolitanos", "c": "Caracas", "r": 30}, 
+{"n": "Academia Puerto Cabello", "c": "Puerto Cabello", "r": 34}, 
+{"n": "Deportivo La Guaira", "c": "La Guaira", "r": 34}, 
+{"n": "Zamora", "c": "Barinas", "r": 38}, 
+{"n": "Portuguesa", "c": "Acarigua", "r": 32}, 
+{"n": "Estudiantes de Mérida", "c": "Mérida", "r": 34}, 
+{"n": "Mineros de Guayana", "c": "Puerto Ordaz", "r": 36}, 
+{"n": "Universidad Central", "c": "Caracas", "r": 26}, 
+{"n": "Rayo Zuliano", "c": "Maracaibo", "r": 26}, 
+{"n": "Angostura", "c": "Ciudad Bolívar", "r": 24}, 
+{"n": "Deportivo Lara", "c": "Barquisimeto", "r": 34}, 
+{"n": "Yaracuyanos", "c": "San Felipe", "r": 24}, 
+{"n": "Trujillanos", "c": "Valera", "r": 26}, 
+{"n": "Hermanos Colmenárez", "c": "Acarigua", "r": 20}]}]}

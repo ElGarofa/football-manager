@@ -1,0 +1,14 @@
+{"codigo":"MOZ","pais":"Mozambique","continente":"África","bandera":"🇲🇿","divisiones":[
+  {"nombre":"Moçambola","nivel":1,"completo":false,"clubes":[
+   {"n":"Costa do Sol","c":"Maputo","r":28},
+   {"n":"Ferroviário de Maputo","c":"Maputo","r":28},
+   {"n":"Black Bulls","c":"Maputo","r":26},
+   {"n":"UD Songo","c":"Songo","r":28},
+   {"n":"Ferroviário de Nampula","c":"Nampula","r":22},
+   {"n":"Ferroviário da Beira","c":"Beira","r":24},
+   {"n":"Textáfrica do Chimoio","c":"Chimoio","r":20},
+   {"n":"Maxaquene","c":"Maputo","r":22},
+   {"n":"Liga Desportiva de Maputo","c":"Maputo","r":26},
+   {"n":"Ferroviário de Pemba","c":"Pemba","r":18}
+  ]}
+]}

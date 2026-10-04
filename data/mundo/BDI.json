@@ -1,0 +1,13 @@
+{"codigo":"BDI","pais":"Burundi","continente":"África","bandera":"🇧🇮","divisiones":[
+  {"nombre":"Ligue A","nivel":1,"completo":false,"clubes":[
+   {"n":"Vital'O","c":"Buyumbura","r":22},
+   {"n":"Le Messager Ngozi","c":"Ngozi","r":20},
+   {"n":"Aigle Noir","c":"Makamba","r":20},
+   {"n":"Musongati","c":"Gitega","r":18},
+   {"n":"Flambeau de l'Est","c":"Ruyigi","r":16},
+   {"n":"Bumamuru","c":"Burambi","r":16},
+   {"n":"Muzinga","c":"Buyumbura","r":16},
+   {"n":"Inter Star","c":"Buyumbura","r":16},
+   {"n":"Rukinzo","c":"Buyumbura","r":14}
+  ]}
+]}

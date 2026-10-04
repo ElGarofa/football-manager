@@ -1,0 +1,35 @@
+{"codigo":"ISL","pais":"Islandia","continente":"Europa","bandera":"🇮🇸","divisiones":[{"nombre":"Besta deild karla","nivel":1,"completo":true,"clubes":[
+{"n":"Breiðablik","c":"Kópavogur","r":46},
+{"n":"Víkingur Reykjavík","c":"Reykjavík","r":48},
+{"n":"Valur","c":"Reykjavík","r":42},
+{"n":"Stjarnan","c":"Garðabær","r":40},
+{"n":"KR","c":"Reykjavík","r":38},
+{"n":"FH","c":"Hafnarfjörður","r":38},
+{"n":"ÍA","c":"Akranes","r":34},
+{"n":"Fram","c":"Reykjavík","r":32},
+{"n":"KA","c":"Akureyri","r":32},
+{"n":"Vestri","c":"Ísafjörður","r":28},
+{"n":"ÍBV","c":"Vestmannaeyjar","r":30},
+{"n":"Afturelding","c":"Mosfellsbær","r":26}
+]},
+{"nombre":"Lengjudeild karla","nivel":2,"completo":false,"clubes":[
+{"n":"Fylkir","c":"Reykjavík","r":24},
+{"n":"Keflavík","c":"Keflavík","r":26},
+{"n":"Grindavík","c":"Grindavík","r":22},
+{"n":"Þór Akureyri","c":"Akureyri","r":22},
+{"n":"HK","c":"Kópavogur","r":24},
+{"n":"Njarðvík","c":"Njarðvík","r":20},
+{"n":"Grótta","c":"Seltjarnarnes","r":20},
+{"n":"Selfoss","c":"Selfoss","r":20},
+{"n":"Leiknir Reykjavík","c":"Reykjavík","r":20},
+{"n":"Þróttur Reykjavík","c":"Reykjavík","r":20},
+{"n":"Fjölnir","c":"Reykjavík","r":20},
+{"n":"ÍR","c":"Reykjavík","r":18}
+]},
+{"nombre":"2. deild karla","nivel":3,"completo":false,"clubes":[
+{"n":"Víkingur Ólafsvík","c":"Ólafsvík","r":14},
+{"n":"Haukar","c":"Hafnarfjörður","r":14},
+{"n":"Völsungur","c":"Húsavík","r":13},
+{"n":"Þróttur Vogum","c":"Vogar","r":12}
+]}
+]}

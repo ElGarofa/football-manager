@@ -1,0 +1,28 @@
+{"codigo": "URU", "pais": "Uruguay", "continente": "América del Sur", "bandera": "🇺🇾", "divisiones": [
+{"nombre": "Primera División", "nivel": 1, "completo": false, "clubes": [
+{"n": "Peñarol", "c": "Montevideo", "r": 74}, 
+{"n": "Nacional", "c": "Montevideo", "r": 74}, 
+{"n": "Defensor Sporting", "c": "Montevideo", "r": 55}, 
+{"n": "Danubio", "c": "Montevideo", "r": 50}, 
+{"n": "Liverpool", "c": "Montevideo", "r": 46}, 
+{"n": "Montevideo Wanderers", "c": "Montevideo", "r": 46}, 
+{"n": "River Plate", "c": "Montevideo", "r": 42}, 
+{"n": "Boston River", "c": "Montevideo", "r": 38}, 
+{"n": "Cerro Largo", "c": "Melo", "r": 38}, 
+{"n": "Racing", "c": "Montevideo", "r": 40}, 
+{"n": "Cerro", "c": "Montevideo", "r": 38}, 
+{"n": "Montevideo City Torque", "c": "Montevideo", "r": 42}, 
+{"n": "Juventud", "c": "Las Piedras", "r": 36}, 
+{"n": "Progreso", "c": "Montevideo", "r": 36}, 
+{"n": "Albion", "c": "Montevideo", "r": 34}, 
+{"n": "Plaza Colonia", "c": "Colonia del Sacramento", "r": 34}]}, 
+{"nombre": "Segunda División", "nivel": 2, "completo": false, "clubes": [
+{"n": "Miramar Misiones", "c": "Montevideo", "r": 28}, 
+{"n": "Deportivo Maldonado", "c": "Maldonado", "r": 28}, 
+{"n": "Rentistas", "c": "Montevideo", "r": 28}, 
+{"n": "Central Español", "c": "Montevideo", "r": 26}, 
+{"n": "Atenas", "c": "San Carlos", "r": 24}, 
+{"n": "Sud América", "c": "Montevideo", "r": 24}, 
+{"n": "Uruguay Montevideo", "c": "Montevideo", "r": 22}, 
+{"n": "Fénix", "c": "Montevideo", "r": 28}, 
+{"n": "Villa Española", "c": "Montevideo", "r": 24}]}]}

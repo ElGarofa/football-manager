@@ -1,0 +1,18 @@
+{"codigo":"BOT","pais":"Botsuana","continente":"África","bandera":"🇧🇼","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"Gaborone United","c":"Gaborone","r":26},
+   {"n":"Township Rollers","c":"Gaborone","r":28},
+   {"n":"Jwaneng Galaxy","c":"Jwaneng","r":26},
+   {"n":"Orapa United","c":"Orapa","r":22},
+   {"n":"Police XI","c":"Otse","r":20},
+   {"n":"Botswana Defence Force XI","c":"Gaborone","r":20},
+   {"n":"Security Systems","c":"Gaborone","r":16},
+   {"n":"Sua Flamingoes","c":"Sowa Town","r":16},
+   {"n":"TAFIC","c":"Francistown","r":16},
+   {"n":"Nico United","c":"Selebi-Phikwe","r":16},
+   {"n":"Extension Gunners","c":"Lobatse","r":14},
+   {"n":"Black Forest","c":"Gaborone","r":14},
+   {"n":"Gilport Lions","c":"Francistown","r":16},
+   {"n":"Mochudi Centre Chiefs","c":"Mochudi","r":20}
+  ]}
+]}

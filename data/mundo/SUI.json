@@ -1,0 +1,42 @@
+{"codigo":"SUI","pais":"Suiza","continente":"Europa","bandera":"🇨🇭","divisiones":[
+{"nombre":"Super League","nivel":1,"completo":true,"clubes":[
+{"n":"FC Basel","c":"Basilea","r":74},
+{"n":"BSC Young Boys","c":"Berna","r":72},
+{"n":"FC Lugano","c":"Lugano","r":66},
+{"n":"Servette FC","c":"Ginebra","r":63},
+{"n":"FC Zürich","c":"Zúrich","r":62},
+{"n":"FC St. Gallen","c":"San Galo","r":62},
+{"n":"FC Luzern","c":"Lucerna","r":58},
+{"n":"FC Lausanne-Sport","c":"Lausana","r":56},
+{"n":"FC Sion","c":"Sion","r":56},
+{"n":"Grasshopper Club Zürich","c":"Zúrich","r":56},
+{"n":"FC Thun","c":"Thun","r":52},
+{"n":"FC Winterthur","c":"Winterthur","r":42}
+]},
+{"nombre":"Challenge League","nivel":2,"completo":false,"clubes":[
+{"n":"FC Aarau","c":"Aarau","r":40},
+{"n":"FC Wil","c":"Wil","r":34},
+{"n":"FC Vaduz","c":"Vaduz","r":36},
+{"n":"FC Stade Lausanne-Ouchy","c":"Lausana","r":32},
+{"n":"Neuchâtel Xamax FCS","c":"Neuchâtel","r":34},
+{"n":"FC Schaffhausen","c":"Schaffhausen","r":32},
+{"n":"FC Yverdon-Sport","c":"Yverdon-les-Bains","r":34},
+{"n":"Stade Nyonnais","c":"Nyon","r":28},
+{"n":"FC Rapperswil-Jona","c":"Rapperswil-Jona","r":28},
+{"n":"FC Bellinzona","c":"Bellinzona","r":30},
+{"n":"FC Étoile Carouge","c":"Carouge","r":24},
+{"n":"FC Kriens","c":"Kriens","r":26}
+]},
+{"nombre":"Promotion League","nivel":3,"completo":false,"clubes":[
+{"n":"FC Baden","c":"Baden","r":20},
+{"n":"FC Breitenrain Bern","c":"Berna","r":20},
+{"n":"FC Biel-Bienne","c":"Biel/Bienne","r":20},
+{"n":"FC Köniz","c":"Köniz","r":18},
+{"n":"FC Stade Lausanne","c":"Lausana","r":14},
+{"n":"Old Boys Basel","c":"Basilea","r":20},
+{"n":"SC Brühl St. Gallen","c":"San Galo","r":18},
+{"n":"FC Wohlen","c":"Wohlen","r":18},
+{"n":"FC Locarno","c":"Locarno","r":20},
+{"n":"FC Grand-Saconnex","c":"Grand-Saconnex","r":14}
+]}
+]}

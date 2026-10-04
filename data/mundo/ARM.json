@@ -1,0 +1,20 @@
+{"codigo":"ARM","pais":"Armenia","continente":"Europa","bandera":"🇦🇲","divisiones":[
+{"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+{"n":"Noah","c":"Ereván","r":38},
+{"n":"Pyunik","c":"Ereván","r":36},
+{"n":"Ararat-Armenia","c":"Ereván","r":34},
+{"n":"Urartu","c":"Ereván","r":30},
+{"n":"Alashkert","c":"Ereván","r":30},
+{"n":"Shirak","c":"Gyumri","r":28},
+{"n":"BKMA Yerevan","c":"Ereván","r":26},
+{"n":"Gandzasar Kapan","c":"Kapan","r":26},
+{"n":"Van","c":"Charentsavan","r":24},
+{"n":"Ararat Yerevan","c":"Ereván","r":24}
+]},
+{"nombre":"First League","nivel":2,"completo":false,"clubes":[
+{"n":"Lori","c":"Vanadzor","r":20},
+{"n":"Syunik","c":"Kapan","r":18},
+{"n":"Araks Ararat","c":"Ararat","r":16},
+{"n":"Noravank","c":"Vayk","r":16}
+]}
+]}

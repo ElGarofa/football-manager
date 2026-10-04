@@ -1,0 +1,18 @@
+{"codigo":"LVA","pais":"Letonia","continente":"Europa","bandera":"🇱🇻","divisiones":[{"nombre":"Virslīga","nivel":1,"completo":false,"clubes":[
+{"n":"Riga FC","c":"Riga","r":36},
+{"n":"FK RFS","c":"Riga","r":36},
+{"n":"FK Auda","c":"Ropaži","r":24},
+{"n":"Valmieras FK","c":"Valmiera","r":30},
+{"n":"FK Liepāja","c":"Liepāja","r":28},
+{"n":"FK Ventspils","c":"Ventspils","r":26},
+{"n":"BFC Daugavpils","c":"Daugavpils","r":22},
+{"n":"FK Tukums 2000","c":"Tukums","r":20},
+{"n":"FK Jelgava","c":"Jelgava","r":22},
+{"n":"Grobiņas SC","c":"Grobiņa","r":20}
+]},
+{"nombre":"1. līga","nivel":2,"completo":false,"clubes":[
+{"n":"FK Metta","c":"Riga","r":14},
+{"n":"FS Jelgava","c":"Jelgava","r":14},
+{"n":"Daugavpils Dinaburg","c":"Daugavpils","r":13}
+]}
+]}

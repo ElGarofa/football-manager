@@ -1,0 +1,593 @@
+{
+"codigo": "ARG",
+"pais": "Argentina",
+"continente": "América del Sur",
+"bandera": "🇦🇷",
+"divisiones": [
+{
+"nombre": "Primera División",
+"nivel": 1,
+"completo": true,
+"clubes": [
+{
+"n": "Aldosivi",
+"c": "Mar del Plata",
+"r": 62
+},
+{
+"n": "Argentinos Juniors",
+"c": "Buenos Aires",
+"r": 55
+},
+{
+"n": "Atlético Tucumán",
+"c": "San Miguel de Tucumán",
+"r": 59
+},
+{
+"n": "Banfield",
+"c": "Banfield",
+"r": 63
+},
+{
+"n": "Barracas Central",
+"c": "Buenos Aires",
+"r": 55
+},
+{
+"n": "Belgrano",
+"c": "Córdoba",
+"r": 57
+},
+{
+"n": "Boca Juniors",
+"c": "Buenos Aires",
+"r": 82
+},
+{
+"n": "Central Córdoba (SdE)",
+"c": "Santiago del Estero",
+"r": 55
+},
+{
+"n": "Defensa y Justicia",
+"c": "Florencio Varela",
+"r": 52
+},
+{
+"n": "Deportivo Riestra",
+"c": "Buenos Aires",
+"r": 67
+},
+{
+"n": "Estudiantes (LP)",
+"c": "La Plata",
+"r": 59
+},
+{
+"n": "Gimnasia (LP)",
+"c": "La Plata",
+"r": 56
+},
+{
+"n": "Godoy Cruz",
+"c": "Mendoza",
+"r": 64
+},
+{
+"n": "Huracán",
+"c": "Buenos Aires",
+"r": 67
+},
+{
+"n": "Independiente",
+"c": "Avellaneda",
+"r": 76
+},
+{
+"n": "Independiente Rivadavia",
+"c": "Mendoza",
+"r": 54
+},
+{
+"n": "Instituto",
+"c": "Córdoba",
+"r": 55
+},
+{
+"n": "Lanús",
+"c": "Lanús",
+"r": 53
+},
+{
+"n": "Newell's Old Boys",
+"c": "Rosario",
+"r": 68
+},
+{
+"n": "Platense",
+"c": "Vicente López",
+"r": 66
+},
+{
+"n": "Racing Club",
+"c": "Avellaneda",
+"r": 71
+},
+{
+"n": "River Plate",
+"c": "Buenos Aires",
+"r": 81
+},
+{
+"n": "Rosario Central",
+"c": "Rosario",
+"r": 65
+},
+{
+"n": "San Lorenzo",
+"c": "Buenos Aires",
+"r": 69
+},
+{
+"n": "San Martín (SJ)",
+"c": "San Juan",
+"r": 65
+},
+{
+"n": "Sarmiento (Junín)",
+"c": "Junín",
+"r": 57
+},
+{
+"n": "Talleres (Córdoba)",
+"c": "Córdoba",
+"r": 58
+},
+{
+"n": "Tigre",
+"c": "Victoria",
+"r": 68
+},
+{
+"n": "Unión (Santa Fe)",
+"c": "Santa Fe",
+"r": 59
+},
+{
+"n": "Vélez Sarsfield",
+"c": "Buenos Aires",
+"r": 74
+}
+]
+},
+{
+"nombre": "Primera Nacional",
+"nivel": 2,
+"completo": true,
+"clubes": [
+{
+"n": "Agropecuario",
+"c": "Carlos Casares",
+"r": 49
+},
+{
+"n": "All Boys",
+"c": "Buenos Aires",
+"r": 52
+},
+{
+"n": "Almagro",
+"c": "José Ingeniero",
+"r": 53
+},
+{
+"n": "Almirante Brown",
+"c": "Isidro Casanova",
+"r": 46
+},
+{
+"n": "Alvarado",
+"c": "Mar del Plata",
+"r": 50
+},
+{
+"n": "Atlético Rafaela",
+"c": "Rafaela",
+"r": 52
+},
+{
+"n": "Chacarita Juniors",
+"c": "San Martín",
+"r": 45
+},
+{
+"n": "Chaco For Ever",
+"c": "Resistencia",
+"r": 50
+},
+{
+"n": "Ciudad de Bolívar",
+"c": "Bolívar",
+"r": 49
+},
+{
+"n": "Colón",
+"c": "Santa Fe",
+"r": 46
+},
+{
+"n": "Defensores de Belgrano",
+"c": "Buenos Aires",
+"r": 44
+},
+{
+"n": "Deportivo Madryn",
+"c": "Puerto Madryn",
+"r": 54
+},
+{
+"n": "Estudiantes (Río Cuarto)",
+"c": "Río Cuarto",
+"r": 51
+},
+{
+"n": "Ferro Carril Oeste",
+"c": "Buenos Aires",
+"r": 52
+},
+{
+"n": "Gimnasia y Esgrima (Jujuy)",
+"c": "San Salvador de Jujuy",
+"r": 47
+},
+{
+"n": "Gimnasia y Esgrima (Mendoza)",
+"c": "Mendoza",
+"r": 50
+},
+{
+"n": "Guillermo Brown",
+"c": "Puerto Madryn",
+"r": 53
+},
+{
+"n": "Güemes",
+"c": "Santiago del Estero",
+"r": 52
+},
+{
+"n": "Los Andes",
+"c": "Lomas de Zamora",
+"r": 54
+},
+{
+"n": "Maipú",
+"c": "Maipú",
+"r": 52
+},
+{
+"n": "Mitre (SdE)",
+"c": "Santiago del Estero",
+"r": 53
+},
+{
+"n": "Morón",
+"c": "Morón",
+"r": 47
+},
+{
+"n": "Nueva Chicago",
+"c": "Buenos Aires",
+"r": 44
+},
+{
+"n": "Patronato",
+"c": "Paraná",
+"r": 52
+},
+{
+"n": "Quilmes",
+"c": "Quilmes",
+"r": 51
+},
+{
+"n": "Racing (Córdoba)",
+"c": "Córdoba",
+"r": 47
+},
+{
+"n": "San Martín (Tucumán)",
+"c": "San Miguel de Tucumán",
+"r": 44
+},
+{
+"n": "San Telmo",
+"c": "Dock Sud",
+"r": 44
+},
+{
+"n": "Sportivo Belgrano",
+"c": "San Francisco",
+"r": 47
+},
+{
+"n": "Temperley",
+"c": "Temperley",
+"r": 49
+},
+{
+"n": "Tristán Suárez",
+"c": "Tristán Suárez",
+"r": 52
+},
+{
+"n": "Villa Dálmine",
+"c": "Campana",
+"r": 44
+}
+]
+},
+{
+"nombre": "Primera B",
+"nivel": 3,
+"completo": true,
+"clubes": [
+{
+"n": "Acassuso",
+"c": "San Isidro",
+"r": 37
+},
+{
+"n": "Argentino de Merlo",
+"c": "Merlo",
+"r": 40
+},
+{
+"n": "Argentino de Quilmes",
+"c": "Quilmes",
+"r": 43
+},
+{
+"n": "Armenio",
+"c": "Ingeniero Maschwitz",
+"r": 36
+},
+{
+"n": "Atlanta",
+"c": "Buenos Aires",
+"r": 43
+},
+{
+"n": "Berazategui",
+"c": "Berazategui",
+"r": 36
+},
+{
+"n": "Claypole",
+"c": "Claypole",
+"r": 38
+},
+{
+"n": "Colegiales",
+"c": "Munro",
+"r": 37
+},
+{
+"n": "Comunicaciones",
+"c": "Buenos Aires",
+"r": 43
+},
+{
+"n": "Defensores Unidos",
+"c": "Zárate",
+"r": 37
+},
+{
+"n": "Deportivo Merlo",
+"c": "Merlo",
+"r": 36
+},
+{
+"n": "Deportivo Español",
+"c": "Buenos Aires",
+"r": 41
+},
+{
+"n": "Dock Sud",
+"c": "Dock Sud",
+"r": 36
+},
+{
+"n": "Estudiantes (BA)",
+"c": "Caseros",
+"r": 37
+},
+{
+"n": "Excursionistas",
+"c": "Buenos Aires",
+"r": 46
+},
+{
+"n": "Fénix",
+"c": "Pilar",
+"r": 38
+},
+{
+"n": "Flandria",
+"c": "Jáuregui",
+"r": 46
+},
+{
+"n": "Laferrere",
+"c": "Gregorio de Laferrere",
+"r": 42
+},
+{
+"n": "Midland",
+"c": "Libertad",
+"r": 43
+},
+{
+"n": "Sacachispas",
+"c": "Buenos Aires",
+"r": 45
+}
+]
+},
+{
+"nombre": "Primera C",
+"nivel": 4,
+"completo": true,
+"clubes": [
+{
+"n": "Cañuelas",
+"c": "Cañuelas",
+"r": 31
+},
+{
+"n": "Centro Español",
+"c": "Buenos Aires",
+"r": 37
+},
+{
+"n": "Defensores de Cambaceres",
+"c": "Ensenada",
+"r": 32
+},
+{
+"n": "General Lamadrid",
+"c": "Buenos Aires",
+"r": 35
+},
+{
+"n": "Ituzaingó",
+"c": "Ituzaingó",
+"r": 31
+},
+{
+"n": "J.J. Urquiza",
+"c": "Loma Hermosa",
+"r": 37
+},
+{
+"n": "Liniers",
+"c": "Buenos Aires",
+"r": 35
+},
+{
+"n": "Luján",
+"c": "Luján",
+"r": 38
+},
+{
+"n": "Muñiz",
+"c": "Muñiz",
+"r": 37
+},
+{
+"n": "Real Pilar",
+"c": "Pilar",
+"r": 37
+},
+{
+"n": "San Martín (Burzaco)",
+"c": "Burzaco",
+"r": 32
+},
+{
+"n": "Sportivo Italiano",
+"c": "Buenos Aires",
+"r": 35
+},
+{
+"n": "Victoriano Arenas",
+"c": "Valentín Alsina",
+"r": 37
+},
+{
+"n": "Villa San Carlos",
+"c": "Berisso",
+"r": 31
+},
+{
+"n": "Yupanqui",
+"c": "Buenos Aires",
+"r": 38
+},
+{
+"n": "Atlas",
+"c": "Buenos Aires",
+"r": 32
+}
+]
+},
+{
+"nombre": "Primera D",
+"nivel": 5,
+"completo": true,
+"clubes": [
+{
+"n": "Alem",
+"c": "Leandro N. Alem",
+"r": 24
+},
+{
+"n": "Brown (Adrogué)",
+"c": "Adrogué",
+"r": 31
+},
+{
+"n": "Camioneros",
+"c": "Esteban Echeverría",
+"r": 26
+},
+{
+"n": "Central Ballester",
+"c": "José León Suárez",
+"r": 25
+},
+{
+"n": "Deportivo Paraguayo",
+"c": "Buenos Aires",
+"r": 32
+},
+{
+"n": "El Porvenir",
+"c": "Gerli",
+"r": 29
+},
+{
+"n": "Juventud Unida",
+"c": "San Martín",
+"r": 26
+},
+{
+"n": "Lugano",
+"c": "Buenos Aires",
+"r": 27
+},
+{
+"n": "Puerto Nuevo",
+"c": "Buenos Aires",
+"r": 26
+},
+{
+"n": "Sportivo Barracas",
+"c": "Buenos Aires",
+"r": 30
+},
+{
+"n": "Deportivo Armenio",
+"c": "Ingeniero Maschwitz",
+"r": 32
+},
+{
+"n": "Club Social Flores",
+"c": "Buenos Aires",
+"r": 31
+}
+]
+}
+]
+}

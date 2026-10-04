@@ -1,0 +1,23 @@
+{"codigo":"KOS","pais":"Kosovo","continente":"Europa","bandera":"🇽🇰","divisiones":[
+{"nombre":"Superliga","nivel":1,"completo":false,"clubes":[
+{"n":"Ballkani","c":"Suhareka","r":38},
+{"n":"Drita","c":"Gjilan","r":36},
+{"n":"Prishtina","c":"Pristina","r":32},
+{"n":"Llapi","c":"Podujevë","r":32},
+{"n":"Malisheva","c":"Malisheva","r":28},
+{"n":"Gjilani","c":"Gjilan","r":28},
+{"n":"Dukagjini","c":"Klinë","r":28},
+{"n":"Drenica","c":"Skenderaj","r":28},
+{"n":"Trepça '89","c":"Mitrovica","r":28},
+{"n":"Ferizaj","c":"Ferizaj","r":26},
+{"n":"Vushtrria","c":"Vushtrri","r":24}
+]},
+{"nombre":"Liga e Parë","nivel":2,"completo":false,"clubes":[
+{"n":"Feronikeli","c":"Drenas","r":22},
+{"n":"Liria","c":"Prizren","r":20},
+{"n":"Flamurtari","c":"Pristina","r":20},
+{"n":"Besa","c":"Pejë","r":20},
+{"n":"Trepça","c":"Mitrovica","r":22},
+{"n":"Ulpiana","c":"Pristina","r":18}
+]}
+]}

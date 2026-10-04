@@ -1,0 +1,11 @@
+{"codigo":"STP","pais":"Santo Tomé y Príncipe","continente":"África","bandera":"🇸🇹","divisiones":[
+  {"nombre":"Campeonato Nacional","nivel":1,"completo":false,"clubes":[
+   {"n":"Sporting Praia Cruz","c":"Praia Cruz","r":14},
+   {"n":"UDRA","c":"Santo Tomé","r":12},
+   {"n":"Inter Bom-Bom","c":"Santo Tomé","r":12},
+   {"n":"Vitória Riboque","c":"Santo Tomé","r":11},
+   {"n":"Desportivo de Guadalupe","c":"Guadalupe","r":11},
+   {"n":"6 de Setembro","c":"Santo Tomé","r":10},
+   {"n":"Os Operários","c":"Santo Tomé","r":10}
+  ]}
+]}

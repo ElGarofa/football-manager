@@ -1,0 +1,16 @@
+{"codigo":"SYR","pais":"Siria","continente":"Asia","bandera":"🇸🇾","divisiones":[
+{"nombre":"Syrian Premier League","nivel":1,"completo":false,"clubes":[
+{"n":"Al-Jaish","c":"Damasco","r":34},
+{"n":"Al-Wahda","c":"Damasco","r":34},
+{"n":"Al-Karamah","c":"Homs","r":34},
+{"n":"Tishreen","c":"Latakia","r":32},
+{"n":"Al-Ittihad","c":"Alepo","r":32},
+{"n":"Al-Futuwa","c":"Deir ez-Zor","r":28},
+{"n":"Hutteen","c":"Latakia","r":28},
+{"n":"Jableh","c":"Jableh","r":24},
+{"n":"Al-Wathba","c":"Homs","r":26},
+{"n":"Al-Shorta","c":"Damasco","r":24},
+{"n":"Taliya","c":"Hama","r":24},
+{"n":"Al-Horriya","c":"Alepo","r":22}
+]}
+]}

@@ -1,0 +1,22 @@
+{"codigo":"IDN","pais":"Indonesia","continente":"Asia","bandera":"🇮🇩","divisiones":[
+{"nombre":"Super League","nivel":1,"completo":false,"clubes":[
+{"n":"Persib Bandung","c":"Bandung","r":38},
+{"n":"Persija Jakarta","c":"Yakarta","r":38},
+{"n":"Persebaya Surabaya","c":"Surabaya","r":34},
+{"n":"Arema","c":"Malang","r":34},
+{"n":"PSM Makassar","c":"Makassar","r":34},
+{"n":"Bali United","c":"Gianyar","r":34},
+{"n":"Borneo FC","c":"Samarinda","r":34},
+{"n":"Dewa United","c":"Tangerang","r":30},
+{"n":"Madura United","c":"Pamekasan","r":30},
+{"n":"PSIS Semarang","c":"Semarang","r":28},
+{"n":"Persis Solo","c":"Surakarta","r":28},
+{"n":"Persik Kediri","c":"Kediri","r":26},
+{"n":"Persita Tangerang","c":"Tangerang","r":26},
+{"n":"Barito Putera","c":"Banjarmasin","r":26},
+{"n":"PSS Sleman","c":"Sleman","r":26},
+{"n":"Bhayangkara","c":"Yakarta","r":26},
+{"n":"Malut United","c":"Ternate","r":24},
+{"n":"Semen Padang","c":"Padang","r":24},
+{"n":"Persipura Jayapura","c":"Jayapura","r":24},
+{"n":"Persijap Jepara","c":"Jepara","r":20}]}]}

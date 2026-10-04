@@ -1,0 +1,18 @@
+{"codigo":"AND","pais":"Andorra","continente":"Europa","bandera":"🇦🇩","divisiones":[
+{"nombre":"Primera Divisió","nivel":1,"completo":false,"clubes":[
+{"n":"Inter Club d'Escaldes","c":"Escaldes-Engordany","r":24},
+{"n":"FC Santa Coloma","c":"Santa Coloma","r":22},
+{"n":"UE Santa Coloma","c":"Santa Coloma","r":22},
+{"n":"Atlètic Club d'Escaldes","c":"Escaldes-Engordany","r":18},
+{"n":"Penya Encarnada d'Andorra","c":"Andorra la Vieja","r":16},
+{"n":"FC Ordino","c":"Ordino","r":16},
+{"n":"Esperança d'Andorra","c":"Andorra la Vieja","r":14},
+{"n":"Engordany","c":"Escaldes-Engordany","r":14}
+]},
+{"nombre":"Segona Divisió","nivel":2,"completo":false,"clubes":[
+{"n":"FC Lusitanos","c":"Andorra la Vieja","r":12},
+{"n":"Pas de la Casa","c":"Encamp","r":10},
+{"n":"Carroi","c":"Carroi","r":10},
+{"n":"Sant Julià","c":"Sant Julià de Lòria","r":10}
+]}
+]}

@@ -1,0 +1,32 @@
+{"codigo":"BEL","pais":"Bélgica","continente":"Europa","bandera":"🇧🇪","divisiones":[
+{"nombre":"Pro League","nivel":1,"completo":true,"clubes":[
+{"n":"Club Brujas","c":"Brujas","r":78},
+{"n":"RSC Anderlecht","c":"Bruselas","r":72},
+{"n":"Union Saint-Gilloise","c":"Bruselas","r":72},
+{"n":"KRC Genk","c":"Genk","r":70},
+{"n":"KAA Gent","c":"Gante","r":68},
+{"n":"Royal Antwerp","c":"Amberes","r":66},
+{"n":"Standard de Lieja","c":"Lieja","r":64},
+{"n":"Cercle Brugge","c":"Brujas","r":60},
+{"n":"KV Mechelen","c":"Malinas","r":58},
+{"n":"KVC Westerlo","c":"Westerlo","r":56},
+{"n":"Sint-Truidense VV","c":"Sint-Truiden","r":56},
+{"n":"Sporting Charleroi","c":"Charleroi","r":56},
+{"n":"OH Leuven","c":"Lovaina","r":54},
+{"n":"SV Zulte Waregem","c":"Waregem","r":50},
+{"n":"SV Dender EH","c":"Denderleeuw","r":48},
+{"n":"RAAL La Louvière","c":"La Louvière","r":44}
+]},
+{"nombre":"Challenger Pro League","nivel":2,"completo":false,"clubes":[
+{"n":"KV Kortrijk","c":"Courtrai","r":48},
+{"n":"Beerschot","c":"Amberes","r":46},
+{"n":"KAS Eupen","c":"Eupen","r":42},
+{"n":"RWDM","c":"Bruselas","r":40},
+{"n":"Lommel SK","c":"Lommel","r":38},
+{"n":"Club NXT","c":"Brujas","r":36},
+{"n":"Francs Borains","c":"Boussu","r":34},
+{"n":"Patro Eisden Maasmechelen","c":"Maasmechelen","r":34},
+{"n":"Lokeren-Temse","c":"Lokeren","r":34},
+{"n":"Jong Genk","c":"Genk","r":34}
+]}
+]}

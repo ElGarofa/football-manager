@@ -1,0 +1,26 @@
+{"codigo":"SVN","pais":"Eslovenia","continente":"Europa","bandera":"🇸🇮","divisiones":[
+{"nombre":"PrvaLiga","nivel":1,"completo":false,"clubes":[
+{"n":"Maribor","c":"Maribor","r":48},
+{"n":"Olimpija Ljubljana","c":"Liubliana","r":45},
+{"n":"Celje","c":"Celje","r":45},
+{"n":"Mura","c":"Murska Sobota","r":36},
+{"n":"Koper","c":"Koper","r":35},
+{"n":"Bravo","c":"Liubliana","r":34},
+{"n":"Domžale","c":"Domžale","r":34},
+{"n":"Radomlje","c":"Radomlje","r":30},
+{"n":"Primorje","c":"Ajdovščina","r":28},
+{"n":"Aluminij","c":"Kidričevo","r":28}
+]},
+{"nombre":"2. SNL","nivel":2,"completo":false,"clubes":[
+{"n":"Nafta 1903","c":"Lendava","r":24},
+{"n":"Krka","c":"Novo Mesto","r":24},
+{"n":"Gorica","c":"Nova Gorica","r":24},
+{"n":"Triglav","c":"Kranj","r":24},
+{"n":"Rudar Velenje","c":"Velenje","r":26},
+{"n":"Krško","c":"Krško","r":22},
+{"n":"Brežice 1919","c":"Brežice","r":20},
+{"n":"Jadran Dekani","c":"Dekani","r":18},
+{"n":"Ilirija 1911","c":"Liubliana","r":20},
+{"n":"Beltinci","c":"Beltinci","r":18}
+]}
+]}

@@ -1,0 +1,19 @@
+{"codigo":"BIH","pais":"Bosnia y Herzegovina","continente":"Europa","bandera":"🇧🇦","divisiones":[
+{"nombre":"Premijer liga","nivel":1,"completo":false,"clubes":[
+{"n":"Zrinjski Mostar","c":"Mostar","r":42},
+{"n":"Sarajevo","c":"Sarajevo","r":42},
+{"n":"Borac Banja Luka","c":"Banja Luka","r":40},
+{"n":"Željezničar","c":"Sarajevo","r":40},
+{"n":"Velež Mostar","c":"Mostar","r":36},
+{"n":"Široki Brijeg","c":"Široki Brijeg","r":36},
+{"n":"Tuzla City","c":"Tuzla","r":34},
+{"n":"Radnik Bijeljina","c":"Bijeljina","r":30},
+{"n":"Posušje","c":"Posušje","r":30},
+{"n":"Igman Konjic","c":"Konjic","r":28},
+{"n":"Rudar Prijedor","c":"Prijedor","r":28},
+{"n":"Leotar","c":"Trebinje","r":27},
+{"n":"Slavija","c":"Istočno Sarajevo","r":27},
+{"n":"Orašje","c":"Orašje","r":27},
+{"n":"Mladost Doboj Kakanj","c":"Doboj Kakanj","r":27}
+]}
+]}

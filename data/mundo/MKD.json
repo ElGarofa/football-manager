@@ -1,0 +1,25 @@
+{"codigo":"MKD","pais":"Macedonia del Norte","continente":"Europa","bandera":"🇲🇰","divisiones":[
+{"nombre":"Prva liga","nivel":1,"completo":false,"clubes":[
+{"n":"Shkëndija","c":"Tetovo","r":42},
+{"n":"Vardar","c":"Skopie","r":36},
+{"n":"Rabotnički","c":"Skopie","r":32},
+{"n":"Shkupi","c":"Skopie","r":32},
+{"n":"Sileks","c":"Kratovo","r":30},
+{"n":"Struga","c":"Struga","r":30},
+{"n":"Akademija Pandev","c":"Strumica","r":30},
+{"n":"Makedonija Gjorče Petrov","c":"Skopie","r":28},
+{"n":"Pelister","c":"Bitola","r":28},
+{"n":"Brera Strumica","c":"Strumica","r":28},
+{"n":"Tikveš","c":"Kavadarci","r":26},
+{"n":"Voska Sport","c":"Skopie","r":26},
+{"n":"Belasica","c":"Strumica","r":26}
+]},
+{"nombre":"Vtora liga","nivel":2,"completo":false,"clubes":[
+{"n":"Bregalnica","c":"Štip","r":20},
+{"n":"Besa","c":"Dobërdoll","r":18},
+{"n":"Gostivar","c":"Gostivar","r":18},
+{"n":"Pobeda","c":"Prilep","r":20},
+{"n":"Osogovo","c":"Kočani","r":18},
+{"n":"Skopje","c":"Skopie","r":18}
+]}
+]}

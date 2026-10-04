@@ -1,0 +1,10 @@
+[
+{"id":1,"nombre":"Banco del Plata Sur","tipo":"prestamo","desc":"Préstamo a tasa fija, se devuelve en cuotas por jornada."},
+{"id":2,"nombre":"Financiera Horizonte","tipo":"prestamo","desc":"Préstamo rápido con tasa algo más alta."},
+{"id":3,"nombre":"Grupo Tehuelche Capital","tipo":"socio","desc":"Pone capital a cambio de un porcentaje de tus ventas de jugadores."},
+{"id":4,"nombre":"Inversiones Ceibo","tipo":"socio","desc":"Socio capitalista de largo plazo."},
+{"id":5,"nombre":"Don Anselmo Ferreyra","tipo":"mecenas","desc":"Empresario hincha: inyecta dinero pero exige resultados y puede vetar ventas de tus figuras."},
+{"id":6,"nombre":"Familia Rinaldi Hnos.","tipo":"mecenas","desc":"Mecenas histórico del club con exigencias deportivas."},
+{"id":7,"nombre":"Fondo Aconcagua","tipo":"fondo","desc":"Compra un porcentaje de los derechos económicos de uno de tus jugadores."},
+{"id":8,"nombre":"Talento Sur Partners","tipo":"fondo","desc":"Fondo especializado en jugadores jóvenes."}
+]

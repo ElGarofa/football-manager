@@ -1,0 +1,43 @@
+{"codigo":"NED","pais":"Países Bajos","continente":"Europa","bandera":"🇳🇱","divisiones":[
+{"nombre":"Eredivisie","nivel":1,"completo":true,"clubes":[
+{"n":"PSV Eindhoven","c":"Eindhoven","r":82},
+{"n":"Ajax","c":"Ámsterdam","r":80},
+{"n":"Feyenoord","c":"Róterdam","r":80},
+{"n":"AZ Alkmaar","c":"Alkmaar","r":70},
+{"n":"FC Twente","c":"Enschede","r":66},
+{"n":"FC Utrecht","c":"Utrecht","r":62},
+{"n":"NEC Nijmegen","c":"Nimega","r":58},
+{"n":"SC Heerenveen","c":"Heerenveen","r":58},
+{"n":"Go Ahead Eagles","c":"Deventer","r":56},
+{"n":"Sparta Rotterdam","c":"Róterdam","r":56},
+{"n":"FC Groningen","c":"Groninga","r":54},
+{"n":"Fortuna Sittard","c":"Sittard","r":52},
+{"n":"Heracles Almelo","c":"Almelo","r":50},
+{"n":"PEC Zwolle","c":"Zwolle","r":50},
+{"n":"NAC Breda","c":"Breda","r":50},
+{"n":"Excelsior","c":"Róterdam","r":46},
+{"n":"Telstar","c":"Velsen","r":44},
+{"n":"FC Volendam","c":"Volendam","r":44}
+]},
+{"nombre":"Eerste Divisie","nivel":2,"completo":false,"clubes":[
+{"n":"Willem II","c":"Tilburgo","r":48},
+{"n":"ADO Den Haag","c":"La Haya","r":44},
+{"n":"RKC Waalwijk","c":"Waalwijk","r":44},
+{"n":"De Graafschap","c":"Doetinchem","r":44},
+{"n":"Roda JC Kerkrade","c":"Kerkrade","r":44},
+{"n":"SC Cambuur","c":"Leeuwarden","r":42},
+{"n":"Almere City","c":"Almere","r":40},
+{"n":"Jong Ajax","c":"Ámsterdam","r":40},
+{"n":"VVV-Venlo","c":"Venlo","r":38},
+{"n":"FC Emmen","c":"Emmen","r":38},
+{"n":"FC Dordrecht","c":"Dordrecht","r":36},
+{"n":"FC Den Bosch","c":"Bolduque","r":36},
+{"n":"FC Eindhoven","c":"Eindhoven","r":36},
+{"n":"MVV Maastricht","c":"Maastricht","r":36},
+{"n":"Jong PSV","c":"Eindhoven","r":36},
+{"n":"Helmond Sport","c":"Helmond","r":34},
+{"n":"TOP Oss","c":"Oss","r":34},
+{"n":"Jong AZ","c":"Alkmaar","r":34},
+{"n":"Jong Utrecht","c":"Utrecht","r":32}
+]}
+]}

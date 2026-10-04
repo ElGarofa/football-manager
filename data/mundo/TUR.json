@@ -1,0 +1,49 @@
+{"codigo":"TUR","pais":"Turquía","continente":"Europa","bandera":"🇹🇷","divisiones":[
+{"nombre":"Süper Lig","nivel":1,"completo":true,"clubes":[
+{"n":"Galatasaray","c":"Estambul","r":80},
+{"n":"Fenerbahçe","c":"Estambul","r":78},
+{"n":"Beşiktaş","c":"Estambul","r":72},
+{"n":"Trabzonspor","c":"Trebisonda","r":62},
+{"n":"Başakşehir","c":"Estambul","r":52},
+{"n":"Samsunspor","c":"Samsun","r":46},
+{"n":"Göztepe","c":"Esmirna","r":44},
+{"n":"Konyaspor","c":"Konya","r":42},
+{"n":"Alanyaspor","c":"Alanya","r":42},
+{"n":"Kasımpaşa","c":"Estambul","r":40},
+{"n":"Antalyaspor","c":"Antalya","r":40},
+{"n":"Kayserispor","c":"Kayseri","r":38},
+{"n":"Çaykur Rizespor","c":"Rize","r":38},
+{"n":"Gaziantep FK","c":"Gaziantep","r":38},
+{"n":"Eyüpspor","c":"Estambul","r":38},
+{"n":"Kocaelispor","c":"Izmit","r":36},
+{"n":"Gençlerbirliği","c":"Ankara","r":36},
+{"n":"Fatih Karagümrük","c":"Estambul","r":36}
+]},
+{"nombre":"1. Lig","nivel":2,"completo":false,"clubes":[
+{"n":"Bodrum FK","c":"Bodrum","r":32},
+{"n":"Sivasspor","c":"Sivas","r":34},
+{"n":"Ankaragücü","c":"Ankara","r":32},
+{"n":"Pendikspor","c":"Estambul","r":28},
+{"n":"Sakaryaspor","c":"Sakarya","r":28},
+{"n":"Bandırmaspor","c":"Bandırma","r":26},
+{"n":"Boluspor","c":"Bolu","r":26},
+{"n":"Çorum FK","c":"Çorum","r":26},
+{"n":"Erzurumspor","c":"Erzurum","r":26},
+{"n":"Manisa FK","c":"Manisa","r":26},
+{"n":"Amed Sportif","c":"Diyarbakır","r":28},
+{"n":"Keçiörengücü","c":"Ankara","r":26},
+{"n":"Şanlıurfaspor","c":"Şanlıurfa","r":26},
+{"n":"Ümraniyespor","c":"Estambul","r":26},
+{"n":"Sarıyer","c":"Estambul","r":26},
+{"n":"Esenler Erokspor","c":"Estambul","r":24},
+{"n":"Hatayspor","c":"Antakya","r":28},
+{"n":"İstanbulspor","c":"Estambul","r":26}
+]},
+{"nombre":"2. Lig","nivel":3,"completo":false,"clubes":[
+{"n":"Adanaspor","c":"Adana","r":20},
+{"n":"Karşıyaka","c":"Esmirna","r":22},
+{"n":"Menemen","c":"Menemen","r":18},
+{"n":"Vanspor","c":"Van","r":18},
+{"n":"Tuzlaspor","c":"Estambul","r":18}
+]}
+]}

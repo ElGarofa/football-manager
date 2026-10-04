@@ -1,0 +1,10 @@
+{"codigo":"SOM","pais":"Somalia","continente":"África","bandera":"🇸🇴","divisiones":[
+  {"nombre":"Primera División","nivel":1,"completo":false,"clubes":[
+   {"n":"Heegan SC","c":"Mogadiscio","r":12},
+   {"n":"Elman FC","c":"Mogadiscio","r":12},
+   {"n":"Horseed SC","c":"Mogadiscio","r":12},
+   {"n":"Gaadiidka","c":"Mogadiscio","r":10},
+   {"n":"Jeenyo United","c":"Mogadiscio","r":10},
+   {"n":"Dekedaha","c":"Mogadiscio","r":10}
+  ]}
+]}

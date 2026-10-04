@@ -1,0 +1,12 @@
+{"codigo":"NAM","pais":"Namibia","continente":"África","bandera":"🇳🇦","divisiones":[
+  {"nombre":"Premier League","nivel":1,"completo":false,"clubes":[
+   {"n":"African Stars","c":"Windhoek","r":20},
+   {"n":"Black Africa","c":"Windhoek","r":20},
+   {"n":"Blue Waters","c":"Walvis Bay","r":18},
+   {"n":"Civics","c":"Windhoek","r":18},
+   {"n":"Tura Magic","c":"Windhoek","r":18},
+   {"n":"UNAM FC","c":"Windhoek","r":16},
+   {"n":"Okahandja United","c":"Okahandja","r":14},
+   {"n":"Citizens FC","c":"Windhoek","r":14}
+  ]}
+]}

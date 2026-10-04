@@ -1,0 +1,21 @@
+{"codigo":"CRC","pais":"Costa Rica","continente":"América del Norte y Central","bandera":"🇨🇷","divisiones":[
+{"nombre":"Primera División","nivel":1,"completo":false,"clubes":[
+  {"n":"Deportivo Saprissa","c":"San Juan de Tibás","r":55},
+  {"n":"Liga Deportiva Alajuelense","c":"Alajuela","r":54},
+  {"n":"CS Herediano","c":"Heredia","r":52},
+  {"n":"Cartaginés","c":"Cartago","r":42},
+  {"n":"Sporting FC","c":"San José","r":36},
+  {"n":"Municipal Pérez Zeledón","c":"San Isidro de El General","r":36},
+  {"n":"Guadalupe FC","c":"Guadalupe","r":34},
+  {"n":"Puntarenas FC","c":"Puntarenas","r":34},
+  {"n":"Santos de Guápiles","c":"Guápiles","r":32},
+  {"n":"Municipal Liberia","c":"Liberia","r":32},
+  {"n":"San Carlos","c":"Ciudad Quesada","r":34}
+]},
+{"nombre":"Segunda División","nivel":2,"completo":false,"clubes":[
+  {"n":"Municipal Grecia","c":"Grecia","r":22},
+  {"n":"Limón FC","c":"Limón","r":22},
+  {"n":"Turrialba","c":"Turrialba","r":18},
+  {"n":"Jicaral Sercoba","c":"Jicaral","r":18}
+]}
+]}
