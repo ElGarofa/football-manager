@@ -135,3 +135,24 @@ button,select,input{min-height:36px}
 @keyframes pdc{50%{opacity:.6}}@keyframes pdl{50%{transform:translateY(14px)}}
 .pd-obra rect[fill^="url"]{animation:pdh 2s linear infinite}@keyframes pdh{50%{opacity:.35}}
 @media(max-width:900px){.pdwrap{grid-template-columns:1fr}}
+
+/* v1.4 accesibilidad */
+:root[data-vis="1"]{--ok:#3b9cff;--bad:#ff9d1c;--warn:#f2e03a}
+:root[data-vis="2"]{--bg:#000;--p:#0a0a0a;--p2:#141414;--b:#fff;--t:#fff;--m:#e6e6e6;--ok:#00ff9c;--bad:#ff5a5a;--warn:#ffe600}
+:root[data-vis="2"] button{border:2px solid #fff}
+.radar{color:var(--t);flex:none}
+.side i .ic{display:block}.side button i{display:inline-flex;align-items:center;justify-content:center;min-width:22px}
+
+/* v1.5 presentaciones */
+.gfxdlg{border:0;border-radius:20px;padding:0;background:transparent;color:var(--t);max-width:min(94vw,460px)}.gfxdlg::backdrop{background:rgba(0,0,0,.72)}
+.gx-pres,.gx-cer{background:linear-gradient(160deg,var(--k,#1b2442),#0b1020 70%);border:1px solid var(--b);border-radius:20px;padding:22px;text-align:center;position:relative;overflow:hidden}
+.gx-pres small,.gx-cer small{letter-spacing:.2em;color:#ffd23f;font-weight:800}
+.gx-spot{position:absolute;inset:-40% -20% auto;height:70%;background:radial-gradient(closest-side,rgba(255,255,255,.28),transparent);animation:gxs 1.2s ease-out both}
+.gx-hero{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:12px 0;animation:gxp .7s cubic-bezier(.2,1.4,.4,1) both}
+.gx-kit{position:relative}.gx-kit b{position:absolute;left:0;right:0;top:34%;font-size:26px;color:#fff;text-shadow:0 1px 3px #000}
+.gx-r{display:flex;justify-content:center}.gx-pres h2{margin:.2em 0}
+.gx-row{display:flex;gap:8px;align-items:baseline;text-align:left;padding:7px 10px;border-radius:10px;background:rgba(255,255,255,.06);margin:5px 0;opacity:0;animation:gxr .5s ease forwards;animation-delay:calc(var(--i)*.45s)}
+.gx-row b{min-width:96px;font-size:12px;opacity:.8}.gx-row em{font-style:normal;font-weight:700;flex:1}.gx-row.mio{background:rgba(255,210,63,.22);outline:1px solid #ffd23f}.gx-row i{font-style:normal;font-weight:900;color:#ffd23f}
+.gx-val{margin-top:10px}.gx-val .chart{width:100%;height:auto}
+@keyframes gxs{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}@keyframes gxp{from{transform:scale(.3) translateY(40px);opacity:0}to{transform:none;opacity:1}}@keyframes gxr{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+.gx-cer em small{letter-spacing:0;font-weight:400;color:var(--m)}.gx-pres p small{letter-spacing:0}

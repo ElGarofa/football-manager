@@ -60,3 +60,11 @@ export function sonido(k){if(!on())return;try{
  else if(k==='ok'){tone(660,0,.1,'sine',.06);tone(880,.08,.14,'sine',.06)}
  else if(k==='logro'){[659,784,988,1319].forEach((f,i)=>tone(f,i*.1,.4,'triangle',.09))}
  else if(k==='click')tone(520,0,.05,'sine',.03)}catch(e){}}
+
+// ambiente de cancha: murmullo de público que sube con los goles
+let amb=null;
+export function ambiente(k,nivel=.6){if(!on()&&k!==false)return;const c=ac();if(!c)return;
+ if(k===false){if(amb){const a=amb;amb=null;try{a.g.gain.linearRampToValueAtTime(0,c.currentTime+.6);setTimeout(()=>{try{a.s.stop()}catch(e){}},700)}catch(e){}}return}
+ if(k==='roar'){if(amb){const t=c.currentTime;amb.g.gain.cancelScheduledValues(t);amb.g.gain.setValueAtTime(amb.g.gain.value,t);amb.g.gain.linearRampToValueAtTime(.22,t+.3);amb.g.gain.linearRampToValueAtTime(amb.base,t+3.5)}return}
+ if(amb)return;const n=c.sampleRate*2,b=c.createBuffer(1,n,c.sampleRate),d=b.getChannelData(0);let l=0;for(let i=0;i<n;i++){l=(l+(Math.random()*2-1)*.06)*.985;d[i]=l*4}
+ const s=c.createBufferSource(),g=c.createGain(),f=c.createBiquadFilter();s.buffer=b;s.loop=true;f.type='lowpass';f.frequency.value=700;const base=.025+.05*nivel;g.gain.value=0;g.gain.linearRampToValueAtTime(base,c.currentTime+1.5);s.connect(f);f.connect(g);g.connect(c.destination);s.start();amb={s,g,base}}

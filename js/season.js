@@ -39,6 +39,7 @@ export function endSeason(g){
  opcionesFin(g);{const L=Ls[ul],n=L.ids.length;CA.cierre(g,{pos,div:L.def.nombre,ok:!!ob&&pos<=ob.max,champ:pos===1,promoted:ul>0&&pos<=AS(Ls,ul),relegated:ul<Ls.length-1&&pos>n-AS(Ls,ul+1),copa:alcance(g,'copa')==='Campeón',intl:alcance(g,'lib')==='Campeón'||alcance(g,'sud')==='Campeón'})}
  EX.cierre(g,{pos,div:Ls[ul].def.nombre,ok:!!ob&&pos<=ob.max,champ:pos===1,promoted:ul>0&&pos<=AS(Ls,ul),relegated:ul<Ls.length-1&&pos>Ls[ul].ids.length-AS(Ls,ul+1),copa:alcance(g,'copa')==='Campeón',libCampeon:alcance(g,'lib')==='Campeón',sudCampeon:alcance(g,'sud')==='Campeón'});
 PR.cierre(g,{pos,champ:pos===1});
+for(const p of Object.values(g.players)){const h=p.vh||(p.vh=[]);h.push([+g.date.slice(0,4),p.val]);if(h.length>12)h.shift()}
  V11.cierre(g,{pos,relegated:ul<Ls.length-1&&pos>Ls[ul].ids.length-AS(Ls,ul+1)});
  NA.cobroAnual(g);
  for(const p of Object.values(g.players))if(p.prestamo){const c=g.clubs[p.clubId],o=g.clubs[p.prestamo.de];if(c)c.plantilla=c.plantilla.filter(i=>i!==p.id);p.clubId=o.id;o.plantilla.push(p.id);p.contrato=p.prestamo.k;delete p.prestamo}

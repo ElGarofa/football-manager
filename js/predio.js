@@ -3,6 +3,7 @@ import {fmt} from './players.js';
 import {zl} from './finance.js';
 import * as F from './facilities.js';
 import {CFG} from './config.js';
+import {dibujarIso} from './predio_iso.js';
 const U=g=>g.clubs[g.userClubId];
 const dias=(a,b)=>Math.max(0,Math.round((new Date(b)-new Date(a))/864e5));
 // parcelas (x,y,w,h) dentro de un lienzo de 920x560
@@ -51,7 +52,7 @@ P.v_predio=function(){const g=this.g,c=U(g),Z=F.zonas(),tope=F.topeZona(g,c),sel
  if(sel){const lv=zl(c,sel.id),ob=c.obras.find(o=>o.zona===sel.id),cost=this.zc(c,sel);
   panel=`<div class="card"><h4>${sel.icono} ${sel.nombre} <small class="muted">nivel ${lv}/${tope}</small></h4>${pips(lv,tope)}<p>${sel.desc}</p>${ob?`<p class="warn">🏗️ Obra a nivel ${ob.a}: faltan ${dias(g.date,ob.hasta)} días</p>`:`<div class="row">${lv>=tope?`<span class="muted">${lv>=10?'Máximo':'Tope de tu división'}</span>`:`<button class="pri" data-act="obra" data-k="${sel.id}">🔨 Mejorar a nivel ${lv+1} · ${fmt(cost)}</button><small class="muted">${F.obraDias(lv)} días de obra</small>`}</div>`}</div>`}
  return`<h2>Predio del club</h2><div class="cards"><div><b>Obras en curso</b>${c.obras.length}/${CFG.facilities.obrasMax}</div><div><b>Nivel máximo</b>${tope}<small>${c.division}</small></div><div><b>Presupuesto</b>${fmt(c.presupuesto)}</div></div>
- <div class="pdwrap">${dibujar(g,this.pdk)}<div class="pdside">${panel}</div></div>
+ <p><button data-act="pd_vista">${this.pdiso?'🗺️ Vista plana':'🧊 Vista isométrica'}</button> ${this.pdiso?`<button data-act="pd_noche">${this.pdnoche?'☀️ Día':'🌙 Noche'}</button>`:''}</p><div class="pdwrap">${this.pdiso?dibujarIso(g,this.pdk,this.pdnoche):dibujar(g,this.pdk)}<div class="pdside">${panel}</div></div>
  <p class="hint">Los edificios crecen con cada nivel. Durante una obra vas a ver la grúa y el andamio hasta que termine.</p>`};
-const oa=P.act9;P.act9=function(a,d){if(a==='pd_sel'){this.pdk=this.pdk===d.k?null:d.k;this.render();return true}return oa.call(this,a,d)};
+const oa=P.act9;P.act9=function(a,d){if(a==='pd_vista'){this.pdiso=!this.pdiso;this.render();return true}if(a==='pd_noche'){this.pdnoche=!this.pdnoche;this.render();return true}if(a==='pd_sel'){this.pdk=this.pdk===d.k?null:d.k;this.render();return true}return oa.call(this,a,d)};
 }

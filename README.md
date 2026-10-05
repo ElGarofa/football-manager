@@ -1,4 +1,4 @@
-# Manager Argentina v1.3
+# Manager Argentina v1.5
 ## Ejecutar en Windows
 1. Instalá Python 3 (python.org, tildando "Add to PATH") o Node.js.
 2. Doble clic en `iniciar.bat` y se abre http://localhost:8000.
@@ -78,3 +78,20 @@ Se hace por tandas, cada una con sus clubes, divisiones y jugadores ficticios: (
 - Si una división tiene menos de 8 clubes se completa con clubes ficticios (marcados `ficticio`).
 - **Premios** (menú Premios): Balón de Oro, Yashin, Kopa, Bota de Oro, Puskás, Entrenador y Club del año, Equipo ideal mundial; premios de tu liga (mejor jugador, goleador, arquero, joven, equipo ideal), historial, tus premios/títulos y una tabla de premios en dinero por competición. Si ganás alguno, tu jugador sube de valor y el club de reputación.
 - Limitaciones conocidas: el calendario es el mismo para todos los países (arranca en febrero); los jugadores de otros clubes del mundo para los premios son un “pool de estrellas” simulado, no jugadores de carne y hueso del juego; la economía depende de la reputación, no del país; los datos de clubes están escritos de memoria y muchas divisiones son listas parciales.
+
+## v1.4 — gráficos
+- Escudos únicos por club (6 formas × 6 patrones × 6 símbolos) y colores reales de los clubes conocidos; camisetas titular/alternativa/tercera (`kit(c,s,alt)`); caras con más tonos de piel, peinados y barbas.
+- Partido en vivo: jugadores con camiseta y número, animación de carrera, camiseta alternativa si los colores chocan, clima (lluvia/niebla), partido nocturno con reflectores, público en tribunas según capacidad, vistas Calor / Tiros / Pases.
+- Ficha de jugador con radar de atributos.
+- Accesibilidad: modo daltonismo y alto contraste (Partida y ajustes → Visión).
+
+
+## v1.5 — gráficos, parte 2
+- Menú con íconos SVG (reemplazan a los emojis; Selección conserva la bandera).
+- Predio en vista isométrica con modo día/noche, estadio que crece con nivel y capacidad, obras con andamio, grúa y barra de progreso.
+- Partido en vivo: repetición del gol (cámara lenta), botón de zoom que sigue la pelota y sonido de público que ruge con los goles (WebAudio, respeta el ajuste de sonido).
+- Ficha de jugador: gráfico de evolución del valor de mercado (se completa al cierre de cada temporada) y botón "Descargar figurita" (PNG).
+- Presentación animada al fichar un jugador y ceremonia de premios al cerrar la temporada.
+- Los números de las tarjetas resumen se animan al cambiar de pantalla (se desactiva con Animaciones: Reducidas).
+- El comparador de jugadores ya existía (radar + tabla).
+- Pendiente: tarjetas de jugador pensadas para móvil, pulir la vista isométrica en pantallas muy chicas.

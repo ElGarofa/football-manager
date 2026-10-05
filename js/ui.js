@@ -2,6 +2,7 @@ import {CFG} from './config.js';
 import {FORMATIONS,OPTIONS,LBL,autoLineup,coords,setFormation} from './tactics.js';
 import {badge,hue,face,kit} from './visual.js';
 import {Pitch,tacticBoard} from './pitch.js';
+import {icon} from './icons.js';
 import {squadOf,squadValue,wageBill,staffCost} from './clubs.js';
 import {LiveMatch} from './matches.js';
 import {fmt} from './players.js';
@@ -20,6 +21,7 @@ import * as U10 from './ui10.js';
 import * as PD from './predio.js';
 import * as MU from './mundo.js';
 import * as PRM from './premios.js';
+import * as GFX from './gfx.js';
 import {zl,proyeccion,ingresoProy,refPrice,mantAnual,tvAnual,attendance,nivelOf} from './finance.js';
 const MENU=[['sec','Club'],['inicio','🏠','Inicio'],['noticias','📰','Noticias'],['competiciones','🌎','Competiciones'],['plantilla','👥','Plantilla'],['vestuario','👔','Vestuario'],['tacticas','📋','Tácticas'],['entrenamiento','🏃','Entrenamiento'],['calendario','📅','Calendario'],['resultados','⚽','Resultados'],['liga','🏆','Liga'],['sec','Fichajes'],['mercado','💱','Mercado'],['scouting','🔭','Scouting'],['cantera','🌱','Cantera'],['comparar','⚖️','Comparador'],['sec','Negocios'],['mundo2','🌍','Mundo'],['predio','🏞️','Predio'],['instalaciones','🏗️','Instalaciones'],['patrocinios','🤝','Patrocinios'],['inversionistas','💼','Inversionistas'],['finanzas','💰','Finanzas'],['mundo','🌍','Club y mundo'],['sec','Carrera'],['carrera','🧭','Entrenador'],['seleccion','FLAG','Selección'],['premios','🥇','Premios'],['logros','🏅','Logros'],['salon','🏛️','Salón de la fama'],['historia','📈','Historia y gráficos'],['sec','Sistema'],['editor','✏️','Editor de datos'],['guardar','⚙️','Partida y ajustes']];
 const POSORD=['POR','DFC','LI','LD','MCD','MC','MCO','MI','MD','EI','ED','DC'];
@@ -42,7 +44,7 @@ export class UI{
  toast(m){const t=document.getElementById('toast');t.textContent=m;t.className='show';clearTimeout(this._t);this._t=setTimeout(()=>t.className='',3500)}
  start(){this.game=null;this.el.innerHTML=`<div class="start"><h1>Manager Argentina <small>v1.3</small></h1><p>Elegí tu club. Todos los datos son ficticios.</p>${hasSave()?'<p><button data-act="load">Cargar partida</button></p>':''}<label>División<select data-chg="sd"><option value="">Todas</option>${opts(this.data.leagues.map(l=>l.nombre),this.sd)}</select></label><div class="tw"><table><tr><th>Club</th><th>Ciudad</th><th>División</th><th>Reputación</th><th>Presupuesto</th><th>Plantilla</th><th></th></tr>${this.data.clubs.filter(c=>!this.sd||c.division==this.sd).map(c=>`<tr><td>${badge(c,22)} ${c.nombre}</td><td>${c.ciudad}, ${c.provincia}</td><td>${c.division}</td><td>${c.reputacion}</td><td>${fmt(c.presupuesto)}</td><td>${fmt(c.valorPlantilla)}</td><td><button data-act="pick" data-id="${c.id}">Elegir</button></td></tr>`).join('')}</table></div></div>`}
  render(){const g=this.g,c=g.clubs[g.userClubId];this.theme();const al=g.spOfertas.length+g.invOfertas.length+g.ofertas.length;
-  this.el.innerHTML=`<aside class="side"><div class="brand">${badge(c,40)}<div>${c.nombre}<small>${g.date} · ${c.division}</small></div></div>${MENU.map(([k,i,t])=>k==='sec'?`<div class="sec">${i}</div>`:`<button class="${k==this.view?'on':''}" data-act="nav" data-v="${k}"><i>${i==='FLAG'?g.pais.bandera:i}</i>${t}${k==='mercado'&&g.ofertas.length?`<span class="dot">${g.ofertas.length}</span>`:''}${k==='patrocinios'&&g.spOfertas.length?`<span class="dot">${g.spOfertas.length}</span>`:''}${k==='inversionistas'&&g.invOfertas.length?`<span class="dot">${g.invOfertas.length}</span>`:''}</button>`).join('')}</aside><main>${this['v_'+this.view]()}</main>`;if(this.view==='tacticas')this.initTP()}
+  this.el.innerHTML=`<aside class="side"><div class="brand">${badge(c,40)}<div>${c.nombre}<small>${g.date} · ${c.division}</small></div></div>${MENU.map(([k,i,t])=>k==='sec'?`<div class="sec">${i}</div>`:`<button class="${k==this.view?'on':''}" data-act="nav" data-v="${k}"><i>${i==='FLAG'?g.pais.bandera:icon(k,i)}</i>${t}${k==='mercado'&&g.ofertas.length?`<span class="dot">${g.ofertas.length}</span>`:''}${k==='patrocinios'&&g.spOfertas.length?`<span class="dot">${g.spOfertas.length}</span>`:''}${k==='inversionistas'&&g.invOfertas.length?`<span class="dot">${g.invOfertas.length}</span>`:''}</button>`).join('')}</aside><main>${this['v_'+this.view]()}</main>`;if(this.view==='tacticas')this.initTP()}
  theme(){let t='dark';try{t=localStorage.getItem('fm_theme')||'dark'}catch(e){}const r=document.documentElement;r.dataset.theme=t;r.style.setProperty('--h',this.game?hue(this.g.clubs[this.g.userClubId]):150)}
  v_inicio(){const g=this.g;if(g.despedido)return`<h2>Te despidieron</h2><p>La directiva perdió la confianza en vos. Podés empezar una nueva carrera en otro club.</p><p><button class="pri" data-act="new">Nueva partida</button></p>`;
   const c=g.clubs[g.userClubId],L=g.league,m=(L.fixtures[L.j]||[]).find(x=>x.h==c.id||x.a==c.id),srt=L.sorted(),pos=srt.findIndex(r=>r.id==c.id)+1,li=L.results.findLastIndex(r=>r.h==c.id||r.a==c.id),rival=m?g.clubs[m.h==c.id?m.a:m.h]:null,rt=srt.find(r=>r.id==c.id),
@@ -165,6 +167,7 @@ export class UI{
   case'fog':g.fog=!g.fog;this.render();break;
   case'livetog':g.live=!g.live;this.render();break;
   case'lp':this.run=!this.run;if(this.run)this.tick();else this.renderLive();break;
+  case'lview':if(d.v==='zoom'){if(this.pitch)this.pitch.setZoom(!this.pitch.zoom);break}if(this.pitch)this.pitch.setMode(d.v);document.querySelectorAll('#lvv button').forEach(b=>b.style.outline=b.dataset.v===d.v?'2px solid var(--ac,#ffd23f)':'');break;
   case'lf':this.speed=this.speed>200?120:500;this.renderLive();break;
   case'lsub':this.toast(this.lm.sub(this.us,document.getElementById('sOut').value,document.getElementById('sIn').value)?'Cambio hecho':'Cambio no válido');this.renderLive();break;
   case'lend':while(this.lm.min<90)this.lm.step();this.endLive();break;
@@ -183,7 +186,7 @@ export class UI{
     g.custom[n]=this.tp.slots.map(s=>({...s}));setFormation(n,g.custom[n]);this.render()},
    click:i=>{if(this.pk){const id=this.pk;this.pk=null;this.chg('slot',{s:'xi:'+i},id)}}});board.draw()}
  go(){this.g.pend?this.live():this.render()}
- live(){const g=this.g,m=g.pend.m;if(!this.lm){this.us=m.h==g.userClubId?0:1;this.lm=new LiveMatch(g.setup(m.h),g.setup(m.a));this.lm.auto[this.us]=false;this.run=false;this.ht=0;this.speed=500;this.el.innerHTML='<main class="live"><div id="lvs"></div><p><button data-act="lp" id="lvp"></button> <button data-act="lf" id="lvf"></button> <button data-act="lend">Simular hasta el final</button></p><canvas id="pitch" width="900" height="580"></canvas><div id="lvc"></div><div class="ev" id="lvlog"></div></main>';this.pitch=new Pitch(document.getElementById('pitch'),this.lm,this.us);this.renderLive();this._lt=setTimeout(()=>this.tick(),this.speed);return}this.renderLive()}
+ live(){const g=this.g,m=g.pend.m;if(!this.lm){this.us=m.h==g.userClubId?0:1;this.lm=new LiveMatch(g.setup(m.h),g.setup(m.a));this.lm.auto[this.us]=false;this.run=false;this.ht=0;this.speed=500;this.el.innerHTML=`<main class="live"><div id="lvs"></div><p><button data-act="lp" id="lvp"></button> <button data-act="lf" id="lvf"></button> <button data-act="lend">Simular hasta el final</button></p><p id="lvv">${[["live","🎥 En vivo"],["heat","🔥 Calor"],["shots","🎯 Tiros"],["pases","➡️ Pases"],["zoom","🔍 Zoom"]].map(([v,t])=>`<button data-act="lview" data-v="${v}">${t}</button>`).join(" ")}</p><canvas id="pitch" width="900" height="580"></canvas><div id="lvc"></div><div class="ev" id="lvlog"></div></main>`;this.pitch=new Pitch(document.getElementById('pitch'),this.lm,this.us);this.renderLive();this._lt=setTimeout(()=>this.tick(),this.speed);return}this.renderLive()}
  tick(){clearTimeout(this._lt);if(!this.run)return;const lm=this.lm;lm.step();this.pitch.update();this.renderLive();if(lm.min>=90)return this.endLive();if(lm.min===45&&!this.ht){this.ht=1;this.run=false;this.renderLive();return}this._lt=setTimeout(()=>this.tick(),this.speed)}
  endLive(){const g=this.g;clearTimeout(this._lt);this.pitch.stop=true;const wasComp=g.pend.kind==='comp';g.finishLive(this.lm.result());this.lm=null;this.view='inicio';this.render();if(wasComp&&g.lastRep)this.reportR(g.lastRep);else this.report(g.league.results.length-1)}
  renderLive(){const lm=this.lm,g=this.g,T=lm.T,st=lm.st,t=this.us,n=i=>T[i].club.nombre,paused=!this.run,pc=i=>Math.round(st[i].poss/(lm.min||1)*100),
@@ -208,3 +211,4 @@ U10.install(UI,{pTable,chip,AT,bar,opts,dias,S});
 PD.install(UI,{pips});
 MU.install(UI);
 PRM.install(UI);
+GFX.install(UI);

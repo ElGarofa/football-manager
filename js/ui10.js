@@ -2,7 +2,7 @@
 import * as CP from './comp.js';
 import {squadOf} from './clubs.js';
 import {fmt} from './players.js';
-import {badge,kit,face} from './visual.js';
+import {badge,kit,face,radar} from './visual.js';
 import {ROLES} from './tactics.js';
 import {Game} from './game.js';
 import {endSeason} from './season.js';
@@ -29,12 +29,12 @@ export function install(UI,H){
 const P=UI.prototype,{opts}=H;
 
 // ---------- apariencia ----------
-const oth=P.theme;P.theme=function(){oth.call(this);const r=document.documentElement;r.style.setProperty('--fs',ls('fm_fs','1'));r.dataset.anim=ls('fm_anim','1')};
+const oth=P.theme;P.theme=function(){oth.call(this);const r=document.documentElement;r.style.setProperty('--fs',ls('fm_fs','1'));r.dataset.anim=ls('fm_anim','1');r.dataset.vis=ls('fm_vis','0')};
 
 // ---------- inicio de partida ----------
 P.start=function(){this.game=null;const sd=this.sd,dsf=this.dsf||'',lvl=id=>(this.data.leagues.find(l=>l.id===id)||{}).nivel||1;
  let cs=this.data.clubs.filter(c=>!sd||c.division==sd);if(dsf==='ascenso')cs=cs.filter(c=>lvl(c.liga)>=4);
- this.el.innerHTML=`<div class="start"><h1>Manager Argentina <small>v1.3</small></h1><p>Elegí tu club. Los jugadores son ficticios. <button data-act="mw_open">🌍 Explorar el mundo</button></p><div id="slots"></div>
+ this.el.innerHTML=`<div class="start"><h1>Manager Argentina <small>v1.5</small></h1><p>Elegí tu club. Los jugadores son ficticios. <button data-act="mw_open">🌍 Explorar el mundo</button></p><div id="slots"></div>
  <div class="grid"><label>División<select data-chg="sd"><option value="">Todas</option>${opts(this.data.leagues.map(l=>l.nombre),sd)}</select></label><label>Modo<select data-chg="dsf"><option value="">Carrera libre</option>${Object.entries(V11.DESAFIOS).map(([k,d])=>`<option value="${k}" ${dsf===k?'selected':''}>Desafío: ${d.n}</option>`).join('')}</select></label><label>Importar partida<input type="file" accept=".json,application/json" data-chg="imp"></label></div>
  ${dsf?`<div class="alert">${V11.DESAFIOS[dsf].d}</div>`:''}
  <div class="grid"><label>Buscar club<input data-chg="csq" value="${this.csq||''}" placeholder="Nombre o ciudad"></label></div>
@@ -45,7 +45,7 @@ P.start=function(){this.game=null;const sd=this.sd,dsf=this.dsf||'',lvl=id=>(thi
 P.v_guardar=function(){const g=this.g,sl=this.slotsCache||[];let t=ls('fm_theme','dark');
  SV.list().then(l=>{this.slotsCache=l;const el=document.getElementById('slotl');if(el)el.innerHTML=this.slotsHtml(l)});
  return`<h2>Partida y ajustes</h2><h3>Guardado</h3><div id="slotl">${this.slotsHtml(sl)}</div><p><button data-act="export">⬇️ Exportar partida (archivo)</button> <label class="filebtn">⬆️ Importar<input type="file" accept=".json,application/json" data-chg="imp" hidden></label> <button class="bad" data-act="new">Volver al inicio</button></p><p class="hint">Se guarda en este navegador (IndexedDB) y hay autoguardado. Exportá un archivo para pasar la partida a otro dispositivo o tener un respaldo.</p>
- <h3>Apariencia y accesibilidad</h3><div class="grid"><label>Tema<select data-chg="tema"><option value="dark" ${t=='dark'?'selected':''}>Oscuro vivo</option><option value="light" ${t=='light'?'selected':''}>Claro</option><option value="club" ${t=='club'?'selected':''}>Color del club</option></select></label><label>Tamaño del texto<select data-chg="fs">${[['.9','Chico'],['1','Normal'],['1.15','Grande'],['1.3','Muy grande']].map(([v,l])=>`<option value="${v}" ${ls('fm_fs','1')==v?'selected':''}>${l}</option>`).join('')}</select></label><label>Animaciones<select data-chg="anim"><option value="1" ${ls('fm_anim','1')==='1'?'selected':''}>Activadas</option><option value="0" ${ls('fm_anim','1')==='0'?'selected':''}>Reducidas</option></select></label><label>Sonido<select data-chg="snd"><option value="1" ${EX.soundOn()?'selected':''}>Activado</option><option value="0" ${EX.soundOn()?'':'selected'}>Silencio</option></select></label></div>
+ <h3>Apariencia y accesibilidad</h3><div class="grid"><label>Tema<select data-chg="tema"><option value="dark" ${t=='dark'?'selected':''}>Oscuro vivo</option><option value="light" ${t=='light'?'selected':''}>Claro</option><option value="club" ${t=='club'?'selected':''}>Color del club</option></select></label><label>Tamaño del texto<select data-chg="fs">${[['.9','Chico'],['1','Normal'],['1.15','Grande'],['1.3','Muy grande']].map(([v,l])=>`<option value="${v}" ${ls('fm_fs','1')==v?'selected':''}>${l}</option>`).join('')}</select></label><label>Animaciones<select data-chg="anim"><option value="1" ${ls('fm_anim','1')==='1'?'selected':''}>Activadas</option><option value="0" ${ls('fm_anim','1')==='0'?'selected':''}>Reducidas</option></select></label><label>Visión<select data-chg="vis">${[["0","Normal"],["1","Daltonismo (rojo/verde)"],["2","Alto contraste"]].map(([v,l])=>`<option value="${v}" ${ls("fm_vis","0")===v?"selected":""}>${l}</option>`).join("")}</select></label><label>Sonido<select data-chg="snd"><option value="1" ${EX.soundOn()?'selected':''}>Activado</option><option value="0" ${EX.soundOn()?'':'selected'}>Silencio</option></select></label></div>
  <h3>Jugabilidad</h3><p><button data-act="fog">Niebla de información: ${g.fog?'activada':'desactivada'}</button> <button data-act="livetog">Partidos en vivo: ${g.live?'sí':'no'}</button> <button data-act="tut_open">Ver tutorial</button> <button data-nav data-act="nav" data-v="editor">Editor de datos</button></p><p class="hint">Con la niebla activada ves rangos estimados de los jugadores de otros clubes y los ojeadores los afinan.</p>${g.editado?'<p class="hint">✏️ Esta partida usa datos editados.</p>':''}`};
 P.slotsHtml=function(l){return`<div class="slots">${(l.length?l:[['1','Ranura 1'],['2','Ranura 2'],['3','Ranura 3'],['auto','Autoguardado']].map(([k,label])=>({k,label,meta:null}))).map(x=>`<div class="card"><h4>${x.label}</h4>${x.meta?`<p>${x.meta.club}<br><small class="muted">${x.meta.fecha}</small></p>`:'<p class="muted">Vacía</p>'}${x.k!=='auto'?`<button class="pri" data-act="saveslot" data-k="${x.k}">Guardar aquí</button> `:''}${x.meta?`<button data-act="loadslot" data-k="${x.k}">Cargar</button> <button class="bad" data-act="delslot" data-k="${x.k}">✕</button>`:''}</div>`).join('')}</div>`};
 
@@ -93,7 +93,7 @@ const ohi=P.v_historia;P.v_historia=function(){const g=this.g,c=U(g),B=Array(6).
  return ohi.call(this)+(B.concat(A).some(x=>x)?`<h3>Goles por período (esta temporada)</h3><div class="card">${CH.bars({cats,series:[{name:'A favor',color:'var(--ok)',data:B},{name:'En contra',color:'var(--bad)',data:A}]})}</div>`:'')};
 
 // ---------- ficha de jugador ----------
-const oc=P.card;P.card=function(id){oc.call(this,id);const g=this.g,p=g.players[id],dl=document.getElementById('dlg');if(!p||!dl.open)return;const ph=dl.querySelector('.ph');if(ph)ph.insertAdjacentHTML('afterbegin',face(p,56,g.clubs[p.clubId]));
+const oc=P.card;P.card=function(id){oc.call(this,id);const g=this.g,p=g.players[id],dl=document.getElementById('dlg');if(!p||!dl.open)return;const ph=dl.querySelector('.ph');if(ph)ph.insertAdjacentHTML('afterbegin',face(p,56,g.clubs[p.clubId]));if(p.pos!=='POR'&&!g.fog||p.clubId===g.userClubId)dl.querySelector('.ph')?.insertAdjacentHTML('beforeend',`<div style="margin-left:auto">${radar(p,130)}</div>`);
  if(p.clubId===g.userClubId&&p.lesion>=12&&!p.rehab){const f=dl.querySelector('form p');if(f)f.insertAdjacentHTML('afterbegin',`<button type="button" data-act="rehab" data-id="${p.id}">🩺 Tratamiento intensivo (${fmt(V11.costoRehab(g,p))})</button> `)}};
 
 // ---------- móvil: barra inferior ----------
@@ -112,6 +112,7 @@ const oc9=P.chg9;P.chg9=function(a,d,v){const g=this.game&&this.g;switch(a){
  case'imp':{const f=(typeof v==='string'&&v)?null:null;return true}
  case'dsf':this.dsf=v;this.start();return true;case'csq':this.csq=v;this.start();document.querySelector('[data-chg=csq]')?.focus();return true;
  case'fs':lset('fm_fs',v);this.render();return true;
+ case'vis':lset('fm_vis',v);this.render();return true;
  case'anim':lset('fm_anim',v);this.render();return true;
  case'snd':EX.setSound(v==='1');EX.sonido('ok');this.render();return true;
  case'rol':g.roles&&this.toast(V11.setRol(g,+d.id,v));this.render();return true;
