@@ -40,9 +40,9 @@ export function seasonEnd(g,ord){const Ls=Object.values(g.leagues);
  ord.forEach((ids,k)=>{const n=ids.length,nv=Ls[k].def.nivel;ids.forEach((id,i)=>{const c=g.clubs[id],pos=i+1;
   ingreso(c,'tv',.3*tvAnual(g,c)*(1.6-1.2*(pos-1)/Math.max(1,n-1)));
   if(pos<=3)ingreso(c,'premios',E().premio[pos-1]*E().tv[nv-1]);
-  if(k>0&&pos<=2)ingreso(c,'premios',E().asc*E().tv[nv-2]);
+  if(k>0&&pos<=(Ls[k].def.asc??2))ingreso(c,'premios',E().asc*E().tv[nv-2]);
   const exp=[...ids].sort((a,b)=>g.clubs[b].reputacion-g.clubs[a].reputacion).indexOf(id)+1;
-  const d=cl((exp-pos)/n*6,-3,3)+(k>0&&pos<=2?2:0)+(k<Ls.length-1&&pos>n-2?-2:0)+.03*(E().repCentro[nv-1]-c.reputacion);
+  const d=cl((exp-pos)/n*6,-3,3)+(k>0&&pos<=(Ls[k].def.asc??2)?2:0)+(k<Ls.length-1&&pos>n-(Ls[k+1].def.asc??2)?-2:0)+.03*(E().repCentro[nv-1]-c.reputacion);
   c.reputacion=Math.round(cl(c.reputacion+d,20,95)*10)/10})})}
 export function newSeason(g){const u=g.userClubId,Z=CFG.facilities.zonas;
  for(const c of Object.values(g.clubs)){ensureClub(c,g);

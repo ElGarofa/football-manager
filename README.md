@@ -1,4 +1,4 @@
-# Manager Argentina v1.2
+# Manager Argentina v1.3
 ## Ejecutar en Windows
 1. Instalá Python 3 (python.org, tildando "Add to PATH") o Node.js.
 2. Doble clic en `iniciar.bat` y se abre http://localhost:8000.
@@ -71,3 +71,10 @@ Se hace por tandas, cada una con sus clubes, divisiones y jugadores ficticios: (
 - Explorador **🌍 Mundo** (botón en el inicio y entrada en el menú): continente → país → división → clubes.
 - Los datos están escritos de memoria, sin fuente externa: muchas divisiones están marcadas como **lista parcial** (`completo:false`) y pueden estar desactualizadas. Revisar y completar con `python3 tools/validar_mundo.py`.
 - Solo Argentina es jugable; dirigir clubes de otros países queda para próximas versiones.
+
+
+## v1.3 — todo el mundo jugable + premios
+- **Podés dirigir un club de cualquiera de los 215 países** de `data/mundo/`: en el inicio tocá “🌍 Explorar el mundo”, elegí continente → país → división y “Dirigir”. El país se arma en el momento (`js/gen.js`): sus clubes y divisiones reales, jugadores ficticios con nombres de la región, ascensos/descensos según el tamaño de cada división, copa nacional, copas continentales de su confederación con clubes reales y Eliminatorias/Mundial con su selección.
+- Si una división tiene menos de 8 clubes se completa con clubes ficticios (marcados `ficticio`).
+- **Premios** (menú Premios): Balón de Oro, Yashin, Kopa, Bota de Oro, Puskás, Entrenador y Club del año, Equipo ideal mundial; premios de tu liga (mejor jugador, goleador, arquero, joven, equipo ideal), historial, tus premios/títulos y una tabla de premios en dinero por competición. Si ganás alguno, tu jugador sube de valor y el club de reputación.
+- Limitaciones conocidas: el calendario es el mismo para todos los países (arranca en febrero); los jugadores de otros clubes del mundo para los premios son un “pool de estrellas” simulado, no jugadores de carne y hueso del juego; la economía depende de la reputación, no del país; los datos de clubes están escritos de memoria y muchas divisiones son listas parciales.

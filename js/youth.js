@@ -50,7 +50,7 @@ export function cierre(g){const J=g.juv;if(!J)return;const me=U(g),fx=fxYouth(me
  for(const p of J.R.filter(p=>p.edad>=22)){suelto(g,p);if(p.ovr>=50)g.news.push(`${p.nombre} dejó la cantera (llegó a los 22 años sin subir al plantel)`)}J.R=J.R.filter(p=>p.edad<22);
  J.R.sort((a,b)=>b.pot-a.pot);for(const p of J.R.splice(MAXJ))suelto(g,p);
  // Sudamericano Sub-20
- const cand=J.R.filter(p=>p.edad>=19).sort((a,b)=>b.ovr-a.ovr).slice(0,3);if(cand.length&&Math.random()<.7){const camp=Math.random()<.18;for(const p of cand){if(camp||Math.random()<.5){p.pot=Math.min(95,p.pot+(camp?2:1));p.ovr=Math.min(95,p.ovr+1)}}g.news.push(`🇦🇷 ${cand.map(p=>p.nombre).join(', ')} fueron convocados al Sudamericano Sub-20${camp?' y Argentina salió campeón':''}`)}
+ const cand=J.R.filter(p=>p.edad>=19).sort((a,b)=>b.ovr-a.ovr).slice(0,3);if(cand.length&&Math.random()<.7){const camp=Math.random()<.18;for(const p of cand){if(camp||Math.random()<.5){p.pot=Math.min(95,p.pot+(camp?2:1));p.ovr=Math.min(95,p.ovr+1)}}g.news.push(`${g.pais?.bandera||'🇦🇷'} ${cand.map(p=>p.nombre).join(', ')} fueron convocados al torneo Sub-20 de ${g.pais?.conf||'CONMEBOL'}${camp?` y ${g.pais?.nombre||'Argentina'} salió campeón`:''}`)}
  // costos y camada nueva
  const cost=J.convenios.length*costoConv(g)+(J.red?costoRed(J.red-1)*.4:0);if(cost)gasto(me,'cantera',Math.round(cost));
  J.mentores=J.mentores.filter(m=>g.players[m.mid]?.clubId===g.userClubId&&[...J.R,...J.S].some(p=>p.id===m.jid));

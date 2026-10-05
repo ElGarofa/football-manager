@@ -1,4 +1,5 @@
 // v1.0/v1.1: móvil, guardado en ranuras, tutorial, logros, salón, editor, roles, Europa, búsqueda y detalles visuales
+import * as CP from './comp.js';
 import {squadOf} from './clubs.js';
 import {fmt} from './players.js';
 import {badge,kit,face} from './visual.js';
@@ -33,7 +34,7 @@ const oth=P.theme;P.theme=function(){oth.call(this);const r=document.documentEle
 // ---------- inicio de partida ----------
 P.start=function(){this.game=null;const sd=this.sd,dsf=this.dsf||'',lvl=id=>(this.data.leagues.find(l=>l.id===id)||{}).nivel||1;
  let cs=this.data.clubs.filter(c=>!sd||c.division==sd);if(dsf==='ascenso')cs=cs.filter(c=>lvl(c.liga)>=4);
- this.el.innerHTML=`<div class="start"><h1>Manager Argentina <small>v1.2</small></h1><p>Elegí tu club. Los jugadores son ficticios. <button data-act="mw_open">🌍 Explorar el mundo</button></p><div id="slots"></div>
+ this.el.innerHTML=`<div class="start"><h1>Manager Argentina <small>v1.3</small></h1><p>Elegí tu club. Los jugadores son ficticios. <button data-act="mw_open">🌍 Explorar el mundo</button></p><div id="slots"></div>
  <div class="grid"><label>División<select data-chg="sd"><option value="">Todas</option>${opts(this.data.leagues.map(l=>l.nombre),sd)}</select></label><label>Modo<select data-chg="dsf"><option value="">Carrera libre</option>${Object.entries(V11.DESAFIOS).map(([k,d])=>`<option value="${k}" ${dsf===k?'selected':''}>Desafío: ${d.n}</option>`).join('')}</select></label><label>Importar partida<input type="file" accept=".json,application/json" data-chg="imp"></label></div>
  ${dsf?`<div class="alert">${V11.DESAFIOS[dsf].d}</div>`:''}
  <div class="grid"><label>Buscar club<input data-chg="csq" value="${this.csq||''}" placeholder="Nombre o ciudad"></label></div>
@@ -55,7 +56,7 @@ P.v_logros=function(){const g=this.g,n=Object.keys(g.logros).length,s=g.stats;
 P.v_salon=function(){const g=this.g,c=U(g),s=g.stats,t=s.t;
  const idol=[...g.idolos].sort((a,b)=>b.pj-a.pj),act=squadOf(g,g.userClubId).filter(p=>p.cpj).sort((a,b)=>(b.cgol||0)-(a.cgol||0)).slice(0,5);
  const d=g.desafio;
- return`<h2>Salón de la fama</h2><div class="cards"><div><b>Títulos de liga</b>${t.liga}</div><div><b>Copa Argentina</b>${t.copa}</div><div><b>Libertadores</b>${t.lib}</div><div><b>Sudamericana</b>${t.sud}</div><div><b>Ascensos</b>${t.asc}</div></div>
+ return`<h2>Salón de la fama</h2><div class="cards"><div><b>Títulos de liga</b>${t.liga}</div><div><b>${CP.NOMBRES.copa}</b>${t.copa}</div><div><b>${CP.NOMBRES.lib}</b>${t.lib}</div><div><b>Sudamericana</b>${t.sud}</div><div><b>Ascensos</b>${t.asc}</div></div>
  ${d?`<div class="alert ${d.fail?'b':''}">🎯 Desafío “${V11.DESAFIOS[d.tipo].n}”: ${d.ok?'<b>¡cumplido!</b>':d.fail?'fallido':`${d.anios}/${d.limite} temporadas`}</div>`:''}
  <div class="g2"><div><h3>Récords</h3>${g.rec.goleada?`<div class="kv"><span>Mayor goleada</span><b>${g.rec.goleada.txt} (${g.rec.goleada.y})</b></div>`:''}${g.rec.derrota?`<div class="kv"><span>Peor derrota</span><b>${g.rec.derrota.txt} (${g.rec.derrota.y})</b></div>`:''}<div class="kv"><span>Mejor racha ganadora</span><b>${s.maxRacha||0}</b></div><div class="kv"><span>Invicto más largo</span><b>${s.maxInv}</b></div></div>
  <div><h3>Ídolos del club</h3>${idol.length?idol.map(i=>`<div class="kv"><span>⭐ ${i.nombre} <small class="muted">${i.pos}</small></span><b>${i.pj} PJ · ${i.gol} goles</b></div>`).join(''):'<p class="muted">Un jugador se vuelve ídolo al pasar los 120 partidos en tu club.</p>'}<h3>Con más goles en tu era</h3>${act.map(p=>`<div class="kv"><span>${p.nombre}</span><b>${p.cgol||0} goles · ${p.cpj} PJ</b></div>`).join('')||'<p class="muted">—</p>'}</div></div>
@@ -71,7 +72,7 @@ P.buscarRes=function(q){const g=this.g,el=document.getElementById('gsr');if(!el)
  const ps=Object.values(g.players).filter(p=>p.nombre.toLowerCase().includes(q)).sort((a,b)=>b.ovr-a.ovr).slice(0,8),cs=Object.values(g.clubs).filter(c=>c.nombre.toLowerCase().includes(q)).slice(0,5);
  el.innerHTML=`${cs.map(c=>`<div class="kv"><span>${badge(c,16)} ${c.nombre}</span><span class="muted">${c.division}</span></div>`).join('')}${ps.map(p=>`<div class="kv"><a class="plink" data-act="card" data-id="${p.id}">${p.nombre}</a><span class="muted">${p.pos} · ${p.ovr}/${p.pot} · ${g.clubs[p.clubId]?.nombre||'libre'}</span></div>`).join('')}`};
 P.resumen=function(){const g=this.g,r=g.resumen;if(!r)return;const dl=document.getElementById('dlg');
- dl.innerHTML=`<h3>Resumen de la temporada ${r.y}</h3><div class="cards" style="grid-template-columns:repeat(2,1fr)"><div><b>${r.div}</b>${r.pos}º${r.champ?' 🏆':''}</div><div><b>Objetivo</b>${r.ok?'✅ Cumplido':'❌ No cumplido'}</div><div><b>Goleador</b>${r.goleador}</div><div><b>Presupuesto</b>${fmt(r.ppto)}</div></div><p>${r.promoted?'🎉 Ascendiste. ':''}${r.relegated?'⬇️ Descendiste. ':''}${r.copa?'🏆 Campeón de la Copa Argentina. ':''}Ingresos ${fmt(r.ing)} · Gastos ${fmt(r.gas)} · Logros: ${r.logros}/${EX.LOGROS.length}</p><form method="dialog"><p><button class="pri">Empezar la nueva temporada</button></p></form>`;dl.showModal()};
+ dl.innerHTML=`<h3>Resumen de la temporada ${r.y}</h3><div class="cards" style="grid-template-columns:repeat(2,1fr)"><div><b>${r.div}</b>${r.pos}º${r.champ?' 🏆':''}</div><div><b>Objetivo</b>${r.ok?'✅ Cumplido':'❌ No cumplido'}</div><div><b>Goleador</b>${r.goleador}</div><div><b>Presupuesto</b>${fmt(r.ppto)}</div></div><p>${r.promoted?'🎉 Ascendiste. ':''}${r.relegated?'⬇️ Descendiste. ':''}${r.copa?'🏆 Campeón de la ${CP.NOMBRES.copa}. ':''}Ingresos ${fmt(r.ing)} · Gastos ${fmt(r.gas)} · Logros: ${r.logros}/${EX.LOGROS.length}</p><form method="dialog"><p><button class="pri">Empezar la nueva temporada</button></p></form>`;dl.showModal()};
 
 // ---------- wrappers de vistas ----------
 const oin=P.v_inicio;P.v_inicio=function(){const g=this.g;let h=oin.call(this);if(g.despedido)return h;h=h.replace('<div class="hero">',`<div class="hero"><span class="kit">${kit(U(g),62)}</span>`);
@@ -121,7 +122,7 @@ const oc9=P.chg9;P.chg9=function(a,d,v){const g=this.game&&this.g;switch(a){
 const oa9=P.act9;P.act9=function(a,d){const g=this.game&&this.g,done=(m,keep)=>{if(m)this.toast(m);if(!keep)this.render()};switch(a){
  case'menu':this.mo=!this.mo;this.render();return true;
  case'nav':if(!this.game)return false;this.mo=false;EX.sonido('click');break;
- case'pick':{this.game=Game.create(structuredClone(this.data),+d.id);if(this.dsf)V11.iniciarDesafio(this.game,this.dsf);this.dsf='';this.view='inicio';this.render();if(ls('fm_tut','0')!=='1')this.tutorial(0);return true}
+ case'pick':{this.game=Game.create(structuredClone(this.dataPlay||this.data),+d.id);this.dataPlay=null;if(this.dsf)V11.iniciarDesafio(this.game,this.dsf);this.dsf='';this.view='inicio';this.render();if(ls('fm_tut','0')!=='1')this.tutorial(0);return true}
  case'saveslot':SV.save(g,d.k).then(ok=>{this.toast(ok?'Partida guardada':'No se pudo guardar (poco espacio)');if(this.view==='guardar')this.render()});return true;
  case'loadslot':SV.load(d.k).then(n=>{if(n){this.game=n;this.view='inicio';this.go();this.toast('Partida cargada')}else this.toast('Ranura vacía')});return true;
  case'load':SV.load('1').then(n=>{if(n){this.game=n;this.view='inicio';this.go();this.toast('Partida cargada')}else this.toast('No hay partida guardada')});return true;

@@ -1,4 +1,5 @@
 // Carrera del DT: reputación, licencias, ofertas, cuerpo técnico propio, directiva (v0.9)
+import * as CP0 from './comp.js';
 import {CFG} from './config.js';
 import {addDays} from './league.js';
 import {squadOf} from './clubs.js';
@@ -47,7 +48,7 @@ export function cambiarClub(g,cid){const old=U(g),nw=g.clubs[cid];if(!nw)return;
  g.news.push(`✍️ Firmaste como entrenador de ${nw.nombre}`)}
 export function aceptar(g,id){const o=g.ofertasDT.find(x=>x.id===id);if(!o)return'La oferta venció';const n=g.clubs[o.club].nombre;cambiarClub(g,o.club);return`Ahora dirigís a ${n}`}
 export function cierre(g,res){const d=g.dt;let r=0;if(res.ok)r+=3;else r-=3;if(res.champ)r+=4;if(res.promoted)r+=4;if(res.relegated)r-=5;if(res.copa)r+=3;if(res.intl)r+=4;
- d.rep=C(Math.round((d.rep+r)*10)/10,10,98);d.hist.push({y:g.year,club:U(g).nombre,pos:res.pos,div:res.div,nota:[res.champ?'Campeón':'',res.promoted?'Ascenso':'',res.relegated?'Descenso':'',res.copa?'Copa Argentina':'',res.intl?'Título internacional':''].filter(Boolean).join(' · ')});d.hist=d.hist.slice(-40)}
+ d.rep=C(Math.round((d.rep+r)*10)/10,10,98);d.hist.push({y:g.year,club:U(g).nombre,pos:res.pos,div:res.div,nota:[res.champ?'Campeón':'',res.promoted?'Ascenso':'',res.relegated?'Descenso':'',res.copa?CP0.NOMBRES.copa:'',res.intl?'Título internacional':''].filter(Boolean).join(' · ')});d.hist=d.hist.slice(-40)}
 export function despedir(g){const d=g.dt;d.rep=C(d.rep-8,10,98);g.ofertasDT=[];genOfertas(g,true);g.news.push('📰 Te despidieron. Tenés ofertas de clubes más chicos.')}
 export function nuevaTemporada(g){g.objNeg=false;g.pedido=false;g.objMod='normal';nuevosCand(g);if(!g.despedido)genOfertas(g,false)}
 export function renunciar(g){g.despedido=true;g.dt.rep=C(g.dt.rep-2,10,98);g.ofertasDT=[];genOfertas(g,true);g.news.push('Renunciaste al club.')}

@@ -35,6 +35,21 @@ for f in sorted(glob.glob(base+'/[A-Z][A-Z][A-Z].json')):
     if sorted(niv)!=list(range(1,len(niv)+1)):errs.append(f'{n}: niveles no consecutivos {niv}')
     if d['continente'] in idx:
         idx[d['continente']].append({"codigo":d['codigo'],"pais":d['pais'],"bandera":d['bandera'],"divisiones":len(d['divisiones']),"clubes":nc});tot+=nc
+CONF={"América del Sur":"CONMEBOL","América del Norte y Central":"CONCACAF","El Caribe":"CONCACAF","Europa":"UEFA","Asia":"AFC","África":"CAF","Oceanía":"OFC"}
+def conf(d):
+    if d["codigo"] in("GUY","SUR"):return"CONCACAF"
+    if d["codigo"]=="AUS":return"AFC"
+    return CONF[d["continente"]]
+cont={k:[] for k in set(CONF.values())}
+for f in sorted(glob.glob(base+'/[A-Z][A-Z][A-Z].json')):
+    d=json.load(open(f,encoding='utf8'));cf=conf(d)
+    allc=sorted([c for dv in d["divisiones"] for c in dv["clubes"]],key=lambda c:-c["r"])
+    top=allc[:8];fz=round(14+.78*(sum(c["r"] for c in top)/max(1,len(top))))
+    for ct in idx.get(d["continente"],[]):
+        if ct["codigo"]==d["codigo"]:ct["f"]=max(38,min(82,fz));ct["conf"]=cf
+    for c in allc[:6]:cont[cf].append({"n":c["n"],"c":c["c"],"p":d["pais"],"k":d["codigo"],"r":c["r"]})
+for k in cont:cont[k]=sorted(cont[k],key=lambda c:-c["r"])[:140]
+json.dump(cont,open(base+'/continental.json','w',encoding='utf8'),ensure_ascii=False,separators=(',',':'))
 out={"continentes":[{"nombre":c,"paises":sorted(idx[c],key=lambda x:x['pais'])} for c in CONT]}
 json.dump(out,open(base+'/index.json','w',encoding='utf8'),ensure_ascii=False)
 print('países:',sum(len(v) for v in idx.values()),'clubes:',tot)

@@ -13,11 +13,13 @@ import * as NA from './nacional.js';
 import * as WO from './world.js';
 import * as EX from './extras.js';
 import * as V11 from './v11.js';
+import * as PR from './premios.js';
 import {opcionesFin} from './transfers.js';
 import {comision,agOf} from './market.js';
 import {fmt} from './players.js';
 import {fxYouth} from './facilities.js';
 import {seasonEnd as finSeasonEnd,newSeason as finNewSeason,ingreso,gasto,zl,topeSalarial,pasaTope} from './finance.js';
+const AS=(Ls,k)=>Ls[k]?.def.asc??2;
 const R=(a,b)=>a+Math.random()*(b-a),C=(x,a,b)=>Math.max(a,Math.min(b,Math.round(x)));
 const TPL='POR POR DFC DFC DFC DFC LI LI LD LD MCD MC MC MCO MI MD EI ED DC DC'.split(' ');
 const need=sq=>{const t=[...TPL];sq.forEach(p=>{const i=t.indexOf(p.pos);if(i>=0)t.splice(i,1)});return t[0]||'MC'};
@@ -33,15 +35,16 @@ export function endSeason(g){
  for(const p of Object.values(g.players))if(!p.clubId)delete g.players[p.id];
  const ul=Ls.findIndex(l=>l.def.id==g.clubs[u].liga),pos=Ls[ul].sorted().findIndex(r=>r.id==u)+1,ob=g.objetivo;
  if(ob){const ok=pos<=ob.max;g.confianza=Math.max(0,Math.min(100,g.confianza+(ok?15:-Math.min(30,10+5*(pos-ob.max))*(g.objMod==='ambicioso'?1.3:1))+(pos==1?10:0)));say(ok?`✅ Objetivo cumplido (${pos}º). Confianza: ${g.confianza}`:`❌ No cumpliste el objetivo (${pos}º, pedían ${ob.max}º). Confianza: ${g.confianza}`);if(ok)ingreso(g.clubs[u],'premios',Math.round(g.clubs[u].reputacion**2*300*({seguro:.7,ambicioso:1.5}[g.objMod]||1)));if(g.confianza<=0)g.despedido=true}
- {const n=Ls[ul].ids.length;spCierre(g,{ok:!!ob&&pos<=ob.max,champ:pos===1,promoted:ul>0&&pos<=2,relegated:ul<Ls.length-1&&pos>n-2});invCierre(g,pos);if(g.clubs[u].presupuesto<0){g.confianza=Math.max(0,g.confianza-10);say('⚠️ Cerraste la temporada con presupuesto negativo: la directiva pierde confianza.');if(g.confianza<=0)g.despedido=true}}
- opcionesFin(g);{const L=Ls[ul],n=L.ids.length;CA.cierre(g,{pos,div:L.def.nombre,ok:!!ob&&pos<=ob.max,champ:pos===1,promoted:ul>0&&pos<=2,relegated:ul<Ls.length-1&&pos>n-2,copa:alcance(g,'copa')==='Campeón',intl:alcance(g,'lib')==='Campeón'||alcance(g,'sud')==='Campeón'})}
- EX.cierre(g,{pos,div:Ls[ul].def.nombre,ok:!!ob&&pos<=ob.max,champ:pos===1,promoted:ul>0&&pos<=2,relegated:ul<Ls.length-1&&pos>Ls[ul].ids.length-2,copa:alcance(g,'copa')==='Campeón',libCampeon:alcance(g,'lib')==='Campeón',sudCampeon:alcance(g,'sud')==='Campeón'});
- V11.cierre(g,{pos,relegated:ul<Ls.length-1&&pos>Ls[ul].ids.length-2});
+ {const n=Ls[ul].ids.length;spCierre(g,{ok:!!ob&&pos<=ob.max,champ:pos===1,promoted:ul>0&&pos<=AS(Ls,ul),relegated:ul<Ls.length-1&&pos>n-AS(Ls,ul+1)});invCierre(g,pos);if(g.clubs[u].presupuesto<0){g.confianza=Math.max(0,g.confianza-10);say('⚠️ Cerraste la temporada con presupuesto negativo: la directiva pierde confianza.');if(g.confianza<=0)g.despedido=true}}
+ opcionesFin(g);{const L=Ls[ul],n=L.ids.length;CA.cierre(g,{pos,div:L.def.nombre,ok:!!ob&&pos<=ob.max,champ:pos===1,promoted:ul>0&&pos<=AS(Ls,ul),relegated:ul<Ls.length-1&&pos>n-AS(Ls,ul+1),copa:alcance(g,'copa')==='Campeón',intl:alcance(g,'lib')==='Campeón'||alcance(g,'sud')==='Campeón'})}
+ EX.cierre(g,{pos,div:Ls[ul].def.nombre,ok:!!ob&&pos<=ob.max,champ:pos===1,promoted:ul>0&&pos<=AS(Ls,ul),relegated:ul<Ls.length-1&&pos>Ls[ul].ids.length-AS(Ls,ul+1),copa:alcance(g,'copa')==='Campeón',libCampeon:alcance(g,'lib')==='Campeón',sudCampeon:alcance(g,'sud')==='Campeón'});
+PR.cierre(g,{pos,champ:pos===1});
+ V11.cierre(g,{pos,relegated:ul<Ls.length-1&&pos>Ls[ul].ids.length-AS(Ls,ul+1)});
  NA.cobroAnual(g);
  for(const p of Object.values(g.players))if(p.prestamo){const c=g.clubs[p.clubId],o=g.clubs[p.prestamo.de];if(c)c.plantilla=c.plantilla.filter(i=>i!==p.id);p.clubId=o.id;o.plantilla.push(p.id);p.contrato=p.prestamo.k;delete p.prestamo}
  g.hist.push({y:Y,camp:cn(Ls[0].sorted()[0].id)});
  const ord=Ls.map(L=>L.sorted().map(r=>r.id)),ids=ord.map(o=>[...o]);finSeasonEnd(g,ord);{const L=Ls[ul];g.carrera.push({y:Y,liga:L.def.nombre,nivel:L.def.nivel,pos,pts:L.table[u].pts,copa:alcance(g,'copa'),lib:alcance(g,'lib'),sud:alcance(g,'sud')});g.carrera=g.carrera.slice(-30)}compCierre(g,ord);
- for(let k=0;k<Ls.length-1;k++){const down=ord[k].slice(-2),up=ord[k+1].slice(0,2);ids[k]=ids[k].filter(i=>!down.includes(i)).concat(up);ids[k+1]=ids[k+1].filter(i=>!up.includes(i)).concat(down)}
+ for(let k=0;k<Ls.length-1;k++){const m=AS(Ls,k+1),down=ord[k].slice(-m),up=ord[k+1].slice(0,m);ids[k]=ids[k].filter(i=>!down.includes(i)).concat(up);ids[k+1]=ids[k+1].filter(i=>!up.includes(i)).concat(down)}
  ids.forEach((a,k)=>a.forEach(id=>{const c=g.clubs[id];if(c.liga!==Ls[k].def.id){if(id==u)say(`${Ls.findIndex(l=>l.def.id==c.liga)>k?'🎉 ¡Ascendiste':'⬇️ Descendiste'} a ${Ls[k].def.nombre}!`);c.liga=Ls[k].def.id;c.division=Ls[k].def.nombre}}));
  for(const p of Object.values(g.players)){(p.h=p.h||[]).push([Y,p.ovr,p.pot,p.pj||0,p.gol||0]);if(p.h.length>15)p.h.shift();grow(p,(g.clubs[p.clubId]?.cuerpoTecnico.entrenador??65)/65*(g.clubs[p.clubId]?fxYouth(g.clubs[p.clubId]):1),g.clubs[p.clubId]?30+.55*g.clubs[p.clubId].reputacion:45);
   if(p.edad>=36||(p.edad>=34&&Math.random()<.35)){const c=g.clubs[p.clubId];if(c){c.plantilla=c.plantilla.filter(i=>i!==p.id);if(p.clubId==u){say(`${p.nombre} se retiró (${p.edad} años)`);V11.retiro(g,p)}}delete g.players[p.id]}}

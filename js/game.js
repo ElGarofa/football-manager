@@ -18,14 +18,18 @@ import * as NA from './nacional.js';
 import * as WO from './world.js';
 import * as EX from './extras.js';
 import * as V11 from './v11.js';
+import * as PR from './premios.js';
+import {setPais} from './players.js';
+import {setNombres} from './comp.js';
+export const ARG={codigo:'ARG',nombre:'Argentina',bandera:'🇦🇷',conf:'CONMEBOL',copa:'Copa Argentina',cups:{lib:'Copa Libertadores',sud:'Copa Sudamericana'},slots:{lib:4,sud:4},gen:false};
 export class Game{
- static create(data,cid){const g=new Game(),lg=data.leagues[0],fs=Object.keys(FORMATIONS);
+ static create(data,cid){const g=new Game(),lg=data.leagues[0],fs=Object.keys(FORMATIONS);g.pais=data.pais||ARG;if(data.ext&&data.ext.clubs)g.ext=data.ext;g.estBase=data.estBase||null;
   g.clubs=Object.fromEntries(data.clubs.map(c=>[c.id,c]));g.players=Object.fromEntries(data.players.map(p=>[p.id,p]));
   Object.values(g.clubs).forEach(c=>c.formacion=fs[c.id%fs.length]);
   g.leagues=Object.fromEntries(data.leagues.map(l=>[l.id,new League(l,l.clubes)]));g.date=addDays(data.leagues[0].inicio,-6);g.userClubId=cid;g.tactic={...DEFAULT_TACTIC};
   g.lineup=autoLineup(squadOf(g,cid),g.tactic.formacion);g.training='Equilibrado';g.news=['Bienvenido, míster.'];g.fin={ing:0,gas:0};g.hist=[];g.live=true;g.ofertas=[];g.confianza=60;g.custom={};Object.values(g.clubs).forEach(c=>ensureClub(c,g));g.migrate();setObjective(g);return g}
  static from(o){const g=Object.assign(new Game(),o);g.custom=g.custom||{};for(const[k,v]of Object.entries(g.custom))setFormation(k,v);g.leagues={};for(const k in o.leagues)g.leagues[k]=Object.assign(new League(o.leagues[k].def,o.leagues[k].ids),o.leagues[k]);g.migrate();return g}
- migrate(){Object.values(this.clubs).forEach(c=>ensureClub(c,this));this.finHist=this.finHist||[];const c=this.clubs[this.userClubId];if(!this.contratos){this.seq=1000;this.invs=[];this.invOfertas=[];initContratos(this);invNueva(this)}scInit(this);this.enVentana=enVentana(this.date);PE.init(this);YO.init(this);CA.init(this);NA.init(this);WO.init(this);EX.init(this);V11.init(this);this.curva=this.curva||{pos:[],pres:[]};this.carrera=this.carrera||[];this.pal=this.pal||[];this.reps=this.reps||[];if(!this.comps){const ini=this.league.def.inicio;compNueva(this,ini);if(this.date>addDays(ini,14))omitir(this)}if(!c.topeSalarial)c.topeSalarial=topeSalarial(this,c)}
+ migrate(){if(!this.pais)this.pais=ARG;setPais(this.pais);setNombres(this.pais);Object.values(this.clubs).forEach(c=>ensureClub(c,this));this.finHist=this.finHist||[];const c=this.clubs[this.userClubId];if(!this.contratos){this.seq=1000;this.invs=[];this.invOfertas=[];initContratos(this);invNueva(this)}scInit(this);this.enVentana=enVentana(this.date);PE.init(this);YO.init(this);CA.init(this);NA.init(this);WO.init(this);EX.init(this);V11.init(this);PR.init(this);this.curva=this.curva||{pos:[],pres:[]};this.carrera=this.carrera||[];this.pal=this.pal||[];this.reps=this.reps||[];if(!this.comps){const ini=this.league.def.inicio;compNueva(this,ini);if(this.date>addDays(ini,14))omitir(this)}if(!c.topeSalarial)c.topeSalarial=topeSalarial(this,c)}
  get league(){return this.leagues[this.clubs[this.userClubId].liga]}
  get year(){return +this.league.def.inicio.slice(0,4)}
  get allDone(){return Object.values(this.leagues).every(l=>l.done)&&Object.values(this.comps||{}).every(c=>c.done)}
